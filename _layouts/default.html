@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+  {% if page.redirect_link %}
+    <meta http-equiv="refresh" content="0; URL={{page.redirect_link}}">
+    <link rel="canonical" href="{{page.redirect_link}}">
+  {% else %}
+
+    {% include head.html %}
+
+      <body>
+      <div class="wrap">
+        {% include header.html %}
+
+        {{ content }}
+
+        {% include footer.html %}
+      </div>
+
+      {% if site.use_analytics == true %}
+      {% include google_analytics.html %}
+      {% endif %} 
+    </body>
+    
+  {% endif %}
+  
+</html>

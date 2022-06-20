@@ -1,0 +1,81 @@
+<footer>
+  <div class="footer-content">
+    <div class="footer-list-social">
+      <ul>
+          {% if site.email %}
+          <li>
+            <a href="mailto:{{ site.email }}">
+              <!-- <i class="fa fa-lg fa-envelope-o"></i> -->
+              <img class="footer-icon" src="{{ site.baseurl }}/assets/images/icons/icon-mail.svg" alt="{{ site.email }}" title="Email">
+            </a>
+          </li>
+          {% endif %}
+
+          {% for institution in site.institutions %}
+            <li>
+              <a href="{{ institution.website }}">
+                <img class="footer-icon" class="institution-logo" src="{{ site.baseurl }}{{ institution.logo }}" alt="{{ institution.website }}" title="{{institution.name}}">
+              </a>
+            </li>
+          {% endfor %}
+
+          
+          {% if site.github_username %}
+          <li hidden>
+            <a href="https://github.com/{{ site.github_username }}">
+              <!-- <i class="fa fa-lg fa-github"></i>
+              <span class="footer-text">GitHub</span> -->
+              <img class="footer-icon" src="{{ site.baseurl }}/assets/images/icons/icon-github.svg" alt="{{ site.github_username }}" title="GitHub">
+            </a>
+          </li>
+          {% endif %}
+
+          {% if site.youtube_username %}
+          <li>
+<!--             <a href="https://www.youtube.com/user/{{ site.youtube_username }}"> TODO: change to this ASAP -->
+            <a href="https://www.youtube.com/channel/UCH0ztMDNtQuIx0-ZWIavG0Q">
+              <!-- <i class="fa fa-lg fa-youtube"></i>
+              <span class="footer-text">YouTube</span> -->
+              <img class="footer-icon" src="{{ site.baseurl }}/assets/images/icons/icon-youtube.svg" alt="{{ site.youtube_username }}" title="YouTube">
+            </a>
+          </li>
+          {% endif %}
+
+          {% if site.twitter_username %}
+          <li>
+            <a href="https://twitter.com/{{ site.twitter_username }}">
+              <!-- <i class="fa fa-lg fa-twitter"></i>
+              <span class="footer-text">Twitter</span> -->
+              <img class="footer-icon" src="{{ site.baseurl }}/assets/images/icons/icon-twitter.svg" alt="{{ site.twitter_username }}" title="Twitter">
+            </a>
+          </li>
+          {% endif %}
+
+      </ul>
+    </div>
+  </div>
+
+  <!-- <div class="footer-content">
+    <div class="footer-list-institutions">
+      <ul>
+        {% for institution in site.institutions %}
+          <li>
+            <a href="{{ institution.website }}"><img class="institution-logo" src="{{ site.baseurl }}{{ institution.logo }}" alt="{{ institution.website }}"></a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+ </div>
+ -->
+
+  <div class="footer-content">
+    <div class="footer-disclaimer">
+      <p>
+        Copyright &copy; 2022 JKU Multimedia Mining Search Group. All content on this website is licensed under the <br />
+        <a href="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution license (CC BY)</a>. Copyright of the linked papers is with the publishers.
+      </p>
+    </div>
+
+  </div>
+
+</footer>

@@ -1,0 +1,199 @@
+---
+layout: default
+---
+<header class="publications-title">
+  <h1>{{ page.title | remove: "| JKU Visual Data Science Lab" }}</h1>
+</header>
+
+<article class="publications-content">
+
+  <div class="pub-nav"> 
+    <ul>
+      <li>
+        <a href="#preprint"><span>Preprints</span></a>
+      </li>
+      <li>
+          <a href="#journal-papers"><span>Papers</span></a>
+      </li>
+      <li>
+          <a href="#editorials"><span>Editorials</span></a>
+      </li>
+      <li>
+        <a href="#theses"><span>Theses</span></a>
+    </li>
+     <li>
+          <a href="#commentaries"><span>Commentaries</span></a>
+      </li>
+      <li>
+          <a href="#book-chapters"><span>Book Chapters</span></a>
+      </li>
+      <li>
+        <a href="#posters"><span>Posters</span></a>
+    </li>      
+    </ul>
+  </div>
+
+  <br>
+
+  <h1 id="preprint">Preprints</h1>
+
+  {% for publication in site.publications reversed %}
+    {% if publication.hide or publication.non_group_project %}
+    {% elsif publication.type == "preprint" %}
+      {% include publication_list_entry.html %}
+    {% endif %}
+  {% endfor %}
+
+  <br>
+  
+  <h1 id="journal-papers">Peer-Reviewed Journal and Conference Papers</h1>
+
+  {% for publication in site.publications reversed %}
+    {% if publication.hide or publication.non_group_project %}
+    {% elsif publication.type == "paper" %}
+      {% include publication_list_entry.html %}
+    {% endif %}
+  {% endfor %}
+
+  <br>
+	
+  <h1 id="theses">Theses</h1>
+
+  {% assign member_thesis = site.publications | where:"type", "thesis" %}
+  {% for thesis in member_thesis reversed %}
+  {% if thesis.hide or thesis.non_group_project %}
+  {% else %}
+    <div class="paper-list-block">
+      {% if thesis.image %}
+        <a href="{{ site.baseurl }}{{ thesis.url }}">
+          <img alt="{{ thesis.shortname }} screenshot" class="paper-image-small" src="{{ site.baseurl }}{{ thesis.image }}">
+        </a>
+      {% endif %}
+      <p>
+        {% assign known = false %}
+        {% for person in site.persons %}
+        {% if person.key == thesis.authors.first %}
+        {% if person.cg_website %}
+            <a href="{{ person.cg_website }}">{{ person.first_name }} {{ person.last_name }}</a>
+        {% elsif person.hide_personal_page %}
+            {{ person.first_name }} {{ person.last_name }}
+        {% else %}
+            <a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }} {{ person.last_name }}</a>
+        {% endif %}
+          {% assign known = true %}
+        {% endif %}
+        {% endfor %}
+      {% if known == false %}
+      {{ author }}
+      {% endif %} <br/>
+        <b> <a href="{{ site.baseurl }}{{ thesis.url }}">{{ thesis.title }}</a></b><br/>
+        {{ thesis.institution }}, {{thesis.thesis_type}}, {{thesis.year}}
+      </p>
+
+    </div>
+  {% endif %}
+
+  {% endfor %}
+
+  <br>
+
+  <h1 id="book-chapters">Book Chapters</h1>
+
+  {% for publication in site.edits_comments_books reversed %}
+    {% if publication.personal %}
+    {% elsif publication.type == "book_chapter" %}
+      {% include publication_list_entry_book.html %}
+    {% endif %}
+  {% endfor %}
+
+  <br>  
+    
+  <h1 id="commentaries">Commentaries</h1>
+
+  {% for publication in site.edits_comments_books reversed %}
+    {% if publication.personal %}
+    {% elsif publication.type == "commentaries" %}
+      {% include publication_list_entry_book.html %}
+    {% endif %}
+  {% endfor %}
+      
+  <br>
+
+  <h1 id="editorials">Editorials</h1>
+
+  {% for publication in site.edits_comments_books reversed %}
+    {% if publication.personal %}
+    {% elsif publication.type == "editorial" %}
+      {% include publication_list_entry_book.html %}
+    {% endif %}
+  {% endfor %}
+
+  <br>
+
+  <h1 id="posters">Selected Abstracts and Posters</h1>
+
+  {% for publication in site.data.posters %}
+
+    <div>
+      <p>
+          {% for author in publication.authors %}
+              {% assign known = false %}
+              {% for person in site.persons %}
+              {% if author == person.key %}
+                  <span class="paper-author">
+                    {% if person.cg_website %}
+                        <a href="{{ person.cg_website }}">{{ person.first_name }} {{ person.last_name }}</a>{% if author != publication.authors.last %}, {% endif %}
+                    {% elsif person.hide_personal_page %}
+                        {{ person.first_name }} {{ person.last_name }}{% if author != publication.authors.last %}, {% endif %}
+                    {% else %}
+                        <a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }} {{ person.last_name }}</a>{% if author != publication.authors.last %}, {% endif %}
+                    {% endif %}
+                    
+                  </span>
+              {% assign known = true %}
+              {% endif %}
+              {% endfor %}
+          
+              {% if known == false %}
+                  <span class="paper-author">
+                      {{ author }}{% if author != publication.authors.last %}, {% endif %}
+                  </span>
+              {% endif %}
+          {% endfor %}
+
+          <br>
+          <b>{{ publication.title }}</b>
+
+          {% if publication.abstract-pdf or publication.poster-pdf %}
+          <span style="float:right;">
+              {% if publication.abstract-pdf %}
+              <i class="fa fa-file-pdf-o"></i>&nbsp; <a href="{{site.poster_content_url}}{{ publication.abstract-pdf }}">Abstract</a>
+              &nbsp;
+              {% endif %}
+      
+              {% if publication.poster-pdf %}
+                  <i class="fa fa-file-pdf-o"></i>&nbsp; <a href="{{site.poster_content_url}}{{ publication.poster-pdf }}">Poster</a>
+              &nbsp;
+              {% endif %}
+      
+              {% if publication.video %}
+                  <i class="fa fa-file-video-o"></i>&nbsp; <a href="{{ publication.video }}">Video</a>
+              &nbsp;
+              {% endif %}
+          </span>
+          {% endif %}
+          
+          <br/>
+          {{ publication.journal }}, {{publication.year}}{% if publication.to_appear %} (to appear){%endif%}.
+          
+          {% if publication.award %}
+          <span class="award pull-right">
+          {{publication.award}}&nbsp;<i class="fa fa-trophy"></i>
+          </span>
+          {% endif %}
+      </p>
+    </div>
+
+  {% endfor %}
+
+</article>

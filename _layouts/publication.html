@@ -1,0 +1,354 @@
+---
+layout: default
+---
+<div class="publication">
+
+  <header class="publication-title">
+    <h2>{{ page.title | remove: "| Visual Data Science Lab" }}</h2>
+  </header>
+
+  {% assign paper_content_url = site.paper_content_url %}
+
+  {% if page.paper_content_url %}
+  {% assign paper_content_url = page.paper_content_url %}
+  {% endif %}
+
+
+  <article class="publication-content-main">
+
+    {% if page.image_large %}
+    <img src="{{ site.baseurl }}/assets/images/papers/{{page.image_large}}" alt="{{page.shortname}} Teaser">
+    {% endif %}
+
+
+    {% if page.abstract %}
+    <h2>Abstract</h2>
+    <p>{{ page.abstract }}</p>
+    <br>
+    {% endif %}
+
+    <h2>Citation</h2>
+    <div class="citation">
+      <p>
+        {% assign bibauthors = '' %}
+        {% for author in page.authors %}
+        {% assign known = false %}
+        {% for person in site.persons %}
+        {% if author == person.key %}
+        {% if person.cg_website %}
+        <a href="{{ person.cg_website }}">{{ person.first_name }}
+          {{ person.last_name }}</a>{% if author != page.authors.last%}, {% endif %}
+        {% elsif person.hide_personal_page %}
+        {{ person.first_name }} {{ person.last_name }}<br>
+        {% else %}
+        <a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }}
+          {{ person.last_name }}</a>{% if author != page.authors.last%}, {% endif %}
+        {% endif %}
+        <!-- <a href="{{ person.website }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>{% if author != page.authors.last%}, {% endif %} -->
+        {% if author == page.authors.first %}
+        {% assign bibauthors = person.first_name | append: ' ' | append: person.last_name %}
+        {% else %}
+        {% assign bibauthors = bibauthors | append: ' and ' | append: person.first_name | append: ' ' | append: person.last_name %}
+        {% endif %}
+        {% assign known = true %}
+        {% endif %}
+        {% endfor %}
+        {% if known == false %}
+        {{ author }}{% if author != page.authors.last%}, {% endif %}
+        {% if author == page.authors.first %}
+        {% assign bibauthors = author %}
+        {% else %}
+        {% assign bibauthors = bibauthors | append: ' and ' | append: author %}
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+
+
+        <br />
+        <span class="paper-title">
+          {% if page.pdf_local %}
+          <b><a href="{{site.baseurl}}{{page.pdf_local}}">{{page.title}}</a></b>
+          {% elsif page.pdf %}
+          <b><a href="{{paper_content_url}}{{page.pdf}}">{{page.title}}</a></b>
+          {% else %}
+          <b>{{page.title}}</b>
+          {% endif %}
+        </span><br />
+        {% if page.type == "thesis" %}
+        <span class="advisors">
+          <em>Advisor(s):</em> {{ page.advisors }}
+        </span><br />
+        {% endif %}
+
+        <span class="paper-citation">
+          {% if page.type == "thesis" %}
+          {{ page.institution }}, {{ page.thesis_type }}, {{ page.month }} {{ page.year }}.
+
+          {% else %}
+          {% assign published-where = '' %}
+          {% if page.bib.journal %}
+          {% assign published-where = page.bib.journal %}
+          {% elsif page.bib.booktitle %}
+          {% assign published-where = page.bib.booktitle %}
+          {% elsif page.bib.publisher %}
+          {% assign published-where = page.bib.publisher %}
+          {% endif %}
+
+
+
+          {{ published-where }}, {% if page.bib.volume %}
+          {{ page.bib.volume }}{% endif %}{% if page.bib.number %}({{ page.bib.number }}){% endif %}{% if page.bib.volume or page.bib.issue %}:{% endif %}{% if page.bib.pages %}
+          {{ page.bib.pages }}, {% endif %} {% if page.bib.doi %} <a
+            href="https://dx.doi.org/{{ page.bib.doi }}">doi:{{ page.bib.doi }}</a>, {%endif%}{{ page.year }}.
+          {% endif %}
+
+          {%if page.award %}
+          <br>
+          <span class="award">
+            <span class="fa fa-trophy"></span>&nbsp;{{page.award}}
+          </span>
+          {% endif %}
+
+          {%if page.note %}
+          <p class="note" style="font-style:italic;">
+            <b>Note:</b> {{page.note}}
+          </p>
+          {% endif %}
+        </span>
+    </div>
+
+    {% if page.bib %}
+    <h2>BibTeX</h2>
+    {% capture newLine %}
+    {% endcapture %}
+    <!-- here replacing the curly brackets with html special characters. { is &#123; ; } is &#125; -->
+    <!-- formatting will mess up the way it is displayed on the page -->
+<pre class="bibtex">
+@{{ page.bibentry }}&#123;{{ page.key }},{{ newLine }}title = &#123;{{ page.title }}&#125;,{{ newLine }}author = &#123;{{ bibauthors }}&#125;,{{ newLine }}{% for bibItem in page.bib %}{% if bibItem[1] %}{{ bibItem[0] }} = &#123;{{ bibItem[1] }}&#125;,{{ newLine }}{% endif %}{% endfor %}year = &#123;{{ page.year }}&#125;
+}
+</pre>
+    {% endif %}
+    <br>
+    <!-- main markdown content -->
+    {{ content }}
+  </article>
+
+  <article class="publication-content-aside">
+    {% if page.project %}
+    <h2>Tool Info and Demo</h2>
+    <ul class="project-icon-list">
+      {% for project in site.tools %}
+      {% if project.key == page.project %}
+      <li><a href="{{ site.baseurl }}{{ project.url}}">{{ project.name }}</a><br>{{ project.title }}</li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+    {% if page.external-project %}
+    <h2>Project Website</h2>
+    <ul class="project-icon-list">
+      <li><a href="{{page.external-project}}">{{ page.shortname }} Website</a></li>
+    </ul>
+    {% endif %}
+
+
+    <h2>Resources</h2>
+    <ul>
+      {% if page.publisherurl %}
+      <li>
+        <a href="{{ page.publisherurl }}" target="_blank">
+          <p>
+            <i class="fa fa-globe fa-lg resources-icon" aria-hidden="true"></i>
+            Publisher
+          </p>
+        </a>
+      </li>
+      {% elsif page.bib.doi %}
+      <li>
+        <a href="https://dx.doi.org/{{ page.bib.doi }}" target="_blank">
+          <p>
+            <i class="fa fa-globe fa-lg resources-icon" aria-hidden="true"></i>
+            Publisher
+          </p>
+        </a>
+      </li>
+      {% endif %}
+
+      {% if page.preprint %}
+      <li>
+        <a href="{{ page.preprint }}" target="_blank">
+          <p>
+            <i class="fa fa-external-link fa-lg resources-icon" aria-hidden="true"></i>
+            Preprint
+          </p>
+        </a>
+      </li>
+      {% endif %}
+
+      {% if page.pdf_local %}
+      <li>
+        <a href="{{site.baseurl}}{{page.pdf_local}}" target="_blank">
+          <p>
+            <i class="fa fa-file-text fa-lg resources-icon" aria-hidden="true"></i>
+            Publication (PDF)
+          </p>
+        </a>
+      </li>
+      {% elsif page.pdf %}
+      <li>
+        <a href="{{paper_content_url}}{{ page.pdf }}" target="_blank">
+          <p>
+            <i class="fa fa-download fa-lg resources-icon" aria-hidden="true"></i>
+            Publication (PDF)
+          </p>
+        </a>
+      </li>
+      {% endif %}
+      {% if page.supplement %}
+      <li>
+        <a href="{{paper_content_url}}{{ page.supplement }}" target="_blank">
+          <p>
+            <i class="fa fa-download fa-lg resources-icon" aria-hidden="true"></i>
+            Supplementary Material
+          </p>
+        </a>
+      </li>
+      {% endif %}
+      {% if page.supplements %}
+      {% for supplement in page.supplements %}
+      <li>
+        {% if supplement.linksym %}
+        <a href="{% if supplement.abslink %}{{ supplement.abslink }}{% else %}{{paper_content_url}}{{ supplement.link }}{% endif %}" target="_blank">
+          <p>
+            <i class="fa fa-external-link fa-lg resources-icon" aria-hidden="true"></i>
+            {{supplement.name}}
+          </p>
+        </a>
+        {% else %}
+        <a href="{% if supplement.abslink %}{{ supplement.abslink }}{% else %}{{paper_content_url}}{{ supplement.link }}{% endif %}" target="_blank">
+          <p>
+            <i class="fa fa-download fa-lg resources-icon" aria-hidden="true"></i>
+            {{supplement.name}}
+          </p>
+        </a>
+        {% endif %}
+      </li>
+      {% endfor %}
+      {% endif %}
+
+      {% if page.code %}
+      <li>
+        <a href="{{ page.code }}" target="_blank">
+          <p>
+            <i class="fa fa-file-code-o fa-lg resources-icon" aria-hidden="true"></i>
+            Source Code
+          </p>
+        </a>
+      </li>
+      {% endif %}
+    </ul>
+    <!-- <ul>
+      {% if page.bib.doi %}
+      <li>
+        <i class="fa fa-globe"></i> &nbsp;<a href="https://dx.doi.org/{{ page.bib.doi }}">Publisher</a>
+      </li>
+      {% endif %}
+
+      {% if page.preprint %}
+      <li>
+        <i class="fa fa-external-link"></i> &nbsp;<a href="{{ page.preprint }}">Preprints</a>
+      </li>
+      {% endif %}
+
+      {% if page.pdf_local %}
+      <li>
+        <i class="fa fa-download"></i> &nbsp;<a href="{{site.baseurl}}{{page.pdf_local}}">Publication (PDF)</a></b>
+      </li>
+      {% elsif page.pdf %}
+      <li>
+        <i class="fa fa-download"></i> &nbsp;<a href="{{paper_content_url}}{{ page.pdf }}">Publication (PDF)</a>
+      </li>
+      {% endif %}
+      {% if page.supplement %}
+      <li>
+        <i class="fa fa-download"></i> &nbsp;<a href="{{paper_content_url}}{{ page.supplement }}">Supplementary
+          Material</a>
+      </li>
+      {% endif %}
+      {% if page.supplements %}
+      {% for supplement in page.supplements %}
+      <li>
+        {% if supplement.linksym %}
+        <i class="fa fa-external-link"></i>
+        {% else %}
+        <i class="fa fa-download"></i>
+        {% endif %}
+        &nbsp;<a
+          href="{% if supplement.abslink %}{{ supplement.abslink }}{% else %}{{paper_content_url}}{{ supplement.link }}{% endif %}">{{supplement.name}}</a>
+      </li>
+      {% endfor %}
+      {% endif %}
+
+      {% if page.code %}
+      <li>
+        <i class="fa  fa-github"></i> &nbsp;<a href="{{ page.code }}">Source Code</a>
+      </li>
+      {% endif %}
+    </ul>
+     -->
+
+    
+
+    {% if page.youtube-id %}
+      <div class="video">
+
+        <div class="video-wrapper">
+          <iframe src="//www.youtube.com/embed/{{page.youtube-id}}?controls=2&showinfo=0&iv_load_policy=3"
+            frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    {% endif %}
+
+    {% if page.preview-youtube-id %}
+      <div class="video">
+
+        <div class="video-wrapper">
+          <iframe src="//www.youtube.com/embed/{{page.preview-youtube-id}}?controls=2&showinfo=0&iv_load_policy=3"
+            frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    {% endif %}
+
+    <!-- (deprecated) for old versions, where you had to create a video file -->
+    <!-- {% if page.video or page.preview-video %}
+      <h2>Video(s)</h2>
+    {% endif %} -->
+    {% for video in site.videos %}
+    {% if video.key == page.video or video.key == page.preview-video %}
+    <div class="video">
+      <!-- <p><b>{{video.name}}</b></p> -->
+      {% if video.youtube-id %}
+      <div class="video-wrapper">
+        <iframe src="//www.youtube.com/embed/{{video.youtube-id}}?controls=2&showinfo=0&iv_load_policy=3"
+          frameborder="0" allowfullscreen></iframe>
+      </div>
+      {% endif %}
+      <!-- {% if video.file %}
+      <p><i class="fa fa-download"></i> &nbsp;<a href="{{paper_content_url}}{{video.file}}">Download Video</a>
+        <p />
+        {% endif %} -->
+    </div>
+    {% endif %}
+    {% endfor %}
+
+  </article>
+
+
+  <article class="publication-meta">
+
+  </article>
+
+  <article class="publication-resources">
+  </article>
+</div>

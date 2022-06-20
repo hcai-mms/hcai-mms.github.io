@@ -1,0 +1,72 @@
+# Site settings
+title: HCAI MMS Group JKU
+email: info@hcai.at
+description: "Human-centered Artificial Intelligence & Multimedia Mining Search Group at JKU and LIT."
+baseurl: ""
+url: "https://hcai.at"
+twitter_username: m_schedl
+# github_username:  
+# youtube_username: 
+# facebook_page: 
+# license_url: 
+safe: false
+lsi: false
+# google_analytics: ""
+use_analytics: false
+
+# paper_content_url: 
+# poster_content_url: 
+# data_url: 
+
+# Build settings
+
+permalink: pretty
+sass:
+  sass_dir: _sass
+# exclude from build
+exclude: ["README.md", "Rakefile", "changelog.md", ".idea/", "Gemfile", "Gemfile.lock", "rvm.env"]
+
+# code highlighter
+#highlighter: rouge
+
+# Collections
+collections:
+  tools:
+    output: true
+    permalink: /tools/:path/
+  themes:
+    output: true
+    permalink: /:path/
+  persons:
+    output: true
+    permalink: /persons/:path/
+  publications:
+    output: true
+    permalink: /publications/:path/
+  about-us:
+    output: true
+    permalink: /about-us/:path/
+  edits_comments_books:
+    output: true
+    permalink: /edits_comments_books/:path/
+  # thesis:
+  #   output: true
+  #   permalink: /thesis/:path/
+  releases:
+    output: true
+    permalink: /releases/:path/
+  videos:
+    output: false
+    permalink: /videos/:path/
+  datasets:
+    output: false
+    permalink: /datasets/:path/
+  institutions:
+    output: false
+    permalink: /institutions/:path/
+  collaborators:
+    output: false
+    permalink: /collaborators/:path/
+  funding:
+    output: false
+    permalink: /funding/:path/

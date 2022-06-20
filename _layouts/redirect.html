@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+  This HTML should redirect you from A to B and pass all paramters (e.g. http://A?foo=bar) to B as well.
+  This can not be done with a pure HTTP redirect -> redirct with JS
+-->
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting to {{page.redirect_link}}</title>
+
+  <!-- As a fallback, we will direct with HTML after 5 seconds - in case the JS redirect didn't work -->
+  <meta http-equiv="refresh" content="3; URL={{page.redirect_link}}">
+  <!-- just a meta attribute for our computer friends (doesn't redirect) -->
+  <link rel="canonical" href="{{page.redirect_link}}">
+
+  <!-- now do the actual redirect with JS. as it is in <head>, the redirect should happen immediately -->
+  <script>
+    window.location.replace('{{page.redirect_link}}' + document.location.search);
+  </script>
+</head>
+
+<body>
+  <!-- some text, just in case things don't work as expected-->
+  <p>Redirecting to <a href="{{page.redirect_link}}">{{page.redirect_link}}</a> ...</p>
+</body>
+</html>

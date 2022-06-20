@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+
+  
+
+    <head>
+ <meta charset="utf-8">
+<title>An Exploratory Study on the Acoustic Musical Properties to Decrease Self-Perceived Anxiety</title>
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="Human-centered Artificial Intelligence & Multimedia Mining Search Group at JKU and LIT.">
+<link rel="canonical" href="http://localhost:4000/publications/MusicAnxietyAcoustic/">
+
+<!-- Custom Fonts -->
+<link href='//fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic|Patua+One|Vollkorn:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<!-- Custom CSS -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/css/site.css">
+
+<!-- Fav and touch icons -->
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" href="/favicon.png" />
+
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.6/slick.css" />
+
+
+ <!-- metadata for link preview  -->
+  <!-- Schema.org markup for Google+ -->
+  <meta itemprop="name" content="An Exploratory Study on the Acoustic Musical Properties to Decrease Self-Perceived Anxiety">
+  <meta itemprop="description" content="Musical listening is broadly used as an inexpensive and safe method to reduce self-perceived anxiety. This strategy is based on the emotivist assumption claiming that emotions are not only recognised in music but induced by it. Yet, the acoustic properties of musical work capable of reducing anxiety are still under-researched. To fill this gap, we explore whether the acoustic parameters relevant in music emotion recognition are also suitable to identify music with relaxing properties. As an anxiety indicator, the positive statements from the six-item Spielberger State-Trait Anxiety Inventory, a self-reported score from 3 to 12, are taken. A user-study with 50 participants assessing the relaxing potential of four musical pieces was conducted; subsequently, the acoustic parameters were evaluated. Our study shows that when using classical Western music to reduce self-perceived anxiety, tonal music should be considered. In addition, it also indicates that harmonicity is a suitable indicator of relaxing music, while the role of scoring and dynamics in reducing non-pathological listener distress should be further investigated.">
+  
+  <meta itemprop="image" content="http://localhost:4000/assets/images/papers/2022_musicanxietyacoustic_teaser.png">
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@m_schedl">
+  <meta name="twitter:title" content="An Exploratory Study on the Acoustic Musical Properties to Decrease Self-Perceived Anxiety">
+  <meta name="twitter:description" content="Musical listening is broadly used as an inexpensive and safe method to reduce self-perceived anxiety. This strategy is based on the emotivist assumption claiming that emotions are not only recognised in music but induced by it. Yet, the acoustic properties of musical work capable of reducing anxiety are still under-researched. To fill this gap, we explore whether the acoustic parameters relevant in music emotion recognition are also suitable to identify music with relaxing properties. As an anxiety indicator, the positive statements from the six-item Spielberger State-Trait Anxiety Inventory, a self-reported score from 3 to 12, are taken. A user-study with 50 participants assessing the relaxing potential of four musical pieces was conducted; subsequently, the acoustic parameters were evaluated. Our study shows that when using classical Western music to reduce self-perceived anxiety, tonal music should be considered. In addition, it also indicates that harmonicity is a suitable indicator of relaxing music, while the role of scoring and dynamics in reducing non-pathological listener distress should be further investigated.">
+  <meta name="twitter:creator" content="@m_schedl">
+  
+  <meta name="twitter:image:src" content="http://localhost:4000/assets/images/papers/2022_musicanxietyacoustic_teaser.png">
+  
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="An Exploratory Study on the Acoustic Musical Properties to Decrease Self-Perceived Anxiety" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://localhost:4000/publications/MusicAnxietyAcoustic/" />
+  <meta property="og:description" content="Musical listening is broadly used as an inexpensive and safe method to reduce self-perceived anxiety. This strategy is based on the emotivist assumption claiming that emotions are not only recognised in music but induced by it. Yet, the acoustic properties of musical work capable of reducing anxiety are still under-researched. To fill this gap, we explore whether the acoustic parameters relevant in music emotion recognition are also suitable to identify music with relaxing properties. As an anxiety indicator, the positive statements from the six-item Spielberger State-Trait Anxiety Inventory, a self-reported score from 3 to 12, are taken. A user-study with 50 participants assessing the relaxing potential of four musical pieces was conducted; subsequently, the acoustic parameters were evaluated. Our study shows that when using classical Western music to reduce self-perceived anxiety, tonal music should be considered. In addition, it also indicates that harmonicity is a suitable indicator of relaxing music, while the role of scoring and dynamics in reducing non-pathological listener distress should be further investigated." />
+  
+  <meta property="og:image" content="http://localhost:4000/assets/images/papers/2022_musicanxietyacoustic_teaser.png" />
+  
+
+
+
+</head>
+
+
+      <body>
+      <div class="wrap">
+        <div class="navigation">
+    <div class="logo">
+        <a href="/">
+            <!-- LIT Human-centered AI Group -->
+            <img class="logo-header-svg" src="/assets/images/logos/hcai-mms-logo.svg" alt="LIT Human-centered AI Group - Logo">
+        </a>
+    </div>
+
+    <div class="logo-subtitle">Associated with the <nobr><a href="https://www.jku.at/linz-institute-of-technology/" target="_blank">Linz Institute of Technology</a></nobr> and the <nobr><a href="https://www.jku.at/en/institute-of-computational-perception/" target="_blank">Institute of Computational Perception</a></nobr> @ <nobr><a href="https://www.jku.at/" target="_blank">JKU Linz</a></nobr>, Austria</div>
+
+
+    <div class="navigation-buttons"> 
+        <ul>
+            <li class="home-button">
+                <a href="/"><span class="nav-icon"><i class="fa fa-home"></i></span><span class="nav-text">Home</span></a>
+            </li>
+            <li class="team-button">                
+                <a href="/team/"><span class="nav-icon"><i class="fa fa-group"></i></span><span class="nav-text">Team</span></a>
+            </li>
+            <li class="project-button">
+                <a target="_self" href="http://www.mschedl.eu/projects.html" target="_blank"><span class="nav-icon"><i class="fa fa-university"></i></span><span class="nav-text">Projects</span></a>
+            </li>
+            <li class="publication-button">
+                <a href="/publications/"><span class="nav-icon"><i class="fa fa-book"></i></span><span class="nav-text">Publications</span></a>
+            </li>
+            <!--<li class="publication-button">
+                <a target="_self" href="https://www.jku.at/en/research/research-documentation/research-unit/308/" target="_blank"><span class="nav-icon"><i class="fa fa-book"></i></span><span class="nav-text">Publications</span></a>
+            </li>
+            <li class="publication-button" hidden>
+                <a href="/publications/"><span class="nav-icon"><i class="fa fa-book"></i></span><span class="nav-text">Publications</span></a>
+            </li>-->
+            <li class="teaching-button">
+                <a target="_self" href="https://www.jku.at/en/institute-of-computational-perception/teaching/current-semester/" target="_blank"><span class="nav-icon" style="vertical-align: sub;"><img src="/assets/images/icons/icon-teaching.svg" height="15"></span><span class="nav-text">Teaching</span></a>
+            </li>
+            <li class="about-us-button">
+                <a href="/about-us/"><span class="nav-icon"><i class="fa fa-comments-o"></i></span><span class="nav-text">About Us</span></a>
+            </li>
+
+            <!-- <li class="home-button">
+                <a href="/"><span class="nav-icon"><i class="fa fa-home"></i></span><span class="nav-text">Home</span></a>
+            </li>
+            <li class="team-button">
+                <a href="/team/"><span class="nav-icon"><i class="fa fa-user"></i></span><span class="nav-text">Team</span></a>
+            </li>
+            <li class="publication-button">
+                <a href="/publications/"><span class="nav-icon"><i class="fa fa-book"></i></span><span class="nav-text">Publications</span></a>
+            </li>
+            <li class="teaching-button">
+                <a href="https://www.jku.at/en/institute-of-computer-graphics/teaching/" target="_blank"><span class="nav-icon"><i class="fa fa-group"></i></span><span class="nav-text">Teaching</span></a>
+            </li> -->
+            
+
+        </ul>
+    </div>
+
+</div>
+
+
+        <div class="publication">
+
+  <header class="publication-title">
+    <h2>An Exploratory Study on the Acoustic Musical Properties to Decrease Self-Perceived Anxiety</h2>
+  </header>
+
+  
+
+  
+
+
+  <article class="publication-content-main">
+
+    
+    <img src="/assets/images/papers/2022_musicanxietyacoustic_teaser.png" alt="MusicAnxietyAcoustic Teaser">
+    
+
+
+    
+    <h2>Abstract</h2>
+    <p>Musical listening is broadly used as an inexpensive and safe method to reduce self-perceived anxiety. This strategy is based on the emotivist assumption claiming that emotions are not only recognised in music but induced by it. Yet, the acoustic properties of musical work capable of reducing anxiety are still under-researched. To fill this gap, we explore whether the acoustic parameters relevant in music emotion recognition are also suitable to identify music with relaxing properties. As an anxiety indicator, the positive statements from the six-item Spielberger State-Trait Anxiety Inventory, a self-reported score from 3 to 12, are taken. A user-study with 50 participants assessing the relaxing potential of four musical pieces was conducted; subsequently, the acoustic parameters were evaluated. Our study shows that when using classical Western music to reduce self-perceived anxiety, tonal music should be considered. In addition, it also indicates that harmonicity is a suitable indicator of relaxing music, while the role of scoring and dynamics in reducing non-pathological listener distress should be further investigated.</p>
+    <br>
+    
+
+    <h2>Citation</h2>
+    <div class="citation">
+      <p>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href="/persons/parada-cabaleiro/">Emilia
+          Parada-Cabaleiro</a>, 
+        
+        <!-- <a href="">Emilia&nbsp;Parada-Cabaleiro</a>,  -->
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        Anton Batliner, 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href="/persons/schedl/">Markus
+          Schedl</a>
+        
+        <!-- <a href="http://www.mschedl.eu">Markus&nbsp;Schedl</a> -->
+        
+        
+        
+        
+        
+        
+        
+        
+
+
+        <br />
+        <span class="paper-title">
+          
+          <b>An Exploratory Study on the Acoustic Musical Properties to Decrease Self-Perceived Anxiety</b>
+          
+        </span><br />
+        
+
+        <span class="paper-citation">
+          
+          
+          
+
+
+
+          International Journal of Environmental Research and Public Health, 
+          19(2):  <a
+            href="https://dx.doi.org/10.3390/ijerph19020994">doi:10.3390/ijerph19020994</a>, 2022.
+          
+
+          
+
+          
+        </span>
+    </div>
+
+    
+    <h2>BibTeX</h2>
+    
+    <!-- here replacing the curly brackets with html special characters. { is &#123; ; } is &#125; -->
+    <!-- formatting will mess up the way it is displayed on the page -->
+<pre class="bibtex">
+@article&#123;,
+    title = &#123;An Exploratory Study on the Acoustic Musical Properties to Decrease Self-Perceived Anxiety&#125;,
+    author = &#123;Emilia Parada-Cabaleiro and Anton Batliner and Markus Schedl&#125;,
+    journal = &#123;International Journal of Environmental Research and Public Health&#125;,
+    doi = &#123;10.3390/ijerph19020994&#125;,
+    volume = &#123;19&#125;,
+    number = &#123;2&#125;,
+    month = &#123;January&#125;,
+    year = &#123;2022&#125;
+}
+</pre>
+    
+    <br>
+    <!-- main markdown content -->
+    <h1 id="acknowledgements">Acknowledgements</h1>
+
+<p>Open Access Funding by the University of Linz.</p>
+
+  </article>
+
+  <article class="publication-content-aside">
+    
+
+    
+
+
+    <h2>Resources</h2>
+    <ul>
+      
+      <li>
+        <a href="https://doi.org/10.3390/ijerph19020994" target="_blank">
+          <p>
+            <i class="fa fa-globe fa-lg resources-icon" aria-hidden="true"></i>
+            Publisher
+          </p>
+        </a>
+      </li>
+      
+
+      
+
+      
+      
+      
+
+      
+      <li>
+        <a href="https://github.com/SEILSdataset/Music_Anxiety_Acoustic" target="_blank">
+          <p>
+            <i class="fa fa-file-code-o fa-lg resources-icon" aria-hidden="true"></i>
+            Source Code
+          </p>
+        </a>
+      </li>
+      
+    </ul>
+    <!-- <ul>
+      
+      <li>
+        <i class="fa fa-globe"></i> &nbsp;<a href="https://dx.doi.org/10.3390/ijerph19020994">Publisher</a>
+      </li>
+      
+
+      
+
+      
+      
+      
+
+      
+      <li>
+        <i class="fa  fa-github"></i> &nbsp;<a href="https://github.com/SEILSdataset/Music_Anxiety_Acoustic">Source Code</a>
+      </li>
+      
+    </ul>
+     -->
+
+    
+
+    
+
+    
+
+    <!-- (deprecated) for old versions, where you had to create a video file -->
+    <!--  -->
+    
+
+  </article>
+
+
+  <article class="publication-meta">
+
+  </article>
+
+  <article class="publication-resources">
+  </article>
+</div>
+
+
+        <footer>
+  <div class="footer-content">
+    <div class="footer-list-social">
+      <ul>
+          
+          <li>
+            <a href="mailto:info@hcai.at">
+              <!-- <i class="fa fa-lg fa-envelope-o"></i> -->
+              <img class="footer-icon" src="/assets/images/icons/icon-mail.svg" alt="info@hcai.at" title="Email">
+            </a>
+          </li>
+          
+
+          
+            <li>
+              <a href="https://www.jku.at/en/institute-of-computational-perception/">
+                <img class="footer-icon" class="institution-logo" src="/assets/images/icons/icon-cp.svg" alt="https://www.jku.at/en/institute-of-computational-perception/" title="Institute of Computational Perception">
+              </a>
+            </li>
+          
+            <li>
+              <a href="https://www.jku.at">
+                <img class="footer-icon" class="institution-logo" src="/assets/images/icons/icon-jku.svg" alt="https://www.jku.at" title="Johannes Kepler University Linz">
+              </a>
+            </li>
+          
+
+          
+          
+
+          
+
+          
+          <li>
+            <a href="https://twitter.com/m_schedl">
+              <!-- <i class="fa fa-lg fa-twitter"></i>
+              <span class="footer-text">Twitter</span> -->
+              <img class="footer-icon" src="/assets/images/icons/icon-twitter.svg" alt="m_schedl" title="Twitter">
+            </a>
+          </li>
+          
+
+      </ul>
+    </div>
+  </div>
+
+  <!-- <div class="footer-content">
+    <div class="footer-list-institutions">
+      <ul>
+        
+          <li>
+            <a href="https://www.jku.at/en/institute-of-computational-perception/"><img class="institution-logo" src="/assets/images/icons/icon-cp.svg" alt="https://www.jku.at/en/institute-of-computational-perception/"></a>
+          </li>
+        
+          <li>
+            <a href="https://www.jku.at"><img class="institution-logo" src="/assets/images/icons/icon-jku.svg" alt="https://www.jku.at"></a>
+          </li>
+        
+      </ul>
+    </div>
+ </div>
+ -->
+
+  <div class="footer-content">
+    <div class="footer-disclaimer">
+      <p>
+        Copyright &copy; 2022 JKU Multimedia Mining Search Group. All content on this website is licensed under the <br />
+        <a href="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution license (CC BY)</a>. Copyright of the linked papers is with the publishers.
+      </p>
+    </div>
+
+  </div>
+
+</footer>
+
+      </div>
+
+       
+    </body>
+    
+  
+  
+</html>

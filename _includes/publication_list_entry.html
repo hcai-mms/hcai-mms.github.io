@@ -1,0 +1,121 @@
+<div class="paper-list-block" id="{{publication.key}}">
+
+    {% if publication.image %}
+      <a href="{{ site.baseurl }}{{ publication.url }}">
+        <img alt="{{ publication.shortname }} screenshot"
+          class="paper-image-small"
+          src="{{ site.baseurl }}/assets/images/papers/{{ publication.image }}">
+      </a>
+    {% endif %}
+
+    <p class="pubs">
+        {% for author in publication.authors %}
+        {% assign known = false %}
+        {% for person in site.persons %}
+        {% if author == person.key %}
+        <span class="paper-author">
+          {% if person.cg_website %}
+              <a href="{{ person.cg_website }}">{{ person.first_name }} {{ person.last_name }}</a>{% if author != publication.authors.last %}, {% endif %}
+          {% elsif person.hide_personal_page %}
+              {{ person.first_name }} {{ person.last_name }}<br>
+          {% else %}
+              <a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }} {{ person.last_name }}</a>{% if author != publication.authors.last %}, {% endif %}
+          {% endif %}
+          
+          <!-- <a href="{{ person.website }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>{% if author != publication.authors.last %}, {% endif %} -->
+        </span>
+        {% assign known = true %}
+        {% endif %}
+        {% endfor %}
+
+        {% if known == false %}
+        <span class="paper-author">
+          {{ author }}{% if author != publication.authors.last %}, {% endif %}
+        </span>
+        {% endif %}
+
+        {% endfor %}
+        <br/>
+        <span class="paper-title"><b><a href="{{ site.baseurl }}{{ publication.url }}">{{ publication.title }}</a></b></span><br/>
+        {% if publication.type == "thesis" %}
+        {{ publication.institution }}, {{ publication.thesis_type }}, {{ publication.month }} {{ publication.year }}
+
+        {% else %}
+        {% assign published-where = '' %}
+        {% if publication.bib.journal %}
+        {% assign published-where = publication.bib.journal %}
+        {% elsif publication.bib.booktitle %}
+        {% assign published-where = publication.bib.booktitle %}
+        {% elsif publication.bib.publisher %}
+        {% assign published-where = publication.bib.publisher %}
+        {% endif %}
+
+        {{ published-where }}, {{ publication.year }}
+        {% endif %}
+        <br>
+
+        <!-- <span class="paper-link">
+
+          {% if publication.external-project %}
+          <i class="fa fa-home"></i>&nbsp;
+          <a href="{{ publication.external-project }}">Paper Website</a>
+          &nbsp;
+          {% elsif publication.url%}
+          <i class="fa fa-home"></i>&nbsp;
+          <a href="{{ site.baseurl }}{{ publication.url }}">Paper Website</a>
+          &nbsp;
+          {% endif %}
+
+    
+          {% if publication.pdf %}
+          <i class="fa fa-file-pdf-o"></i>&nbsp;
+          <a href="{{ site.paper_content_url }}{{ publication.pdf }}">PDF</a>
+          &nbsp;
+          {% endif %}
+    
+          {% if publication.bib.doi %}
+          <i class="fa fa-external-link"></i>&nbsp;
+          <a href="http://dx.doi.org/{{ publication.bib.doi }}">Publisher</a>
+          &nbsp;
+          {% elsif publication.bib.publisher %}
+          <i class="fa fa-external-link"></i>&nbsp;
+          <a href="{{ publication.bib.publisher }}">Publisher</a>
+          &nbsp;
+          {% endif %}
+    
+          {% for video in site.videos %}
+          {% if video.key == publication.video and video.youtube-id %}
+          <i class="fa fa-youtube"></i>&nbsp;
+          <a href="http://youtube.com/watch?v={{video.youtube-id}}">YouTube</a>
+          &nbsp;
+          {% elsif video.key == publication.video and video.vimeo-id %}
+          <i class="fa fa-vimeo"></i>&nbsp;
+          <a href="http://vimeo.com/{{video.vimeo-id}}">Vimeo</a>
+          &nbsp;
+          {% endif %}
+          {% endfor %}
+    
+          {% for video in site.videos %}
+          {% if video.key == publication.video %}
+          <i class="fa fa-file-video-o"></i> &nbsp;
+          <a href="{{site.paper_content_url}}{{video.file}}">Video</a>
+          &nbsp;
+          {% endif %}
+          {% endfor %}
+    
+          {%if publication.bibtex %}
+          <i class="fa fa-download"></i>&nbsp;
+          <a href="{{site.paper_content_url}}{{ publication.bibtex }}">BibTeX</a>
+          &nbsp;
+          {% endif %}
+    
+        </span> -->
+
+        {%if publication.award %}
+        <!-- <br> -->
+        <span class="award">
+        <i class="fa fa-trophy"></i>&nbsp;{{publication.award}}
+        </span>
+        {% endif %}
+    </p>
+</div>

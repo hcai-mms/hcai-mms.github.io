@@ -1,0 +1,605 @@
+---
+layout: default
+---
+<div class="team-member">
+    <header class="team-member-title">
+        <h1>{{ page.first_name }} {{ page.last_name }}</h1>
+    </header>
+
+    <article class="team-member-content-main">
+
+        <p><img alt="{{ page.first_name }} {{ page.last_name }}" class="portrait-image" src="{{site.baseurl}}{{ page.image }}"></p>
+
+        {{ content }}
+
+
+    </article>
+
+    <article class="team-member-content-aside">
+
+        <h1>Contact</h1>
+        <p>{{page.degrees_pre}} <b>{{ page.first_name }} {{ page.last_name }}{% if page.degrees_post %}, {{page.degrees_post}}{% endif %}</b><br>{{ page.position }} </p>
+
+        <ul class="contact-list fa-ul">
+
+            <!-- <p><b>{{ page.first_name }} {{ page.last_name }}</b><br>{{ page.degrees }} </p> -->
+
+            {% if page.location %}
+            <li><i class="fa-li fa fa-home"></i>
+                {{ page.location }}
+            </li>
+            {% endif %}
+
+            {% if page.phone %}
+            <li><i class="fa-li fa fa-phone"></i>
+                {{ page.phone }}</b>
+            </li>
+            {% endif %}
+
+            {% if page.fax %}
+            <li><i class="fa-li fa fa-fax"></i>
+                {{ page.fax }}
+            </li>
+            {% endif %}
+
+            {% if page.email %}
+            <li><i class="fa-li fa fa-envelope-o"></i>
+                <a href="mailto:{{ page.email }}">
+                    <i class="mail-icon-item"></i>
+                    {{ page.email }}
+                </a>
+            </li>
+            {% endif %}
+    
+            {% if page.website %}
+            <li><i class="fa-li fa fas fa-id-badge"></i>
+                <a href="{{ page.website }}">
+                    {{ page.website }}
+                </a>
+            </li>
+            {% endif %}
+
+            {% if page.twitter %}
+            <li><i class="fa-li fa fa-twitter"></i>
+                <a href="https://twitter.com/{{ page.twitter }}">
+                    @{{ page.twitter }}
+                </a>
+            </li>
+            {% endif %}
+
+            {% if page.github %}
+            <li><i class="fa-li fa fa-github"></i>
+                <a href="https://github.com/{{ page.github }}">
+                    {{ page.github }}
+                </a>
+            </li>
+            {% endif %}
+
+            {% if page.google_scholar %}
+            <li><i class="fa-li fa fa-graduation-cap"></i>
+                <a href="http://scholar.google.com/citations?user={{ page.google_scholar }}">
+                    Google Scholar
+                </a>
+            </li>
+            {% endif %}
+
+            {% if page.linkedin %}
+            <li><i class="fa-li fa fa-linkedin-square"></i>
+                <a href="https://www.linkedin.com/in/{{ page.linkedin }}">
+                    LinkedIn
+                </a>
+            </li>
+            {% endif %}
+
+            {% if page.cv %}
+            <li><i class="fa-li fa fa-file-text-o"></i>
+                <a href="{{ page.cv }}">
+                    Download CV
+                </a>
+            </li>
+            {% endif %}
+
+        </ul>
+        <br />
+
+    </article>
+
+    <article class="team-member-content-below member-publications">
+
+        {% if page.show_pub_nav %}
+        <div class="pub-nav"> 
+            <ul>
+                <li>
+                    <a href="#publications"><span>Publications</span></a>
+                </li>
+                <!-- <li>
+                    <a href="#journal-papers"><span>Papers</span></a>
+                </li>
+                <li>
+                    <a href="#posters"><span>Posters</span></a>
+                </li>
+                <li>
+                    <a href="#editorials"><span>Editorials</span></a>
+                </li>
+                <li>
+                    <a href="#commentaries"><span>Commentaries</span></a>
+                </li>
+                <li>
+                    <a href="#book-chapters"><span>Book Chapters</span></a>
+                </li> -->
+                <li>
+                    <a href="#projects"><span>Projects</span></a>
+                </li>
+                <li>
+                    <a href="#talks"><span>Talks</span></a>
+                </li>
+                <li>
+                    <a href="#teaching"><span>Teaching</span></a>
+                </li>
+                <li>
+                    <a href="#awards"><span>Services & Awards</span></a>
+                </li>
+            </ul>
+        </div>
+        {% endif %}
+
+        <br>
+        <h1 id="publications" hidden>Publications</h1>
+
+        {% assign member_publications = site.publications | where_exp:"item", 'item.authors contains page.key' %}
+
+        <!-- Preprint -->
+        {% assign member_preprints = member_publications | where:"type", "preprint" %}
+        {% assign psize = member_preprints | size %}
+        {% if psize > 0 %}
+            <h2 id="preprint">Preprint</h2>
+            {% for publication in member_preprints reversed %}
+                {% if publication.hide %}
+                {% else %}
+                    {% include publication_list_entry.html %}
+                {% endif %}
+            {% endfor %}
+            <br>
+        {% endif %}
+        
+        
+        <!-- Papers -->
+        {% assign member_papers = member_publications | where:"type", "paper" %}
+        {% assign psize = member_papers | size %}
+        {% if psize > 0 %}
+            <h2 id="journal-papers">Peer-Reviewed Journal and Conference Papers</h2>
+            {% for publication in member_papers reversed %}
+                {% if publication.hide %}
+                {% else %}
+                    {% include publication_list_entry.html %}
+                {% endif %}
+            {% endfor %}
+            <br>
+        {% endif %}
+
+        
+        {% assign member_thesis = member_publications | where:"type", "thesis" %}
+        {% assign psize = member_thesis | size %}
+        {% if psize > 0 %}
+            <h2 id="theses">Theses</h2>
+            {% for thesis in member_thesis reversed %}
+                {% if thesis.hide %}
+                    {% else %}
+                        <div class="paper-list-block">
+                            {% if thesis.image %}
+                                <a href="{{ site.baseurl }}{{ thesis.url }}">
+                                    <img alt="{{ thesis.shortname }} screenshot" class="paper-image-small" src="{{ site.baseurl }}{{ thesis.image }}">
+                                </a>
+                            {% endif %}
+                            <p>
+                                {% assign known = false %}
+                                {% for person in site.persons %}
+                                    {% if person.key == thesis.authors.first %}
+                                        <a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>
+                                        {% assign known = true %}
+                                    {% endif %}
+                                {% endfor %}
+                                {% if known == false %}
+                                {{ author }}
+                                {% endif %} <br/>
+                                <b> <a href="{{ site.baseurl }}{{ thesis.url }}">{{ thesis.title }}</a></b><br/>
+                                {{ thesis.institution }}, {{thesis.thesis_type}}, {{thesis.year}}
+                            </p>
+                    
+                        </div>
+                    {% endif %}
+            {% endfor %}
+            <br>
+        {% endif %}
+
+          
+
+
+        <!-- Posters -->
+        {% assign member_posters = site.data.posters | where_exp:"item", "item.authors contains page.key" %}
+        {% assign psize = member_posters | size %}
+        {% if psize > 0 %}
+            <h2 id="posters">Selected Abstracts and Posters</h2>
+            {% for publication in member_posters %} <!--reversed-->
+                <div>
+                    <p>
+                        {% for author in publication.authors %}
+                            {% assign known = false %}
+                            {% for person in site.persons %}
+                            {% if author == person.key %}
+                                <span class="paper-author">
+                                    <a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>,
+                                </span>
+                            {% assign known = true %}
+                            {% endif %}
+                            {% endfor %}
+                        
+                            {% if known == false %}
+                                <span class="paper-author">
+                                    {{ author }}{% if author != publication.authors.last %}, {% endif %}
+                                </span>
+                            {% endif %}
+                        {% endfor %}
+
+                        <br>
+                        <b>{{ publication.title }}</b>
+
+                        {% if publication.abstract-pdf or publication.poster-pdf %}
+                        <span style="float:right;">
+                            {% if publication.abstract-pdf %}
+                            <i class="fa fa-file-pdf-o"></i>&nbsp; <a href="{{site.poster_content_url}}{{ publication.abstract-pdf }}">Abstract</a>
+                            &nbsp;
+                            {% endif %}
+                    
+                            {% if publication.poster-pdf %}
+                                <i class="fa fa-file-pdf-o"></i>&nbsp; <a href="{{site.poster_content_url}}{{ publication.poster-pdf }}">Poster</a>
+                            &nbsp;
+                            {% endif %}
+                    
+                            {% if publication.video %}
+                                <i class="fa fa-file-video-o"></i>&nbsp; <a href="{{ publication.video }}">Video</a>
+                            &nbsp;
+                            {% endif %}
+                        </span>
+                        {% endif %}
+                        
+                        <br/>
+                        {{ publication.journal }}, {{publication.year}}{% if publication.to_appear %} (to appear){%endif%}.
+                        
+                        {% if publication.award %}
+                        <span class="award pull-right">
+                        {{publication.award}}&nbsp;<i class="fa fa-trophy"></i>
+                        </span>
+                        {% endif %}
+                    </p>
+                </div>
+
+                <!-- <p class="poster-item">
+                    {% for author in publication.authors %}
+                
+                    {% assign known = false %}
+                    {% for person in site.persons %}
+                    {% if author == person.key %}
+                        <span class="paper-author">
+                            <a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>,
+                        </span>
+                    {% assign known = true %}
+                    {% endif %}
+                    {% endfor %}
+                
+                    {% if known == false %}
+                        <span class="paper-author">
+                            {{ author }}{% if author != publication.authors.last %}, {% endif %}
+                        </span>
+                    {% endif %}
+                
+                    {% endfor %}
+                    <br/>
+                
+                    <b>{{ publication.title }}</b><br/>
+                    {{ publication.journal }}, {{publication.year}}{% if publication.to_appear %} (to appear){%endif%}.
+                
+                    {% if publication.abstract-pdf or publication.poster-pdf %}
+                <p class="poster-link">
+                
+                        <span>
+                        {% if publication.abstract-pdf %}
+                            <i class="fa fa-file-pdf-o"></i>&nbsp; <a href="{{site.poster_content_url}}{{ publication.abstract-pdf }}">Abstract</a>
+                        &nbsp;
+                        {% endif %}
+                
+                        {% if publication.poster-pdf %}
+                            <i class="fa fa-file-pdf-o"></i>&nbsp; <a href="{{site.poster_content_url}}{{ publication.poster-pdf }}">Poster</a>
+                        &nbsp;
+                        {% endif %}
+                
+                        {% if publication.video %}
+                            <i class="fa fa-file-video-o"></i>&nbsp; <a href="{{ publication.video }}">Video</a>
+                        &nbsp;
+                        {% endif %}
+                
+                        </span>
+                
+                    {% if publication.award %}
+                    <span class="award pull-right">
+                    {{publication.award}}&nbsp;<i class="fa fa-trophy"></i>
+                    </span>
+                    {% endif %}
+                
+                </p> -->
+                {% endif %}
+                <br/>
+            
+            {% endfor %}
+        {% endif %}
+
+
+        {% assign member_edits_comments_books = site.edits_comments_books | where_exp:"item", 'item.authors contains page.key' %}
+
+        <!-- Editorials -->
+        {% assign member_edits = member_edits_comments_books | where:"type", "editorial" %}
+        {% assign psize = member_edits | size %}
+        {% if psize > 0 %}
+            <h2 id="editorials">Editorials</h2>
+            {% for publication in member_edits reversed %}
+                {% if publication.personal %}
+                {% else %}
+                    {% include publication_list_entry_book.html %}
+                {% endif %}
+            {% endfor %}
+            <br>
+        {% endif %}
+
+
+        <!-- Commentaries -->
+        {% assign member_comments = member_edits_comments_books | where:"type", "commentaries" %}
+        {% assign psize = member_comments | size %}
+        {% if psize > 0 %}
+            <h2 id="commentaries">Commentaries</h2>
+            {% for publication in member_comments reversed %}
+                {% if publication.personal %}
+                {% else %}
+                    {% include publication_list_entry_book.html %}
+                {% endif %}
+            {% endfor %}
+            <br>
+        {% endif %}
+            
+        {% assign member_book_chapters = member_edits_comments_books | where:"type", "book_chapter" %}
+        {% assign psize = member_book_chapters | size %}
+        {% if psize > 0 %}
+            <h2 id="book-chapters">Book Chapters</h2>
+            {% for publication in member_book_chapters reversed %}
+                {% if publication.personal %}
+                {% else %}
+                    {% include publication_list_entry_book.html %}
+                {% endif %}
+            {% endfor %}
+            <br>
+        {% endif %}
+
+
+        <!-- Projects -->
+        {% assign member_projects = site.data.projects | where:"author", page.key %}
+        {% assign psize = member_projects | size %}
+        {% if psize > 0 %}
+            <h1 id="projects">Projects</h1>
+            <table class="team-member-pub-table">
+                <tr>
+                    <th></th>
+                    <th></th>
+                </tr>
+                {% for grant in member_projects %}
+                <tr>
+                    <td class="team-member-pub-date">{{ grant.time }}</td>
+                    <td><i>{{ grant.title }},</i><br>Funded by {{ grant.agency }},
+            
+                    {% if grant.program %}
+                        {{ grant.program }},
+                    {% endif %}
+            
+                    {% if grant.number %}
+                    Grant no. {{ grant.number }},
+                    {% endif %}
+            
+                    {{ grant.amount }}.</td>
+                </tr>
+                {% endfor %}
+            </table>
+            <br>
+        {% endif %}
+
+
+        <!-- Talks -->
+        {% assign member_talks = site.data.talks | where:"author", page.key %}
+        {% assign psize = member_talks | size %}
+        {% if psize > 0 %}
+            <h1 id="talks">Talks</h1>
+            <table class="team-member-pub-table">
+                <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                </tr>
+                {% for talk in member_talks %}
+                <tr>
+                <td class="team-member-pub-date">{{ talk.date }}</td>
+                <td><i>{{ talk.title }}</i><br />{{ talk.event }} ({{ talk.type }})</td>
+                <td>{{ talk.location }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+            <br>
+        {% endif %}
+
+
+          
+        <!-- Teaching -->
+
+        {% assign member_courses = site.data.courses | where:"author", page.key %}
+        {% assign member_tutorials = site.data.tutorials | where:"author", page.key %}
+        {% assign member_students = site.data.students | where:"author", page.key %}
+
+        {% assign teaching_size = 0 | plus: member_courses.size | plus: member_tutorials.size | plus: member_students.size %}
+
+        {% if teaching_size > 0 %}
+            <h1 id="teaching">Teaching</h1>
+            
+            {% assign psize = member_courses | size %}
+            {% if psize > 0 %}
+                <h2>Courses</h2>
+
+                <!-- JKU -->
+                {% assign member_courses_institute = member_courses | where:"institution", "jku" %}
+                {% assign psize = member_courses_institute | size %}
+                {% if psize > 0 %}
+                    <h3>Courses at Johannes Kepler University Linz</h3>
+                    {% include member_courses.html %}
+                    <br>
+                {% endif %}
+
+                <!-- harvard -->
+                {% assign member_courses_institute = member_courses | where:"institution", "harvard" %}
+                {% assign psize = member_courses_institute | size %}
+                {% if psize > 0 %}
+                    <h3>Courses at Harvard University</h3>
+                    {% include member_courses.html %}
+                    <br>
+                {% endif %}
+
+                <!-- imperial -->
+                {% assign member_courses_institute = member_courses | where:"institution", "imperial" %}
+                {% assign psize = member_courses_institute | size %}
+                {% if psize > 0 %}
+                    <h3>Courses at Imperial College London</h3>
+                    {% include member_courses.html %}
+                    <br>
+                {% endif %}
+
+                <!-- fhs -->
+                {% assign member_courses_institute = member_courses | where:"institution", "fhs" %}
+                {% assign psize = member_courses_institute | size %}
+                {% if psize > 0 %}
+                    <h3>Courses at Salzburg University of Applied Sciences</h3>
+                    {% include member_courses.html %}
+                    <br>
+                {% endif %}
+
+                <!-- tug -->
+                {% assign member_courses_institute = member_courses | where:"institution", "tug" %}
+                {% assign psize = member_courses_institute | size %}
+                {% if psize > 0 %}
+                    <h3>Courses at Graz University of Technology</h3>
+                    {% include member_courses.html %}
+                    <br>
+                {% endif %}
+
+            {% endif %}
+
+
+            <!-- Tutorials -->
+
+            {% assign psize = member_tutorials | size %}
+            {% if psize > 0 %}
+                <h2>Tutorials and Guest Lectures</h2>
+                <table class="team-member-pub-table">
+                    <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    </tr>
+                    {% for tut in member_tutorials %}
+                    <tr>
+                    <td class="team-member-pub-date">{{ tut.date }}</td>
+                    <td><i>{{ tut.title }}</i><br />{{ tut.event }}
+                        {% if tut.colleagues %}
+                        , held together with {{ tut.colleagues }}
+                        {% endif %}
+                        <br /><a href="{{ tut.website }}">{{ tut.website }}</a></td>
+                    <td>{{ tut.location }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+                <br>
+            {% endif %}
+
+
+            <!-- Student Supervision -->
+
+            {% assign psize = member_students | size %}
+            {% if psize > 0 %}
+                <h2>Student Supervision</h2>
+                <table class="team-member-pub-table">
+                    <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    </tr>
+                    {% for student in member_students %}
+                    <tr>
+                    <td class="team-member-pub-date">{{ student.date }}</td>
+                    <td>{{ student.type }}</td>
+                    <td>{{ student.name }}</td>
+                    <td><i>{{ student.title }}</i></td>
+                    </tr>
+                    {% endfor %}
+                </table>
+                
+                <br>
+            {% endif %}
+
+        {% endif %}
+
+
+        <!-- Sevices & Awards -->
+
+        {% assign member_awards = site.data.awards | where:"author", page.key %}
+        {% assign member_functions = site.data.functions | where:"author", page.key %}
+        {% assign member_reviewing = site.data.reviewing | where:"author", page.key %}
+        {% assign member_memberships = site.data.memberships | where:"author", page.key %}
+
+        {% assign services_size = member_awards.size | plus: member_functions.size | plus: member_reviewing.size | plus: member_memberships.size %}
+
+        {% if services_size > 0 %}
+
+            <h1 id="awards">Services & Awards</h1>
+
+            <!-- Awards and Scholarships -->
+            {% assign member_services = member_awards %}
+            {% assign psize = member_services | size %}
+            {% if psize > 0 %}
+                <h2>Awards and Scholarships</h2>
+                {% include member_services_awards.html %}
+            {% endif %}
+
+            <!-- Editorial and Committee Functions -->
+            {% assign member_services = member_functions %}
+            {% assign psize = member_services | size %}
+            {% if psize > 0 %}
+                <h2>Editorial and Committee Functions</h2>
+                {% include member_services_awards.html %}
+                <br>
+            {% endif %}
+
+            <!-- Reviewing -->
+            {% assign member_services = member_reviewing %}
+            {% assign psize = member_services | size %}
+            {% if psize > 0 %}
+                <h2>Reviewing</h2>
+                {% include member_services_awards.html %}
+                <br>
+            {% endif %}
+
+            <!-- Memberships in Professional Societies and Interest Groups -->
+            {% assign member_services = member_memberships %}
+            {% assign psize = member_services | size %}
+            {% if psize > 0 %}
+                <h2>Memberships in Professional Societies and Interest Groups</h2>
+                {% include member_services_awards.html %}
+                <br>
+            {% endif %}
+        {% endif %}
+      
+      </article>
+</div>

@@ -1,0 +1,86 @@
+---
+layout: default
+---
+<div class="about-us">
+
+    <header class="about-us-title">
+        <h1>About Us</h1>
+        <!-- <h1>{{ page.title | remove: "| JKU Visual Data Science Lab" }}</h1> -->
+    </header>
+
+    <article class="about-us-content-main">
+
+        <!-- <h1>About</h1> -->
+        <p>
+            Founded in 2019, we are a young and multidisciplinary research team dedicated to conducting innovative research at the intersection of machine learning, multimedia, ethics, psychology, and sociology. We create cutting-edge technology at the forefront of the following research areas:
+
+        </p>
+        <ul>
+		<li>Recommender Systems</li>
+        <li>Information Retrieval</li>
+        <li>Natural Language Processing</li>
+        <li>Multimedia Processing, Analysis, and Retrieval</li>
+        <li>Intelligent User Interfaces</li>
+        <li>Affective Computing</li>
+        <li>Ethics in AI (Fairness, Explainability, and Trustworthiness)</li>
+	</ul>
+        <p>
+	    We have been engaged in projects funded by the European Commission (EC), the Austrian Science Fund (FWF), the Austrian Research Promotion Agency (FFG), the State of Upper Austria, 
+	    and the Federal Ministry of Education, Science, and Research. We also maintain collaborations with industry, among others with Siemens, Microsoft, Spotify, and Deezer. 
+	    We also offer consulting activities on the topics mentioned above.
+	</p>
+    <br>  
+    </article>
+
+    <article class="about-us-content-aside">
+        
+        <h2>Contact Us</h2>
+        <p>
+            If you are interested in our research activities or in collaborating with us, please mail to: <a href="info@hcai.at" target="_blank">info@hcai.at</a> or visit us in: <a href="https://www.google.com/maps/place/Science+Park+3/@48.3351096,14.3220006,17z/data=!4m8!1m2!2m1!1sscience+park+3+4.+stock!3m4!1s0x4773991d5880f437:0xc58d7ca1cdc2b04!8m2!3d48.3351119!4d14.3242242/" target="_blank">Science Park 3, JKU, Linz, Austria</a>  
+        </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1647613429384!6m8!1m7!1sCAoSLEFGMVFpcE4xMGdOb2I4bGJoTjc4eVFaTHBYQmVxYS1ieTgyME9vV2hEZmx2!2m2!1d48.3354077!2d14.3239423!3f128.892417662228!4f12.306696425587262!5f0.7820865974627469" width="525" height="320" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+
+       
+    </article>
+    <article class="about-us-content-bottom">
+        <h2>Collaborators</h2><p> </p>
+
+        <article class="about-us-content-bottom-left">
+            <h3>Universities</h3>
+            <ul class="institution-icon-list">
+                {% for collaborator in site.collaborators %}
+                {% if collaborator.national == false and collaborator.industry == false%}
+                    <a href="{{ collaborator.website }}">{{ collaborator.name-short }}</a> <br>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </article>
+        <article class="about-us-content-bottom-middle">
+            <ul class="institution-icon-list">
+                {% for collaborator in site.collaborators %}
+                {% if collaborator.national == true and collaborator.industry == false%}
+                    <a href="{{ collaborator.website }}">{{ collaborator.name-short }}</a> <br>
+                {% endif %}
+                {% endfor %}
+            </ul><br>
+            <h3>Industry</h3>
+            <ul class="institution-icon-list">
+                {% for collaborator in site.collaborators %}
+                {% if collaborator.industry == true%}
+                    <a href="{{ collaborator.website }}">{{ collaborator.name-short }}</a> <br>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </article>
+        <article class="about-us-content-bottom-right">
+            
+        </article>
+
+
+        
+        
+
+    </article>
+</div>

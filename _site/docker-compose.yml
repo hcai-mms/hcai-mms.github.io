@@ -1,0 +1,9 @@
+version: '3.0'
+services:
+  vds-lab-homepage:
+    image: 'jekyll/jekyll:4'
+    command: 'jekyll serve --watch --drafts'
+    volumes:
+      - '.:/srv/jekyll'
+    ports:
+      - '4000:4000'

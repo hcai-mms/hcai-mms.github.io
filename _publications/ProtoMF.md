@@ -15,7 +15,7 @@ abstract: "Recent studies show the benefits of reformulating common machine lear
 
 
 # set this url, if your paper is on another server; defaults to data.jku-vds-lab.at
-paper_content_url: https://t.co/pLBfbroGjg
+paper_content_url:
 # uncomment the "hide" property, if you do not want the publication to be displayed on the website (usually you don't need this)
 # hide: True
 # uncomment the "non_group_project" property, if you only want the publication to be displayed on your personal page (i.e. publications where you contributed, but does not have anything to do with the Vis Group e.g. Master Thesis,...)
@@ -89,7 +89,7 @@ youtube-id:
 preview-youtube-id: 
 
 # the name of your publication pdf e.g. 2020_tvcg_confusionflow.pdf; this is usually uploaded to the caleydo aws server
-pdf:  https://github.com/karapostK/hcai-mms.github.io/blob/master/assets/pdf/ProtoMF__Prototype_based_Matrix_Factorization.pdf
+pdf: /assets/pdf/ProtoMF__Prototype_based_Matrix_Factorization.pdf
 # A supplement PDF e.g. 2017_preprint_taggle_supplement.pdf; this is usually uploaded to the caleydo aws server
 supplement: 
 

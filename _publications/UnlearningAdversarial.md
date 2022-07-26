@@ -8,8 +8,8 @@ title: "Unlearning Protected User Attributes in Recommendations with Adversarial
 # "paper": Peer-Reviewed Journal and Conference Papers
 # "preprint": Preprint
 # "thesis": Thesis (e.g. Master/PhD Thesis)
-type: preprint
-abstract: "" # insert the abstract of your publication between the quotes; you can use html e.g. to make links (<a></a>) or generate bold (<b></b>) etc. text 
+type: paper
+abstract: "Collaborative filtering algorithms capture underlying consumption patterns, including the ones specific to particular demographics or protected information of users, e.g., gender, race, and location. These encoded biases can influence the decision of a recommendation system (RS) towards further separation of the contents provided to various demographic subgroups, and raise privacy concerns regarding the disclosure of users' protected attributes. In this work, we investigate the possibility and challenges of removing specific protected information of users from the learned interaction representations of a RS algorithm, while maintaining its effectiveness. Specifically, we incorporate adversarial training into the state-of-the-art MultVAE architecture, resulting in a novel model, Adversarial Variational Auto-Encoder with Multinomial Likelihood (Adv-MultVAE), which aims at removing the implicit information of protected attributes while preserving recommendation performance. We conduct experiments on the MovieLens-1M and LFM-2b-DemoBias datasets, and evaluate the effectiveness of the bias mitigation method based on the inability of external attackers in revealing the users' gender information from the model. Comparing with baseline MultVAE, the results show that Adv-MultVAE, with marginal deterioration in performance (w.r.t. NDCG and recall), largely mitigates inherent biases in the model on both datasets." # insert the abstract of your publication between the quotes; you can use html e.g. to make links (<a></a>) or generate bold (<b></b>) etc. text 
 
 ####
 
@@ -26,9 +26,9 @@ paper_content_url:
 # The shortname is used for auto-generated titels. e.g. ConfusionFlow
 shortname: UnlearningAdversarial
 # add a 2:1 aspect ratio (e.g., width: 400px, height: 200px) to the folder /assets/images/papers/ e.g. 2020_tvcg_confusionflow.png
-image: 
+image: 2022_sigir_unlearningadversarial.png
 # add a 2:1 aspect ratio teaser figure (e.g., width: 1200px, height: 600px) to the folder /assets/images/papers/ e.g. 2020_tvcg_confusionflow_teaser.png
-image_large: 
+image_large: 2022_sigir_unlearningadversarial_teaser.png
 
 # Authors in the "database" can be used with just the key that is specified in the corresponding .md file (usually it is the lastname in lower case e.g. doe). Authors that do not have an individual page here should be stated with their full name (e.g. John Doe)
 # each author is one item in the list. the list is enumerated with dashes ("-")
@@ -45,9 +45,9 @@ authors:
 - schedl
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG
-journal-short: 
+journal-short: SIGIR
 # when was this publication written/ when was the publication accepted (e.g. 2020)
-year: 
+year: 2022
 
 # if you have an explicit page you want to reference, use this tag; otherwise it will be generated from your doi
 publisherurl: 
@@ -55,16 +55,16 @@ publisherurl:
 # what is the publication type and other bib specific properties
 bibentry: article
 bib:
-  journal:  # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
+  journal: Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
   editor: 
-  publisher: 
+  publisher: Association for Computing Machinery
   address: 
-  doi:		# e.g.10.1109/TVCG.2020.3012063
+  doi: 10.1145/3477495.3531820		# e.g.10.1109/TVCG.2020.3012063
   url: 
   volume: 
   number: 
   pages: 
-  month: 
+  month: July
 
 preprint:	 # here you can put the preprint link (arxiv.org, osf.io,...) e.g. https://arxiv.org/abs/1910.00969
 
@@ -106,6 +106,7 @@ code: https://github.com/CPJKU/adv-multvae
 
 # After the --- you can put information that you want to appear on the website using markdown formatting or HTML. A good example are acknowledgements, extra references, an erratum, etc.
 ---
+
 
 
 

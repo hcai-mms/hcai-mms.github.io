@@ -61,9 +61,9 @@ bib:
   address: New York, NY, USA
   doi:		# e.g.10.1109/TVCG.2020.3012063
   url: 
-  #volume: 58
-  #number: 5
-  #pages: 531--536
+  volume: 
+  number: 
+  pages: 
   month: 
 
 preprint:	 # here you can put the preprint link (arxiv.org, osf.io,...) e.g. https://arxiv.org/abs/1910.00969
@@ -89,7 +89,7 @@ youtube-id:
 preview-youtube-id: 
 
 # the name of your publication pdf e.g. 2020_tvcg_confusionflow.pdf; this is usually uploaded to the caleydo aws server
-pdf: 
+pdf:  https://github.com/karapostK/hcai-mms.github.io/blob/master/assets/pdf/ProtoMF__Prototype_based_Matrix_Factorization.pdf
 # A supplement PDF e.g. 2017_preprint_taggle_supplement.pdf; this is usually uploaded to the caleydo aws server
 supplement: 
 

@@ -47,8 +47,8 @@ layout: default
   <br>
   
   <h1 id="journal-papers">Peer-Reviewed Journal and Conference Papers</h1>
-
-  {% for publication in site.publications reversed %}
+  {% assign sorted_publications = site.publications | sort: 'year' | reverse %}
+  {% for publication in  sorted_publications %}
     {% if publication.hide or publication.non_group_project %}
     {% elsif publication.type == "paper" %}
       {% include publication_list_entry.html %}

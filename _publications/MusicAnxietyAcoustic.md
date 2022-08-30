@@ -8,7 +8,7 @@ title: "An Exploratory Study on the Acoustic Musical Properties to Decrease Self
 # "paper": Peer-Reviewed Journal and Conference Papers
 # "preprint": Preprint
 # "thesis": Thesis (e.g. Master/PhD Thesis)
-type: paper
+type: journal
 abstract: "Musical listening is broadly used as an inexpensive and safe method to reduce self-perceived anxiety. This strategy is based on the emotivist assumption claiming that emotions are not only recognised in music but induced by it. Yet, the acoustic properties of musical work capable of reducing anxiety are still under-researched. To fill this gap, we explore whether the acoustic parameters relevant in music emotion recognition are also suitable to identify music with relaxing properties. As an anxiety indicator, the positive statements from the six-item Spielberger State-Trait Anxiety Inventory, a self-reported score from 3 to 12, are taken. A user-study with 50 participants assessing the relaxing potential of four musical pieces was conducted; subsequently, the acoustic parameters were evaluated. Our study shows that when using classical Western music to reduce self-perceived anxiety, tonal music should be considered. In addition, it also indicates that harmonicity is a suitable indicator of relaxing music, while the role of scoring and dynamics in reducing non-pathological listener distress should be further investigated." # insert the abstract of your publication between the quotes; you can use html e.g. to make links (<a></a>) or generate bold (<b></b>) etc. text 
 
 ####

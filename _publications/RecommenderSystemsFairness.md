@@ -2,7 +2,7 @@
 layout: publication # do not change
 
 #### these fields are mandatory. please fill them out
-title: "Investiating Gender Fairness of Recommendation Algorithms in the Music Domain" # title of your publication 
+title: "Investigating Gender Fairness of Recommendation Algorithms in the Music Domain" # title of your publication 
 
 # choose one of the following types:
 # "paper": Peer-Reviewed Journal and Conference Papers
@@ -24,7 +24,7 @@ paper_content_url: https://www.sciencedirect.com/science/article/pii/S0306457321
 
 #### the following fields are optional, but it is recommended to enter as much information as possible
 # The shortname is used for auto-generated titels. e.g. ConfusionFlow
-shortname: RecommenderSystemsFairness
+shortname: RSFairness
 # add a 2:1 aspect ratio (e.g., width: 400px, height: 200px) to the folder /assets/images/papers/ e.g. 2020_tvcg_confusionflow.png
 image: 2021_recommendersystemsfairness.png
 # add a 2:1 aspect ratio teaser figure (e.g., width: 1200px, height: 600px) to the folder /assets/images/papers/ e.g. 2020_tvcg_confusionflow_teaser.png
@@ -56,7 +56,7 @@ publisherurl: https://www.sciencedirect.com/science/article/pii/S030645732100154
 # what is the publication type and other bib specific properties
 bibentry: article
 bib:
-  journal: Information Processing \& Management # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
+  journal: Information Processing & Management # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
   editor: 
   publisher: Elsevier
   address: 

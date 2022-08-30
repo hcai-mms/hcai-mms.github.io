@@ -7,35 +7,38 @@ layout: default
 
 <article class="publications-content">
 
-  <div class="pub-nav"> 
+  <div class="pub-nav">
     <ul>
-      <li>
+      <!-- <li>
         <a href="#preprint"><span>Preprints</span></a>
+      </li> -->
+      <li>
+        <a href="#journals"><span>Journals</span></a>
       </li>
       <li>
-          <a href="#journal-papers"><span>Papers</span></a>
+        <a href="#journal-papers"><span>Papers</span></a>
       </li>
-      <li>
+      <!-- <li>
           <a href="#editorials"><span>Editorials</span></a>
+      </li> -->
+      <!-- <li>
+          <a href="#commentaries"><span>Commentaries</span></a>
+      </li> -->
+      <li>
+        <a href="#book-chapters"><span>Book Chapters</span></a>
       </li>
       <li>
         <a href="#theses"><span>Theses</span></a>
-    </li>
-     <li>
-          <a href="#commentaries"><span>Commentaries</span></a>
       </li>
-      <li>
-          <a href="#book-chapters"><span>Book Chapters</span></a>
-      </li>
-      <li>
+      <!-- <li>
         <a href="#posters"><span>Posters</span></a>
-    </li>      
+    </li>       -->
     </ul>
   </div>
 
   <br>
 
-  <h1 id="preprint">Preprints</h1>
+  <!-- <h1 id="preprint">Preprints</h1>
 
   {% for publication in site.publications reversed %}
     {% if publication.hide or publication.non_group_project %}
@@ -44,11 +47,22 @@ layout: default
     {% endif %}
   {% endfor %}
 
-  <br>
-  
-  <h1 id="journal-papers">Peer-Reviewed Journal and Conference Papers</h1>
+  <br> -->
+
+  <h1 id="journal">Journals</h1>
   {% assign sorted_publications = site.publications | sort: 'year' | reverse %}
-  {% for publication in  sorted_publications %}
+  {% for publication in sorted_publications %}
+    {% if publication.hide or publication.non_group_project %}
+    {% elsif publication.type == "journal" %}
+      {% include publication_list_entry.html %}
+    {% endif %}
+  {% endfor %}
+
+  <br>
+
+  <h1 id="journal-papers">Conference and Workshop Proceedings</h1>
+  {% assign sorted_publications = site.publications | sort: 'year' | reverse %}
+  {% for publication in sorted_publications %}
     {% if publication.hide or publication.non_group_project %}
     {% elsif publication.type == "paper" %}
       {% include publication_list_entry.html %}
@@ -56,13 +70,24 @@ layout: default
   {% endfor %}
 
   <br>
-	
+
+  <h1 id="book-chapters">Books and Book Chapters</h1>
+
+  {% for publication in site.edits_comments_books reversed %}
+    {% if publication.personal %}
+    {% elsif publication.type == "book_chapter" %}
+      {% include publication_list_entry_book.html %}
+    {% endif %}
+  {% endfor %}
+
+  <br>
+
   <h1 id="theses">Theses</h1>
 
   {% assign member_thesis = site.publications | where:"type", "thesis" %}
   {% for thesis in member_thesis reversed %}
-  {% if thesis.hide or thesis.non_group_project %}
-  {% else %}
+    {% if thesis.hide or thesis.non_group_project %}
+    {% else %}
     <div class="paper-list-block">
       {% if thesis.image %}
         <a href="{{ site.baseurl }}{{ thesis.url }}">
@@ -72,43 +97,32 @@ layout: default
       <p>
         {% assign known = false %}
         {% for person in site.persons %}
-        {% if person.key == thesis.authors.first %}
-        {% if person.cg_website %}
+          {% if person.key == thesis.authors.first %}
+            {% if person.cg_website %}
             <a href="{{ person.cg_website }}">{{ person.first_name }} {{ person.last_name }}</a>
-        {% elsif person.hide_personal_page %}
+            {% elsif person.hide_personal_page %}
             {{ person.first_name }} {{ person.last_name }}
-        {% else %}
-            <a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }} {{ person.last_name }}</a>
-        {% endif %}
-          {% assign known = true %}
-        {% endif %}
+            {% else %}
+              <a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }} {{ person.last_name }}</a>
+            {% endif %}
+            {% assign known = true %}
+          {% endif %}
         {% endfor %}
-      {% if known == false %}
-      {{ author }}
-      {% endif %} <br/>
-        <b> <a href="{{ site.baseurl }}{{ thesis.url }}">{{ thesis.title }}</a></b><br/>
+        {% if known == false %}
+        {{ author }}
+        {% endif %} <br />
+        <b> <a href="{{ site.baseurl }}{{ thesis.url }}">{{ thesis.title }}</a></b><br />
         {{ thesis.institution }}, {{thesis.thesis_type}}, {{thesis.year}}
       </p>
 
     </div>
-  {% endif %}
+    {% endif %}
 
   {% endfor %}
 
   <br>
 
-  <h1 id="book-chapters">Book Chapters</h1>
-
-  {% for publication in site.edits_comments_books reversed %}
-    {% if publication.personal %}
-    {% elsif publication.type == "book_chapter" %}
-      {% include publication_list_entry_book.html %}
-    {% endif %}
-  {% endfor %}
-
-  <br>  
-    
-  <h1 id="commentaries">Commentaries</h1>
+  <!-- <h1 id="commentaries">Commentaries</h1>
 
   {% for publication in site.edits_comments_books reversed %}
     {% if publication.personal %}
@@ -128,9 +142,9 @@ layout: default
     {% endif %}
   {% endfor %}
 
-  <br>
+  <br> -->
 
-  <h1 id="posters">Selected Abstracts and Posters</h1>
+  <!-- <h1 id="posters">Selected Abstracts and Posters</h1>
 
   {% for publication in site.data.posters %}
 
@@ -194,6 +208,6 @@ layout: default
       </p>
     </div>
 
-  {% endfor %}
+  {% endfor %} -->
 
 </article>

@@ -23,7 +23,7 @@ layout: default
   <article class="publication-content-main">
     
     {% if page.image_large %}
-    {%if (page.type =='book') or (page.type =='book_chapter')%}
+    {%if page.type =='book' or page.type =='book_chapter'%}
     <img src="{{ site.baseurl }}/assets/images/covers/{{page.image_large}}" alt="{{page.shortname}} Teaser">
     {%else%}
     <img src="{{ site.baseurl }}/assets/images/papers/{{page.image_large}}" alt="{{page.shortname}} Teaser">

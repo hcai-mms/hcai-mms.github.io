@@ -3,7 +3,7 @@
     
   {% if publication.image %}
     <a class="cover-image-small-link" href="{{ site.baseurl }}{{ publication.url }}">
-      <img class="cover-image-small" src="{{ site.baseurl }}{{ publication.image }}">
+      <img class="cover-image-small" src="{{ site.baseurl }}/assets/images/covers/{{ publication.image }}">
     </a>
   {% endif %}
   
@@ -61,16 +61,21 @@
         {% endif %}
         {% endfor %}
       {% endif %}
-
       <br>
+      {% if publication.chapter %}
+      Chapter: <b>{{ publication.chapter }}</b><br/>
+    {% endif %}
       <b><a href="{{ site.baseurl }}{{ publication.url }}">{{ publication.title }} </a></b>
       <br/>
 
-      {% if publication.chapter %}
-        Chapter: <b>{{ publication.chapter }}</b><br/>
+     
+      {% if publication.bib.journal %}
+      {% assign published-where = publication.bib.journal %}
+      {% elsif publication.bib.booktitle %}
+      {% assign published-where = publication.bib.publisher %}
       {% endif %}
 
-      {{ publication.bib.journal }}, {{publication.year}}{% if publication.to_appear %} (to appear){%endif%}.
+      {{ published-where }}, {{publication.year}}{% if publication.to_appear %} (to appear){%endif%}.
     </p>
 
     <!-- <p class="paper-link">

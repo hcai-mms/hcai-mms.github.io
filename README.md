@@ -50,3 +50,4 @@ The only supported plugins are those that come with the [github-pages gem](https
 ## Liquid Syntax
 
 [Liquid for Designers](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers)
+test

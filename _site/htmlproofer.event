@@ -1,6 +1,0 @@
-{
-  "action": "push",
-  "inputs": {
-      "branchname": "htmlproofer"
-  }
-}

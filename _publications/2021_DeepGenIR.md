@@ -40,9 +40,9 @@ image_large: 2021_deepgenir_teaser.png
 authors:
 - lesota
 - rekab-saz
-- Daniel Cohen
-- Klaus Antonius Grasserbauer
-- Carsten Eickhoff
+- Cohen, Daniel 
+- Grasserbauer, Klaus Antonius 
+- Eickhoff, Carsten 
 - schedl
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG

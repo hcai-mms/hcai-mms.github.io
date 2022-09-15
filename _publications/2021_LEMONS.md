@@ -39,9 +39,9 @@ image_large: 2021_lemons_teaser.png
 # - Max Mustermann # there is no .md file for this person.
 authors:
 - melchiorre
-- Verena Haunschmid
+- Haunschmid, Verena 
 - schedl
-- Gerhard Widmer
+- Widmer, Gerhard 
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG
 journal-short: ECIR

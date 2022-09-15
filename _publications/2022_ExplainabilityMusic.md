@@ -38,12 +38,12 @@ image_large: 2022_aimagazine_expmusic_teaser.png
 # - schedl # .md file exists for this person
 # - Max Mustermann # there is no .md file for this person.
 authors:
-- Darius Afchar
+- Afchar, Darius 
 - melchiorre
 - schedl
-- Romain Hennequin 
-- Elena V. Epure 
-- Manuel Moussallam 
+- Hennequin, Romain 
+- Epure, Elena V. 
+- Moussallam, Manuel 
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG
 journal-short: AI Magazine

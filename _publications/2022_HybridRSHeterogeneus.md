@@ -47,7 +47,7 @@ image_large:
 # - schedl # .md file exists for this person
 # - Max Mustermann # there is no .md file for this person.
 authors:
-- Majd Azzam
+- Azzam, Majd 
 
 # when was this publication written/ when was the publication accepted (e.g. 2020)
 year: 2021

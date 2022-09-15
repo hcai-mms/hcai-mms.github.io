@@ -56,15 +56,15 @@ layout: default
         {% endif %}
         <!-- <a href="{{ person.website }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>{% if author != page.authors.last%}, {% endif %} -->
         {% if author == page.authors.first %}
-        {% assign bibauthors = person.first_name | append: ' ' | append: person.last_name %}
+        {% assign bibauthors = person.last_name | append: ', ' | append: person.first_name %}
         {% else %}
-        {% assign bibauthors = bibauthors | append: ' and ' | append: person.first_name | append: ' ' | append: person.last_name %}
+        {% assign bibauthors = bibauthors | append: ' and ' | append: person.last_name | append: ', ' | append: person.first_name %}
         {% endif %}
         {% assign known = true %}
         {% endif %}
         {% endfor %}
         {% if known == false %}
-        {{ author }}{% if author != page.authors.last%}, {% endif %}
+        {{ author | split: ','|reverse |join}}{% if author != page.authors.last%}, {% endif %}
         {% if author == page.authors.first %}
         {% assign bibauthors = author %}
         {% else %}
@@ -155,7 +155,7 @@ layout: default
           {% assign pagekey = person.last_name | append: page.year | append: shortname  %}
           {%break%}
         {% else %}
-          {% assign pagekey = page.authors[0] | split:' ' | last | append: page.year | append: shortname  %}
+          {% assign pagekey = page.authors[0] | split:',' | first | remove: ' ' | append: page.year | append: shortname  %}
         {% endif %}
       {% endfor %}
     {% endif %}

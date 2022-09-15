@@ -107,7 +107,7 @@ layout: default
           {% endif %}
         {% endfor %}
         {% if known == false %}
-        {{ thesis.authors.first }}
+        {{ thesis.authors.first | split: ','|reverse| join}}
         {% endif %} <br />
         <b> <a href="{{ site.baseurl }}{{ thesis.url }}">{{ thesis.title }}</a></b><br />
         {{ thesis.institution }}, {{thesis.thesis_type}}, {{thesis.year}}

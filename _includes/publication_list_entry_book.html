@@ -56,7 +56,7 @@
         {% endfor %}
         {% if known == false %}
       <span class="paper-author">
-        {{ editor }}{% if editor != publication.editors.last %}, {% endif %}
+        {{ editor | split:', '| reverse|join ' '}}{% if editor != publication.editors.last %}, {% endif %}
       </span>
         {% endif %}
         {% endfor %}

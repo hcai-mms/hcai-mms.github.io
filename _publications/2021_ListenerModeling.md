@@ -21,7 +21,6 @@ paper_content_url: https://www.frontiersin.org/articles/10.3389/frai.2020.508725
 # uncomment the "non_group_project" property, if you only want the publication to be displayed on your personal page (i.e. publications where you contributed, but does not have anything to do with the Vis Group e.g. Master Thesis,...)
 # non_group_project: True
 
-
 #### the following fields are optional, but it is recommended to enter as much information as possible
 # The shortname is used for auto-generated titels. e.g. ConfusionFlow
 shortname: ListenerModeling

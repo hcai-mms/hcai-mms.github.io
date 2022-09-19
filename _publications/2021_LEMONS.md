@@ -54,12 +54,12 @@ publisherurl: https://link.springer.com/chapter/10.1007/978-3-030-72240-1_60 # a
 # what is the publication type and other bib specific properties
 bibentry: article
 bib:
-  journal: Springer # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
+  journal: # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
   booktitle: European Conference on Information Retrieval
-  editor: 
-  publisher: Elsevier
+  editor: "Hiemstra, Djoerd and Moens, Marie-Francine and Mothe, Josiane and Perego, Raffaele and Potthast, Martin and Sebastiani, Fabrizio"
+  publisher: "Springer International Publishing"
   address: 
-  doi:		# e.g.10.1109/TVCG.2020.3012063
+  doi: 10.1007/978-3-030-72240-1_60		# e.g.10.1109/TVCG.2020.3012063
   url: 
   volume: 58
   number: 5

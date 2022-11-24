@@ -72,7 +72,6 @@ bib:
   number: 
   pages: 
   month: February-March
-  year: 2023
 
 preprint:	 # here you can put the preprint link (arxiv.org, osf.io,...) e.g. https://arxiv.org/abs/1910.00969
 

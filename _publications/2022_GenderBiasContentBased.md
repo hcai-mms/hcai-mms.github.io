@@ -21,7 +21,7 @@ paper_content_url:
 # non_group_project: True
 
 institution: Johannes Kepler University Linz 
-thesis_type: Bachelor's Thesis
+thesis_type: Master's Thesis
 advisors : 
 - schedl
 - rekab-saz

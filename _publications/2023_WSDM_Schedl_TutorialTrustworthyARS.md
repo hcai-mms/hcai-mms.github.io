@@ -65,7 +65,7 @@ bib:
   editor: 
   publisher: Association for Computing Machinery
   address: New York, NY, USA
-  location: Singapore, Singapore,
+  location: Singapore, Singapore
   doi:		# e.g.10.1109/TVCG.2020.3012063
   url: 
   volume: 

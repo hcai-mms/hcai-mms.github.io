@@ -164,7 +164,18 @@ layout: default
         
         
         <!-- Papers -->
-        {% assign member_papers = member_publications | where_exp:"item", "item.type == 'paper' or item.type == 'journal'" %}
+        <!-- As Jekyll >= 4.0 is not supported https://github.com/github/pages-gem/issues/651 by github pages-->
+        <!-- it's not possible to have elegant solutions to include "or" in filters. -->
+        <!-- We use the solution from  https://stackoverflow.com/questions/42722902/and-or-on-a-where-exp-expression-on-jekyll -->
+        <!-- -abm  -->
+
+        {% assign member_papers = "" | split: "," %}
+        {% for member_publication in member_publications %}
+        {% if member_publication.type == 'journal' or member_publication.type == 'paper' %}
+        {% assign member_papers = member_papers | push:member_publication %}
+        {% endif %}
+        {% endfor %}
+
         {% assign psize = member_papers | size %}
         {% if psize > 0 %}
             <h2 id="journal-papers">Peer-Reviewed Journal and Conference Papers</h2>

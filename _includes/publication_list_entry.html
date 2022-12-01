@@ -30,8 +30,7 @@
 
         {% if known == false %}
         <span class="paper-author">
-          {{ author| split:', '| reverse|join ' '}}
-          {% if author != publication.authors.last %}, {% endif %}
+          {{ author| split:', '| reverse|join ' '}}{% if author != publication.authors.last %}, {% endif %}
         </span>
         {% endif %}
 

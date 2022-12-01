@@ -22,16 +22,16 @@ image_large: 2022_springer_recsyshandbook3rd_teaser.jpg
 # - streit # .md file exists for this person
 # - Max Mustermann # there is no .md file for this person.
 authors:
-- Deldjoo, Yashar 
+- Yashar Deldjoo 
 - schedl
-- Hidasi, Balazs  
-- Wei, Yinwei  
-- He, Xiangnan 
+- Balazs Hidasi  
+- Yinwei Wei  
+- Xiangnan He 
 # optional list of editors (usually only needed for book_chapters
 editors: 
-- Ricci, Francesco 
-- Rokach, Lior 
-- Shapira, Bracha 
+- Francesco Ricci 
+- Lior Rokach 
+- Bracha Shapira 
 bibentry: incollection
 year: 2022	# year of publication e.g. 2020
 # optional bib information (state as much as possible)

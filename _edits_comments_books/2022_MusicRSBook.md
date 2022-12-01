@@ -23,14 +23,14 @@ image_large: 2022_springer_recsyshandbook3rd_teaser.jpg
 # - Max Mustermann # there is no .md file for this person.
 authors:
 - schedl
-- Peter Knees
-- Brian McFee
-- Dmitry Bogdanov
+- Knees, Peter
+- McFee, Brian
+- Bogdanov, Dmitry
 # optional list of editors (usually only needed for book_chapters
 editors: 
-- Francesco Ricci 
-- Lior Rokach 
-- Bracha Shapira
+- Ricci, Francesco
+- Rokach, Lior
+- Shapira, Bracha
 bibentry: incollection
 year: 2022	# year of publication e.g. 2020
 # optional bib information (state as much as possible)

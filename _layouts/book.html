@@ -54,7 +54,7 @@ layout: default
         {% endif %}
         {% endfor %}
         {% if known == false %}
-        {{ author }}{% if author != page.authors.last%}, {% endif %}
+        {{ author |split:', '| reverse|join ' ' }}{% if author != page.authors.last%}, {% endif %}
         {% if author == page.authors.first %}
         {% assign bibauthors = author %}
         {% else %}

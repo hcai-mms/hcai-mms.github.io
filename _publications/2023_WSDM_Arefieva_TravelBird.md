@@ -59,8 +59,8 @@ bib:
   booktitle: Proceedings of the 16th ACM International Conference on Web Search and Data Mining (WSDM 2023)
   editor: 
   publisher: Association for Computing Machinery
-#  address: New York, NY, USA
-  address: Singapore, Singapore
+  address: New York, NY, USA
+  location: Singapore, Singapore
   doi:		# e.g.10.1109/TVCG.2020.3012063
   url: 
   volume: 

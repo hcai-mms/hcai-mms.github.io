@@ -15,7 +15,7 @@ abstract: "Recent studies show the benefits of reformulating common machine lear
 
 
 # set this url, if your paper is on another server; defaults to data.jku-vds-lab.at
-paper_content_url:
+paper_content_url: # https://dl.acm.org/doi/abs/10.1145/3523227.3546756
 # uncomment the "hide" property, if you do not want the publication to be displayed on the website (usually you don't need this)
 # hide: True
 # uncomment the "non_group_project" property, if you only want the publication to be displayed on your personal page (i.e. publications where you contributed, but does not have anything to do with the Vis Group e.g. Master Thesis,...)
@@ -55,16 +55,17 @@ year: 2022
 bibentry: article
 bib:
   # journal: Springer # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
-  booktitle: ACM Conference on Recommender Systems (RecSys)
+  booktitle: Proceedings of the 16th ACM Conference on Recommender Systems (RecSys)
   editor: 
   publisher: Association for Computing Machinery
   address: New York, NY, USA
-  doi:		# e.g.10.1109/TVCG.2020.3012063
-  url: 
+  doi:		10.1145/3523227.3546756
+  url:  https://doi.org/10.1145/3523227.3546756
   volume: 
   number: 
-  pages: 
+  pages: 246–-256
   month: 
+  location: Seattle, WA, USA
 
 preprint:	 # here you can put the preprint link (arxiv.org, osf.io,...) e.g. https://arxiv.org/abs/1910.00969
 
@@ -89,7 +90,7 @@ youtube-id:
 preview-youtube-id: 
 
 # the name of your publication pdf e.g. 2020_tvcg_confusionflow.pdf; this is usually uploaded to the caleydo aws server
-pdf: /assets/pdf/ProtoMF__Prototype_based_Matrix_Factorization.pdf
+pdf: /assets/pdf/2022_recsys_protomf.pdf
 # A supplement PDF e.g. 2017_preprint_taggle_supplement.pdf; this is usually uploaded to the caleydo aws server
 supplement: 
 

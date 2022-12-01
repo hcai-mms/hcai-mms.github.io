@@ -91,7 +91,7 @@ youtube-id:
 preview-youtube-id: 
 
 # the name of your publication pdf e.g. 2020_tvcg_confusionflow.pdf; this is usually uploaded to the caleydo aws server
-pdf: https://onlinelibrary.wiley.com/doi/abs/10.1002/aaai.12056
+pdf: /assets/pdf/2022_aimagazine_expmusic.pdf
 # A supplement PDF e.g. 2017_preprint_taggle_supplement.pdf; this is usually uploaded to the caleydo aws server
 supplement: 
 

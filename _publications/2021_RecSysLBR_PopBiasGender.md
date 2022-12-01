@@ -58,7 +58,7 @@ year: 2021
 bibentry: article
 bib:
   # journal: Springer # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
-  booktitle: Proceedings of the 15th ACM Conference on Recommender Systems
+  booktitle: Proceedings of the 15th ACM Conference on Recommender Systems (RecSys)
   editor: 
   publisher: Association for Computing Machinery
   address: New York, NY, USA

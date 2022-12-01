@@ -15,7 +15,7 @@ abstract: "Although recommender systems (RSs) play a crucial role in our society
 
 
 # set this url, if your paper is on another server; defaults to data.jku-vds-lab.at
-paper_content_url: https://www.sciencedirect.com/science/article/pii/S0306457321001540
+paper_content_url: # https://www.sciencedirect.com/science/article/pii/S0306457321001540
 # uncomment the "hide" property, if you do not want the publication to be displayed on the website (usually you don't need this)
 # hide: True
 # uncomment the "non_group_project" property, if you only want the publication to be displayed on your personal page (i.e. publications where you contributed, but does not have anything to do with the Vis Group e.g. Master Thesis,...)
@@ -60,8 +60,8 @@ bib:
   editor: 
   publisher: Elsevier
   address: 
-  doi:		# e.g.10.1109/TVCG.2020.3012063
-  url: 
+  doi:	https://doi.org/10.1016/j.ipm.2021.102666
+  url:  https://www.sciencedirect.com/science/article/pii/S0306457321001540
   volume: 58
   number: 5
   pages: 102666
@@ -90,7 +90,7 @@ youtube-id:
 preview-youtube-id: 
 
 # the name of your publication pdf e.g. 2020_tvcg_confusionflow.pdf; this is usually uploaded to the caleydo aws server
-pdf: 
+pdf: /assets/pdf/2021_ipm_rsfairness.pdf
 # A supplement PDF e.g. 2017_preprint_taggle_supplement.pdf; this is usually uploaded to the caleydo aws server
 supplement: 
 

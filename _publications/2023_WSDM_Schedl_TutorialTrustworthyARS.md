@@ -46,8 +46,8 @@ image: placeholder.png
 # - Max Mustermann # there is no .md file for this person.
 authors:
 - schedl
-- Emilia Gómez
-- Elisabeth Lex
+- Gómez, Emilia
+- Lex, Elisabeth
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG
 journal-short: WSDM

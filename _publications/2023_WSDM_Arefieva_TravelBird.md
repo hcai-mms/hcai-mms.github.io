@@ -39,9 +39,9 @@ image_large: 2023_wsdm_travelbird.png
 # - schedl # .md file exists for this person
 # - Max Mustermann # there is no .md file for this person.
 authors:
-- Veronika Arefieva
-- Roman Egger
-- Michael Schrefl
+- Arefieva, Veronika 
+- Egger, Roman
+- Schrefl, Michael
 - schedl
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG

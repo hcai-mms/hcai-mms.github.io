@@ -2,7 +2,7 @@
 layout: publication # do not change
 
 #### these fields are mandatory. please fill them out
-title: "motion-aware Music Tower Blocks (EmoMTB): An Intelligent Audiovisual Interface for Music Discovery and Recommendation" # title of your publication 
+title: "Emotion-aware Music Tower Blocks (EmoMTB): An Intelligent Audiovisual Interface for Music Discovery and Recommendation" # title of your publication 
 
 # choose one of the following types:
 # "paper": Peer-Reviewed Journal and Conference Papers

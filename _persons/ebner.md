@@ -15,7 +15,7 @@ key: ebner # this should be your lastname in lower case; the key is important fo
 # - "alumni": Other Alumni
 # - "administration": Administration/Secretary
 # - "tech": Technical Support
-role: tech
+role: former
 
 email:  antonia.ebner@jku.at # this is your work e-mail address
 image: /assets/images/team_colored/ebner.jpg # insert the relative link to your profile image

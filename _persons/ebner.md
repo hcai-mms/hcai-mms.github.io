@@ -64,6 +64,6 @@ website:
 # show_pub_nav: true
 
 # hide_personal_page: true # uncomment this property, if you don't want to link to a local personal page. usually you don't need this
-
+hide_personal_page: true
 ####
 ---

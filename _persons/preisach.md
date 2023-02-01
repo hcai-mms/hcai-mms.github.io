@@ -5,7 +5,7 @@ layout: team-member # do not change
 first_name: Michael
 last_name: Preisach
 title: "Michael Preisach"
-key: ebner # this should be your lastname in lower case; the key is important for publications or other listings that need to be linked to your profile. it needs to be unique (should there be someone else with the same lastname, please contact the admin)
+key: preisach # this should be your lastname in lower case; the key is important for publications or other listings that need to be linked to your profile. it needs to be unique (should there be someone else with the same lastname, please contact the admin)
 
 # choose one of the following: 
 # - "faculty": Faculty

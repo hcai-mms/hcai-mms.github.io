@@ -14,7 +14,7 @@ abstract: "This article contributes to a more adequate modelling of emotions enc
 
 
 # set this url, if your paper is on another server; defaults to data.jku-vds-lab.at
-paper_content_url: 
+paper_content_url:  https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0281079
 # uncomment the "hide" property, if you do not want the publication to be displayed on the website (usually you don't need this)
 # hide: True
 # uncomment the "non_group_project" property, if you only want the publication to be displayed on your personal page (i.e. publications where you contributed, but does not have anything to do with the Vis Group e.g. Master Thesis,...)
@@ -55,15 +55,15 @@ publisherurl:
 # what is the publication type and other bib specific properties
 bibentry: article
 bib:
-  journal: PLOS ONE To Appear
+  journal: PLOS ONE
   booktitle: #
   editor: 
   publisher: 
   address: 
   doi: 
   url: 
-  volume:
-  number:
+  volume: 18
+  number: 1
   pages: 
   month: 
   location: 

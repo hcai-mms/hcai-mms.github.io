@@ -2,9 +2,9 @@
 layout: team-member # do not change
 
 #### these fields are mandatory. please fill them out
-first_name: Antonia Theres
-last_name: Ebner
-title: "Antonia Theres Ebner"
+first_name: Michael
+last_name: Preisach
+title: "Michael Preisach"
 key: ebner # this should be your lastname in lower case; the key is important for publications or other listings that need to be linked to your profile. it needs to be unique (should there be someone else with the same lastname, please contact the admin)
 
 # choose one of the following: 
@@ -15,10 +15,10 @@ key: ebner # this should be your lastname in lower case; the key is important fo
 # - "alumni": Other Alumni
 # - "administration": Administration/Secretary
 # - "tech": Technical Support
-role: former
+role: tech
 
-email:  antonia.ebner@jku.at # this is your work e-mail address
-image: /assets/images/team_colored/ebner.jpg # insert the relative link to your profile image
+email:  michael.preisach@jku.at # this is your work e-mail address
+image: /assets/images/team_colored/preisach.jpg # insert the relative link to your profile image
 organization: Johannes Kepler University Linz # usually you leave this unchanged, but if your have a different organization, feel free to change the property
 position: Systems Administration # This is the position that you have within your organization. e.g. "Project Assistant", "University Assistant", "Technical Support", "Student Research" (or whatever Marc tells you^^)
 ####
@@ -43,7 +43,7 @@ location: "Johannes Kepler University Linz<br />
                 A-4040 Linz, Austria"
 
 # thats your office number. usually you only need to replace the last 4 numbers with your own extension i.e. replace "6635" (you can find the extension on the right top of your office phone)
-phone: "+43 732 2468 4708"
+phone: "+43 732 2468 4721"
 # if you have a fax you can enter your fax information here
 fax:
 # add your twitter handle (e.g. "marc_streit")
@@ -64,6 +64,6 @@ website:
 # show_pub_nav: true
 
 # hide_personal_page: true # uncomment this property, if you don't want to link to a local personal page. usually you don't need this
-hide_personal_page: true
+
 ####
 ---

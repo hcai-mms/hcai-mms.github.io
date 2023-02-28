@@ -2,10 +2,10 @@
 layout: team-member # do not change
 
 #### these fields are mandatory. please fill them out
-first_name: Benjamin
-last_name: Minixhofer
-title: "Benjamin Minixhofer"
-key: minixhofer # this should be your lastname in lower case; the key is important for publications or other listings that need to be linked to your profile. it needs to be unique (should there be someone else with the same lastname, please contact the admin)
+first_name: Fabio Pernegger
+last_name: Pernegger
+title: "Fabio Pernegger"
+key: pernegger # this should be your lastname in lower case; the key is important for publications or other listings that need to be linked to your profile. it needs to be unique (should there be someone else with the same lastname, please contact the admin)
 
 # choose one of the following: 
 # - "faculty": Faculty
@@ -13,10 +13,10 @@ key: minixhofer # this should be your lastname in lower case; the key is importa
 # - "undergrad": Undergraduate Students
 # - "phdgrad": PhD Graduates
 # - "alumni": Other Alumni
-role: former
+role: undergrad
 
-email: benjamin.minixhofer@jku.at # this is your work e-mail address
-image: /assets/images/team_colored/minixhofer.jpg # insert the relative link to your profile image
+email:  fabio.pernegger@gmail.com # this is your work e-mail address
+image: /assets/images/team_colored/pernegger.jpg # insert the relative link to your profile image
 organization: Johannes Kepler University Linz # usually you leave this unchanged, but if your have a different organization, feel free to change the property
 position: Student Research Assistant # This is the position that you have within your organization. e.g. "Project Assistant", "University Assistant", "Technical Support", "Student Research" (or whatever Marc tells you^^)
 ####
@@ -37,7 +37,7 @@ degrees_post:
 location: "Johannes Kepler University Linz<br />
                 Institute of Computational Perception<br />
                 Altenberger Straße 69<br />
-                Science Park 3, 508<br />
+                Science Park 3, 403<br />
                 A-4040 Linz, Austria"
 
 # thats your office number. usually you only need to replace the last 4 numbers with your own extension i.e. replace "6635" (you can find the extension on the right top of your office phone)
@@ -47,11 +47,11 @@ fax:
 # add your twitter handle (e.g. "marc_streit")
 twitter: 
 # add your github username (e.g. "mstreit")
-github: bminixhofer
+github: 
 # add your google scholar key (e.g. "l7TTSP0AAAAJ")
-google_scholar: P5Z2Pj0AAAAJ
+google_scholar: 
 # add your linkedin username (e.g. "marcstreit")
-linkedin: benjamin-minixhofer-493297164
+linkedin:
 # here you can add a link to your CV (e.g. "http://data.jku-vds-lab.at/team/marc/cv_streit.pdf")
 cv:
 # here you can add a link to a personal website
@@ -65,18 +65,3 @@ website:
 
 ####
 ---
-
-I'm currently studying Artificial Intelligence at JKU Linz. Previously I worked on simplyfing access to state-of-the-art Deep Learning as Data Science Intern at H2O.ai and worked on Transformers as ML Research Intern at Huawei.
-
-I am especially interested in everything NLP and in Rust as a language for writing fast, correct code.
-
-Some of my projects:
-
-WECHSEL. A method to transfer pretrained language models to a new language.
-nlprule. A fast, low-resource Natural Language Processing and Error Correction library written in Rust.
-NNSplit. A library implementing a general framework for semantic text segmentation.
-GerPT2. A small German GPT2 model. I also trained a large version.
-tractjs. A library for running ONNX and TensorFlow models client-side in the browser. Built on the awesome tract library and accessible from Javascript.
-I've also been active on Kaggle some time ago.
-
-Feel free to write me an email at bminixhofer at gmail dot com if you'd like to chat about any of the above (or anything else!).

@@ -13,7 +13,7 @@ key: hauzenberger # this should be your lastname in lower case; the key is impor
 # - "undergrad": Undergraduate Students
 # - "phdgrad": PhD Graduates
 # - "alumni": Other Alumni
-role: undergrad
+role: former
 
 email: lukas.hauzenberger@jku.at # this is your work e-mail address
 image: /assets/images/team_colored/hauzenberger.jpg # insert the relative link to your profile image

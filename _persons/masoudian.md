@@ -18,7 +18,7 @@ role: raPhD
 email: shahed.masoudian@jku.at # this is your work e-mail address
 image: /assets/images/team_colored/masoudian.jpg # insert the relative link to your profile image
 organization: Johannes Kepler University Linz # usually you leave this unchanged, but if your have a different organization, feel free to change the property
-position: Scientific Staff # This is the position that you have within your organization. e.g. "Project Assistant", "University Assistant", "Technical Support", "Student Research" (or whatever Marc tells you^^)
+position: PhD Student # This is the position that you have within your organization. e.g. "Project Assistant", "University Assistant", "Technical Support", "Student Research" (or whatever Marc tells you^^)
 ####
 
 

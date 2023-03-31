@@ -13,7 +13,7 @@ key: parada-cabaleiro # this should be your lastname in lower case; the key is i
 # - "undergrad": Undergraduate Students
 # - "phdgrad": PhD Graduates
 # - "alumni": Other Alumni
-role: faculty
+role: former
 
 email:  emilia.parada-cabaleiro@jku.at # this is your work e-mail address
 image: /assets/images/team_colored/paradacabaleiro.jpg # insert the relative link to your profile image

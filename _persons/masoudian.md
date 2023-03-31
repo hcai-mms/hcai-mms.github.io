@@ -66,3 +66,4 @@ website:
 ####
 ---
 
+I'm a research assistant at Johannes Kepler University. I studied my master at JKU focusing on unsupervised deep domain adaptation method. My curent research is Deep Learning in Natural Language Processing with focus on Modularity and Controllability of Neural Networks.

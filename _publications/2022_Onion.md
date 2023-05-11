@@ -40,8 +40,8 @@ image_large: 2022_cikm_onion.png
 authors:
 - moscati
 - parada-cabaleiro
-- deldjoo
-- zangerle
+- Yashar Deldjoo
+- Eva Zangerle
 - schedl
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG

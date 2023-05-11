@@ -45,7 +45,7 @@ authors:
 - Eva Zangerle
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG
-journal-short: CARS @RecSys
+journal-short: CARS (RecSys Workshop)
 # when was this publication written/ when was the publication accepted (e.g. 2020)
 year: 2022
 

@@ -56,7 +56,7 @@ year: 2022
 bibentry: article
 bib:
   # journal: Springer # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
-  booktitle: CARS: Workshop on Context-Aware Recommender Systems (RecSys)
+  booktitle: CARS Workshop on Context-Aware Recommender Systems (RecSys)
   editor: 
   publisher: Association for Computing Machinery
   address: New York, NY, USA

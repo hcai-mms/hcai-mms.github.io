@@ -27,9 +27,9 @@ paper_content_url: https://archives.ismir.net/ismir2022/paper/000034.pdf
 # The shortname is used for auto-generated titels. e.g. ConfusionFlow
 shortname: CountryBias
 # add a 2:1 aspect ratio (e.g., width: 400px, height: 200px) to the folder /assets/images/papers/ e.g. 2020_tvcg_confusionflow.png
-image: placeholder.png
+image: 2022_ISMIR_Globalization_thumbnail.png
 # add a 2:1 aspect ratio teaser figure (e.g., width: 1200px, height: 600px) to the folder /assets/images/papers/ e.g. 2020_tvcg_confusionflow_teaser.png
-# image_large: 2022_recsyslbr_popbiasgender_teaser.png
+image_large: 2022_ISMIR_Globalization.png
 
 # Authors in the "database" can be used with just the key that is specified in the corresponding .md file (usually it is the lastname in lower case e.g. doe). Authors that do not have an individual page here should be stated with their full name (e.g. John Doe)
 # each author is one item in the list. the list is enumerated with dashes ("-")
@@ -58,7 +58,7 @@ year: 2022
 bibentry: article
 bib:
   # journal: Springer # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
-  booktitle: Proceedings of the 23rd International Society for Music Information Retrieval Conference, {ISMIR} 2022, Bengaluru, India, December 4-8, 2022
+  booktitle: Proceedings of the 23rd International Society for Music Information Retrieval Conference, ISMIR 2022, Bengaluru, India, December 4-8
   editor: 
   publisher:
   address: 

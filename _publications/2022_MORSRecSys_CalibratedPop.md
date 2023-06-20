@@ -58,7 +58,7 @@ year: 2022
 bibentry: article
 bib:
   # journal: Springer # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
-  booktitle: Proceedings of the 2nd Workshop on Multi-Objective Recommender Systems co-located with 16th {ACM} Conference on Recommender Systems (RecSys 2022), Seattle, WA, USA, 18th-23rd September 2022
+  booktitle: Proceedings of the 2nd Workshop on Multi-Objective Recommender Systems co-located with 16th ACM Conference on Recommender Systems (RecSys 2022), Seattle, WA, USA, 18th-23rd September
   editor: 
   publisher: CEUR-WS.org
   address: 

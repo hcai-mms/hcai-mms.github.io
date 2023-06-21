@@ -26,9 +26,9 @@ paper_content_url:
 # The shortname is used for auto-generated titels. e.g. ConfusionFlow
 shortname: DAM_EACL_2023
 # add a 2:1 aspect ratio (e.g., width: 400px, height: 200px) to the folder /assets/images/papers/ e.g. 2020_tvcg_confusionflow.png
-image: 2023_wsdm_travelbird.png
+image: 2023_EACL_DAM.png
 # add a 2:1 aspect ratio teaser figure (e.g., width: 1200px, height: 600px) to the folder /assets/images/papers/ e.g. 2020_tvcg_confusionflow_teaser.png
-image_large: 2023_wsdm_travelbird.png
+image_large: 2023_EACL_DAM.png
 
 # Authors in the "database" can be used with just the key that is specified in the corresponding .md file (usually it is the lastname in lower case e.g. doe). Authors that do not have an individual page here should be stated with their full name (e.g. John Doe)
 # each author is one item in the list. the list is enumerated with dashes ("-")
@@ -38,13 +38,16 @@ image_large: 2023_wsdm_travelbird.png
 # - schedl # .md file exists for this person
 # - Max Mustermann # there is no .md file for this person.
 authors:
-- Arefieva, Veronika 
-- Egger, Roman
-- Schrefl, Michael
+- kumar
+- lesota
+- Zerveas, George 
+- Cohen, Daniel
+- Eickoff, Carsten
 - schedl
+- rekab-saz
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG
-journal-short: WSDM
+journal-short: EACL
 # when was this publication written/ when was the publication accepted (e.g. 2020)
 year: 2023
 
@@ -55,19 +58,19 @@ year: 2023
 bibentry: inproceedings
 bib:
   # journal: Springer # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
-  booktitle: Proceedings of the 16th ACM International Conference on Web Search and Data Mining (WSDM 2023)
+  booktitle: Proceedings of the 17th Conference of the European Chapter of the Association for Computational Linguistics
   editor: 
   publisher: Association for Computing Machinery
-  address: New York, NY, USA
-  location: Singapore, Singapore
+  address: Dubrovnik, Croatia
+  location:
   doi:		# e.g.10.1109/TVCG.2020.3012063
-  url: 
-  volume: 
+  url: https://aclanthology.org/2023.eacl-main.201
+  volume: Proceedings of the 17th Conference of the European Chapter of the Association for Computational Linguistics
   number: 
-  pages: 
-  month: February-March
+  pages: 2738–2751
+  month: MAy
 
-preprint:	 # here you can put the preprint link (arxiv.org, osf.io,...) e.g. https://arxiv.org/abs/1910.00969
+preprint:	https://arxiv.org/abs/2302.06321 # here you can put the preprint link (arxiv.org, osf.io,...) e.g. https://arxiv.org/abs/1910.00969
 
 # Add things like "Best Paper Award at InfoVis 2099, selected out of 4000 submissions"
 award:
@@ -103,7 +106,7 @@ supplements:
 #  linksym: true
 
 # Link to the repository where the code is hostet
-# code: https://github.com/hcai-mms/ProtoMF
+code: https://github.com/CPJKU/ModularizedDebiasing-private/tree/ModularizedDebiasing-public
 
 # After the --- you can put information that you want to appear on the website using markdown formatting or HTML. A good example are acknowledgements, extra references, an erratum, etc.
 ---

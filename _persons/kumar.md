@@ -49,7 +49,7 @@ twitter:
 # add your github username (e.g. "mstreit")
 github: 
 # add your google scholar key (e.g. "l7TTSP0AAAAJ")
-google_scholar: 
+google_scholar: https://scholar.google.com/citations?user=3tc1Q_MAAAAJ&hl=en
 # add your linkedin username (e.g. "marcstreit")
 linkedin:
 # here you can add a link to your CV (e.g. "http://data.jku-vds-lab.at/team/marc/cv_streit.pdf")

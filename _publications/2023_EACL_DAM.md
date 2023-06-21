@@ -64,7 +64,7 @@ bib:
   address: Dubrovnik, Croatia
   location:
   doi:		# e.g.10.1109/TVCG.2020.3012063
-  url: [https://aclanthology.org/2023.eacl-main.201](https://aclanthology.org/2023.eacl-main.201)
+  url: https://aclanthology.org/2023.eacl-main.201
   volume:
   number: 
   pages: 2738–2751

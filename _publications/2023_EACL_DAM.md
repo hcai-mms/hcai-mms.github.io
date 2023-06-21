@@ -60,15 +60,15 @@ bib:
   # journal: Springer # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
   booktitle: Proceedings of the 17th Conference of the European Chapter of the Association for Computational Linguistics
   editor: 
-  publisher: Association for Computing Machinery
+  publisher: Association for Computational Linguistics
   address: Dubrovnik, Croatia
   location:
   doi:		# e.g.10.1109/TVCG.2020.3012063
-  url: https://aclanthology.org/2023.eacl-main.201
-  volume: Proceedings of the 17th Conference of the European Chapter of the Association for Computational Linguistics
+  url: [https://aclanthology.org/2023.eacl-main.201](https://aclanthology.org/2023.eacl-main.201)
+  volume:
   number: 
   pages: 2738–2751
-  month: MAy
+  month: May
 
 preprint:	https://arxiv.org/abs/2302.06321 # here you can put the preprint link (arxiv.org, osf.io,...) e.g. https://arxiv.org/abs/1910.00969
 

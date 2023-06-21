@@ -52,7 +52,7 @@ journal-short: EACL
 year: 2023
 
 # if you have an explicit page you want to reference, use this tag; otherwise it will be generated from your doi
-# publisherurl: https://link.springer.com/chapter/10.1007/978-3-030-72240-1_60 # add link to publisher page of your publication
+publisherurl: https://aclanthology.org/2023.eacl-main.201 # add link to publisher page of your publication
 
 # what is the publication type and other bib specific properties
 bibentry: inproceedings

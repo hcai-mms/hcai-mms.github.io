@@ -42,7 +42,7 @@ authors:
 - Khaled, Koutini
 - schedl 
 - Gerhard, Widmer
-- rekabsaz
+- rekab-saz 
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG
 journal-short: EUSIPCO
@@ -68,7 +68,7 @@ bib:
   pages: 
   month: September
 
-preprint:	https://arxiv.org/abs/2302.06321 # here you can put the preprint link (arxiv.org, osf.io,...) e.g. https://arxiv.org/abs/1910.00969
+preprint:	 # here you can put the preprint link (arxiv.org, osf.io,...) e.g. https://arxiv.org/abs/1910.00969
 
 # Add things like "Best Paper Award at InfoVis 2099, selected out of 4000 submissions"
 award:

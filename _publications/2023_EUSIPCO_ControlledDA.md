@@ -53,7 +53,7 @@ year: 2023
 publisherurl:  # add link to publisher page of your publication
 
 # what is the publication type and other bib specific properties
-bibentry: accepted
+bibentry: inproceedings
 bib:
   # journal: Springer # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
   booktitle: Accepted to the 31st edition of EUSIPCO

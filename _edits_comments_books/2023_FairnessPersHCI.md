@@ -2,7 +2,7 @@
 layout: publication # do not change this
 key:  # unique identifier of this publication e.g. 2020_collaborating_domain_experts
 title: "Personalized Human-Computer Interaction"	# title of the publication e.g. "Foundations of Data Visualization"
-chapter: "3 Fairness of information access system"	# corresponding chapter e.g. "Collaborating Successfully with Domain Experts" (usually only needed for type "book_chapter"
+chapter: "Fairness of information access system"	# corresponding chapter e.g. "Collaborating Successfully with Domain Experts" (usually only needed for type "book_chapter"
 abstract: "Information access systems, such as search engines and recommender systems, affect many day-to-day decisions in modern societies by preselecting and ranking content users are exposed to on the web (e. g., products, music, movies or job advertisements). While they have undoubtedly improved users’ opportunities to find useful and relevant digital content, these systems and their underlying algorithms often exhibit several undesirable characteristics. Among them, harmful biases play a significant role and may even result in unfair or discriminating behavior of such systems. In this chapter, we give an introduction to the different kinds and sources of biases from various perspectives as well as their relation to algorithmic fairness considerations. We also review common computational metrics that formalize some of these biases. Subsequently, the major strategies to mitigate harmful biases are discussed and each is illustrated by presenting concrete state-of-the-art approaches from scientific literature. Finally, we round off by identifying open challenges in research on fair information access systems."
 # choose one of the following types:
 # - "editorial"

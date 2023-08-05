@@ -8,7 +8,7 @@ title: "Predicting the Price of Bitcoin Using Sentiment-Enriched Time Series For
 # "paper": Peer-Reviewed Journal and Conference Papers
 # "preprint": Preprint
 # "thesis": Thesis (e.g. Master/PhD Thesis)
-type: paper
+type: journal
 abstract: "Recently, various methods to predict the future price of financial assets have emerged. One promising approach is to combine the historic price with sentiment scores derived via sentiment analysis techniques. In this article, we focus on predicting the future price of Bitcoin, which is currently the most popular cryptocurrency. More precisely, we propose a hybrid approach, combining time series forecasting and sentiment prediction from microblogs, to predict the intraday price of Bitcoin. Moreover, in addition to standard sentiment analysis methods, we are the first to employ a fine-tuned BERT model for this task. We also introduce a novel weighting scheme in which the weight of the sentiment of each tweet depends on the number of its creator’s followers. For evaluation, we consider periods with strongly varying ranges of Bitcoin prices. This enables us to assess the models w.r.t. robustness and generalization to varied market conditions. Our experiments demonstrate that BERT-based sentiment analysis and the proposed weighting scheme improve upon previous methods. Specifically, our hybrid models that use linear regression as the underlying forecasting algorithm perform best in terms of the mean absolute error (MAE of 2.67) and root mean squared error (RMSE of 3.28). However, more complicated models, particularly long short-term memory networks and temporal convolutional networks, tend to have generalization and overfitting issues, resulting in considerably higher MAE and RMSE scores.
 " # insert the abstract of your publication between the quotes; you can use html e.g. to make links (<a></a>) or generate bold (<b></b>) etc. text 
 
@@ -46,7 +46,7 @@ authors:
 - schedl
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG
-journal-short: MDPI
+journal-short: MDPI BDCC
 # when was this publication written/ when was the publication accepted (e.g. 2020)
 year: 2023
 
@@ -56,10 +56,10 @@ year: 2023
 # what is the publication type and other bib specific properties
 bibentry: article
 bib:
-  # journal: Springer # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
-  booktitle: MDPI
+  journal: Big Data and Cognitive Computing
+  booktitle: 
   editor: 
-  publisher: Big Data and Cognitive Computing
+  publisher: MDPI
   address:
   location: 
   doi: 10.3390/bdcc7030137

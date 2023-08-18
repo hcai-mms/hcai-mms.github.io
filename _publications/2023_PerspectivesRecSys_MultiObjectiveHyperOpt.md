@@ -39,7 +39,7 @@ image_large: placeholder.png
 # - Max Mustermann # there is no .md file for this person.
 authors:
 - moscati
-- deldjoo
+- Deldjoo, Yashar
 - Carparelli, Giulio Davide
 - schedl
 

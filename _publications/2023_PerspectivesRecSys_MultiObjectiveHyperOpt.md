@@ -56,7 +56,7 @@ bibentry: article
 bib:
   # journal: Springer # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
   booktitle: Proceedings of the 3rd Workshop on Perspectives on the Evaluation of Recommender Systems co-located with the 17th ACM Conference on Recommender Systems (RecSys 2023), Singapore, Singapore. 
-  editor: Said, Alan and Zangerle, Eva and Christine Bauer
+  editor: Said, Alan and Zangerle, Eva and Bauer, Christine
   publisher: CEUR-WS.org
   address: 
   doi:		

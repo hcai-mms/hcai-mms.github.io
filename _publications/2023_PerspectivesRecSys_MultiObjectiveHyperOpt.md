@@ -97,9 +97,9 @@ supplement:
 supplements:
 - name: recsyslearn Library
 #  # use link instead of abslink if you want to link to the master directory
-# abslink: https://recsyslearn.readthedocs.io/en/latest/
+  abslink: https://recsyslearn.readthedocs.io/en/latest/
 #  # defaults to a download icon, use this if you want a link-out icon
-# linksym: true
+#  linksym: true
 
 # Link to the repository where the code is hostet
 code: https://github.com/mmosc/moho

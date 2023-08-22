@@ -95,11 +95,11 @@ supplement:
 
 # Extra supplements, such as talk slides, data sets, etc.
 supplements:
-#- name: General UpSet
+- name: recsyslearn
 #  # use link instead of abslink if you want to link to the master directory
-#  abslink: http://vials.io/talk/
+- abslink: https://recsyslearn.readthedocs.io/en/latest/
 #  # defaults to a download icon, use this if you want a link-out icon
-#  linksym: true
+- linksym: false
 
 # Link to the repository where the code is hostet
 code: https://github.com/mmosc/moho

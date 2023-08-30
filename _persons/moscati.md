@@ -47,15 +47,15 @@ fax:
 # add your twitter handle (e.g. "marc_streit")
 twitter: 
 # add your github username (e.g. "mstreit")
-github: 
+github: https://github.com/mmosc
 # add your google scholar key (e.g. "l7TTSP0AAAAJ")
-google_scholar: 
+google_scholar: https://scholar.google.com/citations?user=Y0T4-9kAAAAJ&hl=en
 # add your linkedin username (e.g. "marcstreit")
 linkedin: marta-mosc
 # here you can add a link to your CV (e.g. "http://data.jku-vds-lab.at/team/marc/cv_streit.pdf")
-cv:
+cv: https://mmosc.github.io/assets/pdf/cv_pdf.pdf
 # here you can add a link to a personal website
-website:
+website: https://mmosc.github.io/
 
 
 # uncomment this property, if your personal page should have a navigation for publications (i.e. if you have many publiations). usually you don't need this.

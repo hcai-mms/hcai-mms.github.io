@@ -15,7 +15,7 @@ abstract: "The quality of recommendations can be evaluated in terms of accuracy 
 
 
 # set this url, if your paper is on another server; defaults to data.jku-vds-lab.at
-paper_content_url: [https://ceur-ws.org/](https://ceur-ws.org/Vol-3476/paper3.pdf)
+paper_content_url: https://ceur-ws.org/Vol-3476/paper3.pdf
 # uncomment the "hide" property, if you do not want the publication to be displayed on the website (usually you don't need this)
 # hide: True
 # uncomment the "non_group_project" property, if you only want the publication to be displayed on your personal page (i.e. publications where you contributed, but does not have anything to do with the Vis Group e.g. Master Thesis,...)
@@ -86,7 +86,7 @@ external-project:
 # the youtube-id of the video
 youtube-id:
 # the youtube-id of the preview-video
-preview-youtube-id: 
+preview-youtube-id: Kk2MH9O4pXY
 
 # the name of your publication pdf e.g. 2020_tvcg_confusionflow.pdf; this is usually uploaded to the caleydo aws server
 pdf: 

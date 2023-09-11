@@ -86,7 +86,7 @@ external-project:
 # the youtube-id of the video
 youtube-id:
 # the youtube-id of the preview-video
-preview-youtube-id: Kk2MH9O4pXY
+preview-youtube-id: fTTh4rMeUCQ
 
 # the name of your publication pdf e.g. 2020_tvcg_confusionflow.pdf; this is usually uploaded to the caleydo aws server
 pdf: 

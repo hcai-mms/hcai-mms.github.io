@@ -26,7 +26,7 @@ paper_content_url:
 # The shortname is used for auto-generated titels. e.g. ConfusionFlow
 shortname: Red_Words_RecSysHR
 # add a 2:1 aspect ratio (e.g., width: 400px, height: 200px) to the folder /assets/images/papers/ e.g. 2020_tvcg_confusionflow.png
-image: 
+image: placeholder.png
 # add a 2:1 aspect ratio teaser figure (e.g., width: 1200px, height: 600px) to the folder /assets/images/papers/ e.g. 2020_tvcg_confusionflow_teaser.png
 image_large: 
 

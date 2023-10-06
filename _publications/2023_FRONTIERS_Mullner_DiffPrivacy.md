@@ -2,14 +2,14 @@
 layout: publication # do not change
 
 #### these fields are mandatory. please fill them out
-title: "Fairness of Recommender Systems in the Recruitment Domain: An Analysis from Technical and Legal Perspectives" # title of your publication 
+title: "Differential Privacy in Collaborative Filtering Recommender Systems: A Review" # title of your publication 
 
 # choose one of the following types:
 # "paper": Peer-Reviewed Journal and Conference Papers
 # "preprint": Preprint
 # "thesis": Thesis (e.g. Master/PhD Thesis)
 type: journal
-abstract: "Recommender systems (RSs) have become an integral part of the hiring process, be it via job advertisement ranking systems (job recommenders) for the potential employee or candidate ranking systems (candidate recommenders) for the employer. As seen in other domains, RSs are prone to harmful biases, unfair algorithmic behavior, and even discrimination in a legal sense. Some cases, such as salary equity in regards to gender (gender pay gap), stereotypical job perceptions along gendered lines, or biases toward other subgroups sharing specific characteristics in candidate recommenders, can have profound ethical and legal implications. In this survey, we discuss the current state of fairness research considering the fairness definitions (e.g., demographic parity and equal opportunity) used in recruitment-related RSs (RRSs). We investigate from a technical perspective the approaches to improve fairness, like synthetic data generation, adversarial training, protected subgroup distributional constraints, and post-hoc re-ranking. Thereafter, from a legal perspective, we contrast the fairness definitions and the effects of the aforementioned approaches with existing EU and US law requirements for employment and occupation, and second, we ascertain whether and to what extent EU and US law permits such approaches to improve fairness. We finally discuss the advances that RSs have made in terms of fairness in the recruitment domain, compare them with those made in other domains, and outline existing open challenges." # insert the abstract of your publication between the quotes; you can use html e.g. to make links (<a></a>) or generate bold (<b></b>) etc. text 
+abstract: "State-of-the-art recommender systems produce high-quality recommendations to support users in finding relevant content. However, through the utilization of users' data for generating recommendations, recommender systems threaten users' privacy. To alleviate this threat, often, differential privacy is used to protect users' data via adding random noise. This, however, leads to a substantial drop in recommendation quality. Therefore, several approaches aim to improve this trade-off between accuracy and user privacy. In this work, we first overview threats to user privacy in recommender systems, followed by a brief introduction to the differential privacy framework that can protect users' privacy. Subsequently, we review recommendation approaches that apply differential privacy, and we highlight research that improves the trade-off between recommendation quality and user privacy. Finally, we discuss open issues, e.g., considering the relation between privacy and fairness, and the users' different needs for privacy. With this review, we hope to provide other researchers an overview of the ways in which differential privacy has been applied to state-of-the-art collaborative filtering recommender systems." # insert the abstract of your publication between the quotes; you can use html e.g. to make links (<a></a>) or generate bold (<b></b>) etc. text 
 
 ####
 
@@ -24,7 +24,7 @@ paper_content_url:
 
 #### the following fields are optional, but it is recommended to enter as much information as possible
 # The shortname is used for auto-generated titels. e.g. ConfusionFlow
-shortname: FairRecruit
+shortname: DiffPrivacy
 # add a 2:1 aspect ratio (e.g., width: 400px, height: 200px) to the folder /assets/images/papers/ e.g. 2020_tvcg_confusionflow.png
 image: placeholder.png
 # add a 2:1 aspect ratio teaser figure (e.g., width: 1200px, height: 600px) to the folder /assets/images/papers/ e.g. 2020_tvcg_confusionflow_teaser.png
@@ -38,10 +38,11 @@ image: placeholder.png
 # - schedl # .md file exists for this person
 # - Max Mustermann # there is no .md file for this person.
 authors:
-- kumar
-- grosz 
-- rekab-saz
-- schedl
+
+- Müllner, Peter   
+- Lex, Elisabeth
+- schedl  
+- Kowald, Dominik 
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG
 journal-short: Front. 
@@ -49,17 +50,17 @@ journal-short: Front.
 year: 2023
 
 # if you have an explicit page you want to reference, use this tag; otherwise it will be generated from your doi
-publisherurl: https://www.frontiersin.org/articles/10.3389/fdata.2023.1245198
+publisherurl: https://www.frontiersin.org/articles/10.3389/fdata.2023.1249997
 # what is the publication type and other bib specific properties
 bibentry: article
 bib:
   journal: Frontiers in Big Data - Recommender Systems
   booktitle: #Proceedings of the 2022 ACM International Conference on Multimedia Retrieval (ICMR)
   editor: 
-  publisher: 
-  address: 
-  doi: 10.3389/fdata.2023.1245198
-  url: https://doi.org/10.3389/fdata.2023.1245198
+  publisher:
+  address:
+  doi: 10.3389/fdata.2023.1249997   
+  url: https://doi.org/10.3389/fdata.2023.1249997
   volume: 6
   number: 
   pages: 

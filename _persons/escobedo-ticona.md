@@ -23,7 +23,7 @@ position: PhD Student # This is the position that you have within your organizat
 
 
 
-# cg_website: "https://www.jku.at/en/institute-of-computer-graphics/about-us/team/marc-streit/" # if you add this link, there won't be a local page for your profile, but you would be redirected to another website (usually you would link your profile in the cg website)
+# cg_website: "https://www.jku.at/en/institute-of-computer-graphics/about-us/team/marc-streit/" # if you add this link, there won't be a local page for your profile, but you would be redirected to another website (usually you would link your profile in the cg website)ddddd
 
 
 #### the following fields are optional. It is recommended to add as much information as possible, since otherwise your page would look empty ;)

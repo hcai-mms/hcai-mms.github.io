@@ -13,7 +13,7 @@ key: hausberger # this should be your lastname in lower case; the key is importa
 # - "undergrad": Undergraduate Students
 # - "phdgrad": PhD Graduates
 # - "alumni": Other Alumni
-role: raPhD
+role: undergrad
 
 email: anna.hausberger@jku.at # this is your work e-mail address
 image: /assets/images/team_colored/hausberger.jpeg # insert the relative link to your profile image

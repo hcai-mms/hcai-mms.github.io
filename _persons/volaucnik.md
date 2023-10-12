@@ -13,7 +13,7 @@ key: volaucnik # this should be your lastname in lower case; the key is importan
 # - "undergrad": Undergraduate Students
 # - "phdgrad": PhD Graduates
 # - "alumni": Other Alumni
-role: undergrad
+role: former
 
 email:  cornelia.volaucnik@jku.at # this is your work e-mail address
 image: /assets/images/team_colored/volaucnik.jpg # insert the relative link to your profile image

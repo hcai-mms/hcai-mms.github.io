@@ -18,7 +18,7 @@ role: faculty
 email:  #stefan.brandl@jku.at # this is your work e-mail address
 image: /assets/images/team_colored/nawaz.jpg # insert the relative link to your profile image
 organization: Johannes Kepler University Linz # usually you leave this unchanged, but if your have a different organization, feel free to change the property
-position: University Assistant # This is the position that you have within your organization. e.g. "Project Assistant", "University Assistant", "Technical Support", "Student Research" (or whatever Marc tells you^^)
+position: Assistant Professor # This is the position that you have within your organization. e.g. "Project Assistant", "University Assistant", "Technical Support", "Student Research" (or whatever Marc tells you^^)
 ####
 
 

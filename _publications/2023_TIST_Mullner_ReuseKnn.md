@@ -49,7 +49,7 @@ journal-short: TIST
 year: 2023
 
 # if you have an explicit page you want to reference, use this tag; otherwise it will be generated from your doi
-publisherurl: https://link.springer.com/article/10.1007/s13735-023-00275-8#citeas
+publisherurl: https://doi.org/10.1145/3608481
 
 # what is the publication type and other bib specific properties
 bibentry: article

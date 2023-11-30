@@ -56,19 +56,19 @@ publisherurl:  # add link to publisher page of your publication
 bibentry: inproceedings
 bib:
   # journal: Springer # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
-  booktitle: Accepted to the 31st edition of EUSIPCO
+  booktitle: 31st European Signal Processing Conference, {EUSIPCO} 2023, Helsinki,Finland, September 4-8, 2023
   editor: 
-  publisher: 
+  publisher: {IEEE}
   address: 
-  location:
-  doi:		# e.g.10.1109/TVCG.2020.3012063
-  url: 
-  volume:
+  location: Helsinki,Finland
+  doi:		10.23919/EUSIPCO58844.2023.10290020 # e.g.10.1109/TVCG.2020.3012063
+  url: https://doi.org/10.23919/EUSIPCO58844.2023.10290020
+  volume: 31st
   number: 
-  pages: 
-  month: September
+  pages: 181--185
+  month: September 4-8
 
-preprint:	 # here you can put the preprint link (arxiv.org, osf.io,...) e.g. https://arxiv.org/abs/1910.00969
+preprint:	https://arxiv.org/abs/2306.08010 # here you can put the preprint link (arxiv.org, osf.io,...) e.g. https://arxiv.org/abs/1910.00969
 
 # Add things like "Best Paper Award at InfoVis 2099, selected out of 4000 submissions"
 award:

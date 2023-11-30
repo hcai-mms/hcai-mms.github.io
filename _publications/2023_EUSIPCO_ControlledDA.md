@@ -56,7 +56,7 @@ publisherurl:  # add link to publisher page of your publication
 bibentry: inproceedings
 bib:
   # journal: Springer # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
-  booktitle: 31st European Signal Processing Conference, {EUSIPCO} 2023, Helsinki,Finland, September 4-8, 2023
+  booktitle: 31st European Signal Processing Conference, (EUSIPCO) 2023, Helsinki,Finland, September 4-8, 2023
   editor: 
   publisher: {IEEE}
   address: 

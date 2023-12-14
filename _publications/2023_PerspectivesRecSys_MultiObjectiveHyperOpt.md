@@ -52,7 +52,7 @@ year: 2023
 # publisherurl: https://link.springer.com/chapter/10.1007/978-3-030-72240-1_60 # add link to publisher page of your publication
 
 # what is the publication type and other bib specific properties
-bibentry: article
+bibentry: proceedings
 bib:
   # journal: Springer # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
   booktitle: Proceedings of the 3rd Workshop on Perspectives on the Evaluation of Recommender Systems co-located with the 17th ACM Conference on Recommender Systems (RecSys 2023), Singapore, Singapore. 
@@ -61,7 +61,7 @@ bib:
   address: 
   doi:		
   url: https://ceur-ws.org/Vol-3476/paper3.pdf
-  volume: 
+  volume: 3476
   number: 
   pages: 
   month: 

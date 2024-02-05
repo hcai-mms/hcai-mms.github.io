@@ -2,7 +2,7 @@
 layout: publication # do not change
 
 #### these fields are mandatory. please fill them out
-title: "Domain Information Control at Inference Time for Acoustic Scene Classification" # title of your publication 
+title: "Effective Controllable Bias Mitigation for Classification and Retrieval using Gate Adapters" # title of your publication 
 
 # choose one of the following types:
 # "paper": Peer-Reviewed Journal and Conference Papers

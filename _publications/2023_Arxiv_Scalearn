@@ -38,10 +38,10 @@ image: placeholder.png
 # - schedl # .md file exists for this person
 # - Max Mustermann # there is no .md file for this person.
 authors:
-- Markus, Frohman
-- Carolin, Holtermann
+- Frohman, Markus 
+- Holtermann, Carolin 
 - masoudian
-- Anne, Lauscher 
+- Lauscher, Anne  
 - rekab-saz 
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG

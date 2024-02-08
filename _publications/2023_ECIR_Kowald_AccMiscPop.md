@@ -42,7 +42,7 @@ authors:
 - Kowald, Dominik
 - Mayr, Gregor
 - schedl
-- Lex, Elisabeth",
+- Lex, Elisabeth
 
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG

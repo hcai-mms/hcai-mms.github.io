@@ -56,7 +56,7 @@ publisherurl: https://aclanthology.org/2024.findings-eacl.77/ # add link to publ
 bibentry: inproceedings
 bib:
   # journal: Springer # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
-  booktitle: Findings of the Association for Computational Linguistics: EACL 2024
+  booktitle: "Findings of the Association for Computational Linguistics: EACL 2024"
   editor: Yvette Graham, Matthew Purver
   publisher: 
   address: 

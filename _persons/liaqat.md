@@ -16,7 +16,7 @@ key: escobedo-ticona # this should be your lastname in lower case; the key is im
 role: guest
 
 email:  # this is your work e-mail address
-image: /assets/images/team_colored/placeholder.png # insert the relative link to your profile image
+image: /assets/images/team_colored/liaqat.jpg # insert the relative link to your profile image
 organization:  # usually you leave this unchanged, but if your have a different organization, feel free to change the property
 position:  # This is the position that you have within your organization. e.g. "Project Assistant", "University Assistant", "Technical Support", "Student Research" (or whatever Marc tells you^^)
 ####

@@ -57,8 +57,7 @@ year: 2024
 bibentry: inproceedings
 bib:
   # journal: Springer # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
-  booktitle: Proceedings of the 32nd ACM Conference on User Modeling,
-Adaptation and Personalization (UMAP)
+  booktitle: Proceedings of the 32nd ACM Conference on User Modeling, Adaptation and Personalization (UMAP)
   editor: 
   publisher: Association for Computing Machinery
   address: New York, NY, USA

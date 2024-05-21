@@ -2,7 +2,7 @@
 layout: publication # do not change
 
 #### these fields are mandatory. please fill them out
-title: "Controllability of bias mitigation in retrieval models" # title of your publication 
+title: "Controllability of Bias Mitigation in Retrieval Models" # title of your publication 
 
 # choose one of the following types:
 # "paper": Peer-Reviewed Journal and Conference Papers

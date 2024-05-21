@@ -9,7 +9,9 @@ title: "Controllability of Bias Mitigation in Retrieval Models" # title of your 
 # "preprint": Preprint
 # "thesis": Thesis (e.g. Master/PhD Thesis)
 type: thesis
-abstract: ""
+abstract: "Bias mitigation in the context of retrieval frameworks based on large language models has become a topic of interest in recent years. It has been shown repeatedly that those models adopt social biases present in the training data and the negative impacts this can have on the fairness of tasks learned by fine-tuning such models, for example information retrieval. Usually, the degree of model fairness is controlled by retraining individual models. In practice it would be more beneficial to achieve controllability during inference time, saving time and computational resources.
+
+This thesis utilizes Controllable Gate Adapters (CONGATER), which is a recently introduced method to control model behaviour post-hoc to training. Here CONGATER is applied to control the degree of fairness for retrieval models. In the experiments the fairness of retrieval results is increased by using a fairness regularization loss term. Different baseline models are computed to evaluate the performance of CONGATER, such as fully fine-tuned models, adapter models and two controllable interpolation methods. The experiments show that CONGATER is able to control bias mitigation during inference time, leading to a well-behaved utility-fairness trade-off. Comparisons with the baseline models show that bias mitigation works equally as well with CONGATER while task utility is the same or even higher than for the baseline models."
 ####
 
 
@@ -48,7 +50,7 @@ authors:
 year: 2024
 
 # if you have an explicit page you want to reference, use this tag; otherwise it will be generated from your doi
-publisherurl: 
+publisherurl: https://epub.jku.at/obvulihs/content/titleinfo/9884374
 
 # what is the publication type and other bib specific properties
 bibentry: misc

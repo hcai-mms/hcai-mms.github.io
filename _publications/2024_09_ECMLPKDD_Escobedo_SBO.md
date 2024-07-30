@@ -42,7 +42,7 @@ authors:
 - escobedo-ticona
 - moscati
 - Müllner, Peter
-- Kopeinik Simone
+- Kopeinik, Simone
 - Kowald, Dominik
 - Lex, Elisabeth 
 - schedl

@@ -58,7 +58,7 @@ publisherurl:  # add link to publisher page of your publication
 bibentry: inproceedings
 bib:
   # journal: Springer # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
-  booktitle: "Proceedings of the European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases"
+  booktitle: "Proceedings of the European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD 2024)"
   editor: 
   publisher: 
   address: 

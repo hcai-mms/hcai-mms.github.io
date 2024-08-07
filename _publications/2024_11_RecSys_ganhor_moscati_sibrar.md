@@ -65,7 +65,6 @@ bib:
   volume: 
   number: 
   pages: 
-  year: 2024
   month: 
   location: Bari, Italy
 

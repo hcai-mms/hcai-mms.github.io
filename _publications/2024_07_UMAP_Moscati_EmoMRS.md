@@ -38,11 +38,11 @@ image_large: 2024_EmoMRS.png
 # - Max Mustermann # there is no .md file for this person.
 authors:
 - moscati
-- Hannah Strauß
-- Peer-Ole Jacobsen
-- Andreas Peintner
-- Eva Zangerle
-- Marcel Zentner
+- Strauß, Hannah
+- Jacobsen, Peer-Ole
+- Peintner, Andreas 
+- Zangerle, Eva
+- Zentner, Marcel
 - schedl
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG
@@ -66,7 +66,6 @@ bib:
   volume: 
   number: 
   pages: 
-  year: 2024
   month: 
   location: Cagliari, Italy
 

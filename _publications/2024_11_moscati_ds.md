@@ -49,7 +49,6 @@ year: 2024
 
 # what is the publication type and other bib specific properties
 bibentry: inproceedings
-key: ganhoer_moscati2024sibrar
 bib:
   # journal: Springer # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
   booktitle: Proceedings of the 18th ACM Conference on Recommender Systems (RecSys)

@@ -37,8 +37,8 @@ image_large: 2024_SiBraR.png
 # - schedl # .md file exists for this person
 # - Max Mustermann # there is no .md file for this person.
 authors:
-- Christian Ganhör*
-- <a href="https://hcai.at/persons/moscati">Marta Moscati*</a>
+- Ganhör*, Christian
+- <a href="https://hcai.at/persons/moscati">Moscati*, Marta</a>
 - hausberger
 - nawaz
 - schedl

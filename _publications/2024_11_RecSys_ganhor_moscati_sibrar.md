@@ -37,8 +37,8 @@ image_large: 2024_SiBraR.png
 # - schedl # .md file exists for this person
 # - Max Mustermann # there is no .md file for this person.
 authors:
-- Ganhör*, Christian
-- <a href="https://hcai.at/persons/moscati">Moscati*, Marta</a>
+- ganhoer
+- moscati
 - hausberger
 - nawaz
 - schedl
@@ -57,7 +57,6 @@ key: ganhoer_moscati2024sibrar
 bib:
   # journal: Springer # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
   booktitle: Proceedings of the 18th ACM Conference on Recommender Systems (RecSys)
-  author: Christian Ganhör* and Marta Moscati* and Hausberger, Anna and Nawaz, Shah and Schedl, Markus}, 
   editor: 
   publisher: Association for Computing Machinery
   address: New York, NY, USA

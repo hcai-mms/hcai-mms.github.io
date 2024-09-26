@@ -13,7 +13,7 @@ key: frohmann # this should be your lastname in lower case; the key is important
 # - "undergrad": Undergraduate Students
 # - "phdgrad": PhD Graduates
 # - "alumni": Other Alumni
-role: undergrad
+role: former
 
 email:  markus.frohmann@jku.at # this is your work e-mail address
 image: /assets/images/team_colored/placeholder.png # insert the relative link to your profile image

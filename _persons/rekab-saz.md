@@ -13,7 +13,7 @@ key: rekab-saz # this should be your lastname in lower case; the key is importan
 # - "undergrad": Undergraduate Students
 # - "phdgrad": PhD Graduates
 # - "alumni": Other Alumni
-role: faculty
+role: former
 
 email:  navid.rekabsaz@jku.at # this is your work e-mail address
 image: /assets/images/team_colored/rekabsaz.jpg # insert the relative link to your profile image

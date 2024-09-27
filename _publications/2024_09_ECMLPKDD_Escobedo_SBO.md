@@ -52,7 +52,7 @@ journal-short: ECMLPKDD
 year: 2024
 
 # if you have an explicit page you want to reference, use this tag; otherwise it will be generated from your doi
-publisherurl:  # add link to publisher page of your publication
+publisherurl: https://link.springer.com/chapter/10.1007/978-3-031-70368-3_21  # add link to publisher page of your publication
 
 # what is the publication type and other bib specific properties
 bibentry: inproceedings
@@ -61,16 +61,16 @@ bib:
   booktitle: "Proceedings of the European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD 2024)"
   editor: 
   publisher: 
-  address: 
+  address:  
   location:  Vilnius, Lithuania
-  doi:		
+  doi:	
   url: 
   volume: 
   number: 
-  pages: 
+  pages: 349--365
   month: September
 
-preprint:	https://arxiv.org/pdf/2406.11505 # here you can put the preprint link (arxiv.org, osf.io,...) e.g. https://arxiv.org/abs/1910.00969
+preprint: # here you can put the preprint link (arxiv.org, osf.io,...) e.g. https://arxiv.org/abs/1910.00969
 
 # Add things like "Best Paper Award at InfoVis 2099, selected out of 4000 submissions"
 award:

@@ -28,6 +28,7 @@ institution: Johannes Kepler University Linz
 thesis_type: Master's Thesis
 advisors : 
 - schedl
+- moscati
 
 
 #### the following fields are optional, but it is recommended to enter as much information as possible

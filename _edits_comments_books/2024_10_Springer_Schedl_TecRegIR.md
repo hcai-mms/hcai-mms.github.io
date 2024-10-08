@@ -8,7 +8,7 @@ abstract: "This book provides an in-depth treatment of three important topical a
 # - "editorial"
 # - "book_chapter"
 # - "commentaries"
-type: book_chapter
+type: book
 
 # relative path to the cover image (should  be in /assets/images/covers/ folder e.g. /assets/images/covers/2020_springer_foundations-of-data-vis.jpg)
 image: 2024_10_Springer_Schedl_TecRegIR.png
@@ -34,7 +34,6 @@ year: 2024	# year of publication e.g. 2020
 # optional bib information (state as much as possible)
 bib:
   journal: # e.g. Springer
-  title: "Technical and Regulatory Perspectives on Information Retrieval and Recommender Systems"
   editor:
   publisher: "Springer Cham" 
   address: 

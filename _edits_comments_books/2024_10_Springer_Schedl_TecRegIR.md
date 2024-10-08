@@ -34,7 +34,7 @@ year: 2024	# year of publication e.g. 2020
 # optional bib information (state as much as possible)
 bib:
   journal: # e.g. Springer
-  booktitle: "Technical and Regulatory Perspectives on Information Retrieval and Recommender Systems"
+  booktitle: 
   editor:
   publisher: "Springer Cham" 
   address: 

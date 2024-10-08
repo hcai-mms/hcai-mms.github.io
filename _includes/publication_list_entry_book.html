@@ -73,6 +73,8 @@
       {% assign published-where = publication.bib.journal %}
       {% elsif publication.bib.booktitle %}
       {% assign published-where = publication.bib.publisher %}
+      {% elsif publication.type == 'book' %}
+      {% assign published-where = publication.bib.publisher %}
       {% endif %}
 
       {{ published-where }}, {{publication.year}}{% if publication.to_appear %} (to appear){%endif%}.

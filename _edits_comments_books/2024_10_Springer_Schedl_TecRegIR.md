@@ -8,7 +8,7 @@ abstract: "This book provides an in-depth treatment of three important topical a
 # - "editorial"
 # - "book_chapter"
 # - "commentaries"
-type: book
+type: book_chapter
 
 # relative path to the cover image (should  be in /assets/images/covers/ folder e.g. /assets/images/covers/2020_springer_foundations-of-data-vis.jpg)
 image: 2024_10_Springer_Schedl_TecRegIR.png

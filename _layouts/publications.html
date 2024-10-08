@@ -73,7 +73,7 @@ layout: default
 
   {% for publication in site.edits_comments_books reversed %}
     {% if publication.personal %}
-    {% elsif publication.type == "book_chapter" or page.type =='book' %}
+    {% elsif publication.type == "book_chapter" or publication.type =='book' %}
       {% include publication_list_entry_book.html %}
     {% endif %}
   {% endfor %}

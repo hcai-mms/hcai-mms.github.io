@@ -47,7 +47,8 @@ bib:
   chapter:  
   
 # set this url, if your paper is on another server; defaults to data.jku-vds-lab.at
-paper_content_url: https://link.springer.com/book/9783031699771
+paper_content_url:
+publisherurl: https://link.springer.com/book/9783031699771 
 # link to publication pdf e.g. 2020_something.pdf or http://www.nature.com/nmeth/journal/v11/n2/pdf/nmeth.2807.pdf; in the second case, the property "paper_content_url" must be set to "", otherwise it defaults to data.jku-vds-lab.at
 pdf: 
 ---

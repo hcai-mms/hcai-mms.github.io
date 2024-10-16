@@ -49,7 +49,7 @@ journal-short: RecSys
 year: 2024
 
 # if you have an explicit page you want to reference, use this tag; otherwise it will be generated from your doi
-# publisherurl: https://link.springer.com/chapter/10.1007/978-3-030-72240-1_60 # add link to publisher page of your publication
+publisherurl: https://dl.acm.org/doi/10.1145/3640457.3688138 # add link to publisher page of your publication
 
 # what is the publication type and other bib specific properties
 bibentry: inproceedings
@@ -60,11 +60,11 @@ bib:
   editor: 
   publisher: Association for Computing Machinery
   address: New York, NY, USA
-  doi: 
-  url:  
+  url: https://doi.org/10.1145/3640457.3688138
+  doi: 10.1145/3640457.3688138
   volume: 
   number: 
-  pages: 
+  pages: 380–390
   month: 
   location: Bari, Italy
 

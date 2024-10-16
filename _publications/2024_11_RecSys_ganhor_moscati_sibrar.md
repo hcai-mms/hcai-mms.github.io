@@ -96,7 +96,7 @@ preview-youtube-id:
 # supplement: /assets/pdf/2024_recsys_supplementar.pdf
 
 # Extra supplements, such as talk slides, data sets, etc.
-supplements:
+supplements: https://medium.com/@christian.ganhoer/a-brief-guide-on-sibrar-4a2476b5b73a
 #- name: General UpSet
 #  # use link instead of abslink if you want to link to the master directory
 #  abslink: http://vials.io/talk/

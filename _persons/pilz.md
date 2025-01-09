@@ -13,7 +13,7 @@ key: pilz # this should be your lastname in lower case; the key is important for
 # - "undergrad": Undergraduate Students
 # - "phdgrad": PhD Graduates
 # - "alumni": Other Alumni
-role: alumni
+role: former
 
 email:  pasca.pilz@jku.at # this is your work e-mail address
 image: /assets/images/team_colored/placeholder.png # insert the relative link to your profile image

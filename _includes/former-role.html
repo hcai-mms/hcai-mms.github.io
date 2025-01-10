@@ -1,8 +1,14 @@
 {% for person in site.persons %}
 {% if person.role == include.role %}
 <div class="member">
-<p>{% if person.website %}<a href="{{ person.website }}"> {{ person.first_name }} {{ person.last_name }}</a>{% else %}{{ person.first_name }} {{ person.last_name }}{% endif %}<!--{{ person.organization }}-->
+<p>
+  {% if person.website %}
+    <a href="{{ person.website }}"> {{ person.first_name }} {{ person.last_name }}</a>
+  {% else %}
+    {{ person.first_name }} {{ person.last_name }}
+  {% endif %} <!--{{ person.organization }}-->
 </p>
+  {% endif %}
 {% endif %}
 </div>
 {% endfor %}

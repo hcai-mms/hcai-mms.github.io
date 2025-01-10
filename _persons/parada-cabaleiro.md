@@ -55,7 +55,7 @@ linkedin: emilia-parada-cabaleiro-761339121
 # here you can add a link to your CV (e.g. "http://data.jku-vds-lab.at/team/marc/cv_streit.pdf")
 cv:
 # here you can add a link to a personal website
-website:
+website: https://www.hfm-nuernberg.de/en/service/directory-of-persons/profile/emilia-parada-cabaleiro
 
 
 # uncomment this property, if your personal page should have a navigation for publications (i.e. if you have many publiations). usually you don't need this.

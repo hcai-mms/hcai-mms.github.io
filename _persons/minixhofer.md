@@ -55,7 +55,7 @@ linkedin: benjamin-minixhofer-493297164
 # here you can add a link to your CV (e.g. "http://data.jku-vds-lab.at/team/marc/cv_streit.pdf")
 cv:
 # here you can add a link to a personal website
-website:
+website: https://bmin.ai/
 
 
 # uncomment this property, if your personal page should have a navigation for publications (i.e. if you have many publiations). usually you don't need this.

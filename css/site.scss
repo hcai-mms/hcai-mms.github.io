@@ -1262,6 +1262,12 @@ ul.project-icon-list li {
      width: 100%;
  }
 }
+.former-member a{
+  text-decoration: underline;
+}
+.former-member a:hover 
+{  background-color: $team-color-light;
+}
 
 .team-members-org{
   

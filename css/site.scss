@@ -1262,9 +1262,12 @@ ul.project-icon-list li {
      width: 100%;
  }
 }
-// .former-member a{
-//   text-decoration: underline;
-// }
+.former-member p{
+  height: 25px;
+  margin-bottom: 5px;
+  align-items: center;
+  display: flex;
+}
 // .former-member a:hover 
 // {  background-color: $team-color-light;
 // }

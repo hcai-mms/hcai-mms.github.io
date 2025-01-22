@@ -689,7 +689,9 @@ ul.post-list {
   }
 
 }
-
+.projects-content {
+  @include page-content($publication-color);
+}
 .publications-content {
   @include page-content($publication-color);
 }
@@ -1107,7 +1109,9 @@ footer {
 .publications-content{
   clear:both;
 }
-
+.projects-content{
+  clear:both;
+}
 
 .footer-icon{
   background-color:$medium-gray;
@@ -1331,6 +1335,10 @@ ul.project-icon-list li {
   margin-top: 0px;
 }
 
+.projects-content .pub-nav{ // remove this, if the navigation on the "Publications" page should be left
+  float: right;
+  margin-top: 0px;
+}
 
 // publication list
 

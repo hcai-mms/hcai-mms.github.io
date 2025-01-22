@@ -43,6 +43,9 @@ collections:
   publications:
     output: true
     permalink: /publications/:path/
+  projects:
+    output: true
+    permalink: /projects/:path/
   about-us:
     output: true
     permalink: /about-us/:path/

@@ -1,0 +1,111 @@
+---
+layout: default
+---
+<header class="projects-title">
+  <h1>{{ page.title | remove: "| JKU Visual Data Science Lab" }}</h1>
+</header>
+
+<article class="projects-content">
+
+  <div class="projects-nav">
+    <ul>
+      <li>
+        <a href="#eu"><span>EU Projects</span></a>
+      </li>
+      <li>
+        <a href="#fwf"><span>FWF Projects</span></a>
+      </li>
+      <li>
+        <a href="#ffg"><span>FFG Projects</span></a>
+      </li>
+      <li>
+        <a href="#lit"><span>LIT Projects</span></a>
+      </li>
+      <li>
+        <a href="#industry"><span>Industry Projects</span></a>
+      </li>
+      <li>
+        <a href="#others"><span>Other Projects</span></a>
+      </li>
+    </ul>
+  </div>
+
+  <br>
+
+  <h1 id="eu">EU Projects</h1>
+  {% for project in site.projects reversed %}
+    {% if project.type == "EU" %}
+      <div class="project-list-entry">
+        <b><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></b><br />
+        {{ project.description }}<br />
+        <i>{{ project.year }}</i>
+      </div>
+    {% endif %}
+  {% endfor %}
+
+  <br>
+
+  <h1 id="fwf">FWF Projects</h1>
+  {% for project in site.projects reversed %}
+    {% if project.type == "FWF" %}
+      <div class="project-list-entry">
+        <b><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></b><br />
+        {{ project.description }}<br />
+        <i>{{ project.year }}</i>
+      </div>
+    {% endif %}
+  {% endfor %}
+
+  <br>
+
+  <h1 id="ffg">FFG Projects</h1>
+  {% for project in site.projects reversed %}
+    {% if project.type == "FFG" %}
+      <div class="project-list-entry">
+        <b><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></b><br />
+        {{ project.description }}<br />
+        <i>{{ project.year }}</i>
+      </div>
+    {% endif %}
+  {% endfor %}
+
+  <br>
+
+  <h1 id="lit">LIT Projects</h1>
+  {% for project in site.projects reversed %}
+    {% if project.type == "LIT" %}
+      <div class="project-list-entry">
+        <b><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></b><br />
+        {{ project.description }}<br />
+        <i>{{ project.year }}</i>
+      </div>
+    {% endif %}
+  {% endfor %}
+
+  <br>
+
+  <h1 id="industry">Industry Projects</h1>
+  {% for project in site.projects reversed %}
+    {% if project.type == "Industry" %}
+      <div class="project-list-entry">
+        <b><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></b><br />
+        {{ project.description }}<br />
+        <i>{{ project.year }}</i>
+      </div>
+    {% endif %}
+  {% endfor %}
+
+  <br>
+
+  <h1 id="others">Other Projects</h1>
+  {% for project in site.projects reversed %}
+    {% if project.type == "Other" %}
+      <div class="project-list-entry">
+        <b><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></b><br />
+        {{ project.description }}<br />
+        <i>{{ project.year }}</i>
+      </div>
+    {% endif %}
+  {% endfor %}
+
+</article>

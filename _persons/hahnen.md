@@ -2,8 +2,8 @@
 layout: team-member # do not change
 
 #### these fields are mandatory. please fill them out
-first_name: Leo Hahnen
-last_name: Leo Hahnen
+first_name: Leo
+last_name: Hahnen
 title: "Leo Hahnen"
 key: hahnen # this should be your lastname in lower case; the key is important for publications or other listings that need to be linked to your profile. it needs to be unique (should there be someone else with the same lastname, please contact the admin)
 

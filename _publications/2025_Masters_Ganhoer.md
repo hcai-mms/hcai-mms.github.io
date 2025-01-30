@@ -45,7 +45,7 @@ authors:
 - ganhoer
 
 # when was this publication written/ when was the publication accepted (e.g. 2020)
-year: 2025
+year: 2024
 
 # if you have an explicit page you want to reference, use this tag; otherwise it will be generated from your doi
 publisherurl: https://epub.jku.at/obvulihs/content/titleinfo/11398151

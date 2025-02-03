@@ -18,7 +18,7 @@ role: phdgrad
 email:  alessandro.melchiorre@jku.at # this is your work e-mail address
 image: /assets/images/team_colored/melchiorre.jpg # insert the relative link to your profile image
 organization: Johannes Kepler University Linz # usually you leave this unchanged, but if your have a different organization, feel free to change the property
-position: PhD Student # This is the position that you have within your organization. e.g. "Project Assistant", "University Assistant", "Technical Support", "Student Research" (or whatever Marc tells you^^)
+position: PostDoc # This is the position that you have within your organization. e.g. "Project Assistant", "University Assistant", "Technical Support", "Student Research" (or whatever Marc tells you^^)
 ####
 
 
@@ -47,11 +47,11 @@ fax:
 # add your twitter handle (e.g. "marc_streit")
 twitter: 
 # add your github username (e.g. "mstreit")
-github: 
+github: karapostK
 # add your google scholar key (e.g. "l7TTSP0AAAAJ")
 google_scholar: n02gnLsAAAAJ
 # add your linkedin username (e.g. "marcstreit")
-linkedin: 
+linkedin: a-melchiorre
 # here you can add a link to your CV (e.g. "http://data.jku-vds-lab.at/team/marc/cv_streit.pdf")
 cv:
 # here you can add a link to a personal website
@@ -66,10 +66,10 @@ website: https://karapostk.github.io/
 ####
 ---
 
-Hola!
+I am a PostDoc in Machine Learning and Computer Science at the Institute of Computational Perception at Johannes Kepler University Linz, Austria.
 
-I am a Ph.D. student at the Institute of Computational Perception and at the Multimedia Mining and Search Group at the Johannes Kepler University Linz, Austria.
+My current research is on Generative Retrieval applied to Recommendation and Multimodal Recommender Systems.
 
-I studied Engineering in Computer Science in my Bachelor at Università degli Studi di Napoli Federico II and in my Master at Sapienza - Università di Roma where I both graduated with full marks.
+My past research specializes in recommender system algorithms, explainable AI, and fairness in machine learning. My work has been published in esteemed conferences and journals such as RecSys, ECML-PKDD, ECIR, AI Magazine, and Information Processing & Management.
 
-My main interests revolve around the topics of recommender system algorithms, explainability in AI, and bias & fairness. I am particularly enthusiastic about developing interpretable models and explainability methods for recommender systems, especially in the music domain. I am also interested in investigating the relationships between users’ characteristics and music preference and consumption.
+Additionally, I led two science communication projects showcased at the international Ars Electronica Festival in Linz, 

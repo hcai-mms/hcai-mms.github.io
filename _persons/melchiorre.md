@@ -31,7 +31,7 @@ position: PostDoc # This is the position that you have within your organization.
 # in degrees_pre you can state all your degrees that should be displayed in front of your name e.g. "Dr", "DI", "Prof" etc. (or a combination of several)
 degrees_pre: 
 # in degrees_post you can state all your degrees that should be displayed after your name e.g. "BSc", "MSc" etc. (or a combination of several)
-degrees_post: M.Sc. 
+degrees_post: PhD
 
 # the location property states your work address. Usually you would only need to adjust the room number below i.e. change "0357" which is Marc's office to your own
 location: "Johannes Kepler University Linz<br />

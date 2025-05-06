@@ -12,7 +12,7 @@ key: escobedo-ticona # this should be your lastname in lower case; the key is im
 # - "raPhD": Research Associates & PhD Students
 # - "undergrad": Undergraduate Students
 # - "phdgrad": PhD Graduates
-# - "alumni": Other Alumni
+# - "alumni": Other Alumni   
 role: raPhD
 
 email: gustavo.escobedo@jku.at # this is your work e-mail address

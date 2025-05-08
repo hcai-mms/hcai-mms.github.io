@@ -5,7 +5,7 @@ layout: team-member # do not change
 first_name: Metin 
 last_name: Hasan
 title: "Metin Hasan“
-key: Hasan # this should be your lastname in lower case; the key is important for publications or other listings that need to be linked to your profile. it needs to be unique (should there be someone else with the same lastname, please contact the admin)
+key: hasan # this should be your lastname in lower case; the key is important for publications or other listings that need to be linked to your profile. it needs to be unique (should there be someone else with the same lastname, please contact the admin)
 
 # choose one of the following: 
 # - "faculty": Faculty

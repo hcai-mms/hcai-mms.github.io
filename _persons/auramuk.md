@@ -15,7 +15,7 @@ key: auramuk # this should be your lastname in lower case; the key is important 
 # - "alumni": Other Alumni
 # - "administration": Administration/Secretary
 # - "tech": Technical Support
-role: administration
+role: administration-assistant
 
 email:  artsiom.auramuk@jku.at # this is your work e-mail address
 image: /assets/images/team_colored/auramuk.jpg # insert the relative link to your profile image

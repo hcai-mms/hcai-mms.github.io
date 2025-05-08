@@ -1,4 +1,3 @@
----
 layout: team-member # do not change
 
 #### these fields are mandatory. please fill them out

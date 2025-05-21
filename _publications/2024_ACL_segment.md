@@ -59,7 +59,7 @@ bib:
   editor: Yaser Al-Onaizan, Mohit Bansal, Yun-Nung Chen
   publisher: Association for Computing Machinery
   address: Miami, Florida, USA
-  doi: 10.18653/v1/2024.emnlp-main
+  doi: 10.18653/v1/2024.emnlp-main.665
   url:  https://aclanthology.org/2024.emnlp-main/
   volume: 
   number: 

@@ -2,7 +2,7 @@
 layout: publication # do not change
 
 #### these fields are mandatory. please fill them out
-title: "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing, pages 10932–10938 November 12-16, 2024 ©2024 Association for Computational LinguisticsUnlabeled Debiasing in Downstream Tasks via Class-wise Low Variance Regularization" # title of your publication 
+title: "Unlabeled Debiasing in Downstream Tasks via Class-wise Low Variance Regularization" # title of your publication 
 
 # choose one of the following types:
 # "paper": Peer-Reviewed Journal and Conference Papers

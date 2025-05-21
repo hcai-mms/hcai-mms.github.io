@@ -55,7 +55,7 @@ year: 2024
 bibentry: frohmann-etal-2024-segment
 bib:
   # journal: Springer # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
-  booktitle: Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing (RecSys)
+  booktitle: Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing (ACM)
   editor: Yaser Al-Onaizan, Mohit Bansal, Yun-Nung Chen
   publisher: Association for Computing Machinery
   address: Miami, Florida, USA

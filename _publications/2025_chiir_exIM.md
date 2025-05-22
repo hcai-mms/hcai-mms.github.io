@@ -57,7 +57,7 @@ bib:
   editor: George Buchanan, Haiming Liu, Dana McKAy, Douglas Oard
   publisher: Association for Computing Machinery
   address: New York, NY, United States
-  doi: 10.1145/3698204
+  doi: 10.1145/3698204.3716470
   url: https://chiir2025.github.io/
   volume: 
   number: 

@@ -43,7 +43,7 @@ authors:
 - schedl
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG
-journal-short: ACM
+journal-short: EMNLP
 # when was this publication written/ when was the publication accepted (e.g. 2020)
 year: 2024
 
@@ -54,7 +54,7 @@ year: 2024
 bibentry: masoudian-etal-2024-unlabeled
 bib:
   # journal: Springer # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
-  booktitle: Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing (ACM)
+  booktitle: Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing (EMNLP)
   editor: Yaser Al-Onaizan, Mohit Bansal, Yun-Nung Chen
   publisher: Association for Computing Machinery
   address: Miami, Florida, USA

@@ -51,7 +51,7 @@ year: 2025
 
 # what is the publication type and other bib specific properties
 bibentry: Hausberger2025CHIIR_2025
-bib:
+# bib:
   # journal: Springer # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
   booktitle: CHIIR '25: Proceedings of the 2025 ACM SIGIR Conference on Human Information Interaction and Retrieval (SIGIR)
   editor: George Buchanan, Haiming Liu, Dana McKAy, Douglas Oard

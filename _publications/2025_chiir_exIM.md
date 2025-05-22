@@ -50,7 +50,7 @@ year: 2025
 # publisherurl: https://link.springer.com/chapter/10.1007/978-3-030-72240-1_60 # add link to publisher page of your publication
 
 # what is the publication type and other bib specific properties
-bibentry: Hausberger2025CHIIR_2025
+bibentry: inproceedings
 bib:
   # journal: Springer # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
   booktitle: CHIIR '25: Proceedings of the 2025 ACM SIGIR Conference on Human Information Interaction and Retrieval (SIGIR)

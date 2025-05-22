@@ -53,8 +53,8 @@ year: 2025
 bibentry: inproceedings
 bib:
   # journal: Springer # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
-  booktitle: CHIIR '25: Proceedings of the 2025 ACM SIGIR Conference on Human Information Interaction and Retrieval (SIGIR)
-  editor: George Buchanan, Haiming Liu, Dana McKAy, Douglas Oard
+  booktitle: CHIIR '25: Proceedings of the 2025 ACM SIGIR Conference on Human Information Interaction and Retrieval 
+  editor: #George Buchanan, Haiming Liu, Dana McKAy, Douglas Oard
   publisher: Association for Computing Machinery
   address: New York, NY, United States
   doi: 10.1145/3698204.3716470

@@ -2,10 +2,10 @@
 layout: team-member # do not change
 
 #### these fields are mandatory. please fill them out
-first_name: Artsiom
-last_name: Auramuk
-title: "Artsiom Auramuk"
-key: auramuk # this should be your lastname in lower case; the key is important for publications or other listings that need to be linked to your profile. it needs to be unique (should there be someone else with the same lastname, please contact the admin)
+first_name: Emmanouil
+last_name: Karystinaios
+title: "Emmanouil Karystinaios"
+key: karystinaios # this should be your lastname in lower case; the key is important for publications or other listings that need to be linked to your profile. it needs to be unique (should there be someone else with the same lastname, please contact the admin)
 
 # choose one of the following: 
 # - "faculty": Faculty
@@ -13,14 +13,12 @@ key: auramuk # this should be your lastname in lower case; the key is important 
 # - "undergrad": Undergraduate Students
 # - "phdgrad": PhD Graduates
 # - "alumni": Other Alumni
-# - "administration": Administration/Secretary
-# - "tech": Technical Support
-role: administration-assistant
+role: phdgrad
 
-email:  artsiom.auramuk@jku.at # this is your work e-mail address
-image: /assets/images/team_colored/auramuk.png # insert the relative link to your profile image
+email:  emmanouil.karystinaios@jku.at # this is your work e-mail address
+image: /assets/images/team_colored/karystinaios.jpeg# insert the relative link to your profile image
 organization: Johannes Kepler University Linz # usually you leave this unchanged, but if your have a different organization, feel free to change the property
-position: Secretary Assistant # This is the position that you have within your organization. e.g. "Project Assistant", "University Assistant", "Technical Support", "Student Research" (or whatever Marc tells you^^)
+position: PostDoc # This is the position that you have within your organization. e.g. "Project Assistant", "University Assistant", "Technical Support", "Student Research" (or whatever Marc tells you^^)
 ####
 
 
@@ -33,31 +31,31 @@ position: Secretary Assistant # This is the position that you have within your o
 # in degrees_pre you can state all your degrees that should be displayed in front of your name e.g. "Dr", "DI", "Prof" etc. (or a combination of several)
 degrees_pre: 
 # in degrees_post you can state all your degrees that should be displayed after your name e.g. "BSc", "MSc" etc. (or a combination of several)
-degrees_post: 
+degrees_post: PhD
 
 # the location property states your work address. Usually you would only need to adjust the room number below i.e. change "0357" which is Marc's office to your own
 location: "Johannes Kepler University Linz<br />
                 Institute of Computational Perception<br />
                 Altenberger Straße 69<br />
-                Science Park 3, 443<br />
+                Science Park 3, 406<br />
                 A-4040 Linz, Austria"
 
 # thats your office number. usually you only need to replace the last 4 numbers with your own extension i.e. replace "6635" (you can find the extension on the right top of your office phone)
-phone: "+43 732 2468 4710"
+phone: "+43 732 2468 4718"
 # if you have a fax you can enter your fax information here
 fax:
 # add your twitter handle (e.g. "marc_streit")
 twitter: 
 # add your github username (e.g. "mstreit")
-github: 
+github: manoskary
 # add your google scholar key (e.g. "l7TTSP0AAAAJ")
-google_scholar: 
+google_scholar: bQRK3eYAAAAJ
 # add your linkedin username (e.g. "marcstreit")
-linkedin: 
+linkedin: manos-karistineos
 # here you can add a link to your CV (e.g. "http://data.jku-vds-lab.at/team/marc/cv_streit.pdf")
 cv:
 # here you can add a link to a personal website
-website:
+website: https://emmanouil-karystinaios.github.io/
 
 
 # uncomment this property, if your personal page should have a navigation for publications (i.e. if you have many publiations). usually you don't need this.
@@ -67,3 +65,7 @@ website:
 
 ####
 ---
+
+Emmanouil Karystinaios is a researcher in artificial intelligence, recently completing his Ph.D. at the Computational Perception Institute of Johannes Kepler University. His research focuses on Graph Neural Networks, Computational Musicology, and Music Information Retrieval. Currently, he is working on the Automatic Analysis of Symbolic Music using Graph Neural Networks (GNNs) and on Generative Music Medicine, exploring the use of AI-generated music in therapeutic contexts.
+
+His past and ongoing work includes Cadence Detection, Structural Segmentation, and developing Python packages such as Partitura and GraphMuse for symbolic music processing.

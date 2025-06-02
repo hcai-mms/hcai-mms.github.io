@@ -4,8 +4,8 @@ layout: team-member # do not change
 #### these fields are mandatory. please fill them out
 first_name: Metin 
 last_name: Hasan
-title: "Metin Hasan“
-key: Hasan # this should be your lastname in lower case; the key is important for publications or other listings that need to be linked to your profile. it needs to be unique (should there be someone else with the same lastname, please contact the admin)
+title: "Metin Hasan"
+key: hasan # this should be your lastname in lower case; the key is important for publications or other listings that need to be linked to your profile. it needs to be unique (should there be someone else with the same lastname, please contact the admin)
 
 # choose one of the following: 
 # - "faculty": Faculty
@@ -15,8 +15,8 @@ key: Hasan # this should be your lastname in lower case; the key is important fo
 # - "alumni": Other Alumni
 role: undergrad
 
-email: hasansamimetin@hotmail.com # this is your work e-mail address
-image: /assets/images/team_colored/hasan.jpeg # insert the relative link to your profile image
+email: metin.hassan@jku.at # this is your work e-mail address
+image: /assets/images/team_colored/hasan.jpg # insert the relative link to your profile image
 organization: Johannes Kepler University Linz # usually you leave this unchanged, but if your have a different organization, feel free to change the property
 position: Student Research Assistant # This is the position that you have within your organization. e.g. "Project Assistant", "University Assistant", "Technical Support", "Student Research" (or whatever Marc tells you^^)
 ####

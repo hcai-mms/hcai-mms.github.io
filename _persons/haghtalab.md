@@ -2,10 +2,10 @@
 layout: team-member # do not change
 
 #### these fields are mandatory. please fill them out
-first_name: Artsiom
-last_name: Auramuk
-title: "Artsiom Auramuk"
-key: auramuk # this should be your lastname in lower case; the key is important for publications or other listings that need to be linked to your profile. it needs to be unique (should there be someone else with the same lastname, please contact the admin)
+first_name: Hanif 
+last_name: Haghtalab
+title: "Hanif Haghtalab"
+key: hasan # this should be your lastname in lower case; the key is important for publications or other listings that need to be linked to your profile. it needs to be unique (should there be someone else with the same lastname, please contact the admin)
 
 # choose one of the following: 
 # - "faculty": Faculty
@@ -13,16 +13,13 @@ key: auramuk # this should be your lastname in lower case; the key is important 
 # - "undergrad": Undergraduate Students
 # - "phdgrad": PhD Graduates
 # - "alumni": Other Alumni
-# - "administration": Administration/Secretary
-# - "tech": Technical Support
-role: administration-assistant
+role: undergrad
 
-email:  artsiom.auramuk@jku.at # this is your work e-mail address
-image: /assets/images/team_colored/auramuk.png # insert the relative link to your profile image
+email: hanif.haghtalab@jku.at # this is your work e-mail address
+image: /assets/images/team_colored/hanif.jpg # insert the relative link to your profile image
 organization: Johannes Kepler University Linz # usually you leave this unchanged, but if your have a different organization, feel free to change the property
-position: Secretary Assistant # This is the position that you have within your organization. e.g. "Project Assistant", "University Assistant", "Technical Support", "Student Research" (or whatever Marc tells you^^)
+position: Student Research Assistant # This is the position that you have within your organization. e.g. "Project Assistant", "University Assistant", "Technical Support", "Student Research" (or whatever Marc tells you^^)
 ####
-
 
 
 # cg_website: "https://www.jku.at/en/institute-of-computer-graphics/about-us/team/marc-streit/" # if you add this link, there won't be a local page for your profile, but you would be redirected to another website (usually you would link your profile in the cg website)
@@ -39,11 +36,11 @@ degrees_post:
 location: "Johannes Kepler University Linz<br />
                 Institute of Computational Perception<br />
                 Altenberger Straße 69<br />
-                Science Park 3, 443<br />
+                Science Park 3, 406<br />
                 A-4040 Linz, Austria"
 
 # thats your office number. usually you only need to replace the last 4 numbers with your own extension i.e. replace "6635" (you can find the extension on the right top of your office phone)
-phone: "+43 732 2468 4710"
+phone: 
 # if you have a fax you can enter your fax information here
 fax:
 # add your twitter handle (e.g. "marc_streit")

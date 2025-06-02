@@ -5,5 +5,5 @@ year: 2017-2020	# corresponding year/duration
 funding_agency: Austrian Research Fund (FWF) # if needed
 baseurl: https://www.cp.jku.at/research/projects/V579/project.html
 budget: # if needed
-type: fwf
+type: fwf #
 ---

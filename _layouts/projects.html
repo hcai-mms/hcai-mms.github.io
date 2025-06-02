@@ -47,12 +47,12 @@ layout: default
   <br>
 
   <h1 id="fwf">FWF Projects</h1>
-  {% for project in site.projects reversed %}
+  {% for project in site.projects  %}
     {% if project.type == "FWF" %}
       <div class="project-list-entry">
-        <b><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></b><br />
+         <i>{{ project.year }}</i>
+        <b><a href="{{ site.baseurl }}">{{ project.title }}</a></b><br />
         {{ project.description }}<br />
-        <i>{{ project.year }}</i>
       </div>
     {% endif %}
   {% endfor %}

@@ -33,7 +33,7 @@ layout: default
   <br>
 
   <h1 id="eu">EU Projects</h1>
-  {% for project in site.projects reversed %}
+  {% for project in site.projects %}
     {% if project.type == "EU" %}
       <div class="project-list-entry">
          <i>{{ project.year }}</i>

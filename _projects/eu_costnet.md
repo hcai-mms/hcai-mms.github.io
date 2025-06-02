@@ -1,9 +1,9 @@
 ---
 layout: project # do not change this
 title: 	European Cooperation for Statistics of Network Data Science (COSTNET)	# title of the project
-year: 2016-202	# corresponding year/duration
+year: 2016-2020	# corresponding year/duration
 funding_agency: European Commission in Scuece and Technology (COST) # if needed
-website: https://www.cost.eu/
+url: https://www.cost.eu/
 budget: # if needed
 type: EU #
 ---

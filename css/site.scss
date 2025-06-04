@@ -788,6 +788,34 @@ ul.post-list {
 }
 
 
+.project-list-block {
+  // min-height: px;
+  // padding-bottom: 10px;
+  // padding-top: 10px;
+  display: block;
+
+  .project-year {
+    min-width: 50px;
+    // height: 100px;
+    float: left;
+    margin-right: 20px;
+    // @include box-shadow(1px, 1px, 4px, transparentize(black, 0.75));
+    // @include border-radius(3px);
+
+    
+    @include span-columns(1);
+    @include single-column-content();
+    
+  }
+
+  p {
+    
+    @include span-columns(9);
+    @include single-column-content();
+  }
+}
+
+
 @mixin nav-content() {
 
   @include page-content(#FFF);

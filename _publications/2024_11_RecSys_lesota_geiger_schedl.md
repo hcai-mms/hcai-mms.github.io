@@ -37,11 +37,11 @@ image_large:
 # - schedl # .md file exists for this person
 # - Max Mustermann # there is no .md file for this person.
 authors:
--lesota
--geiger
--Walder, Max
--Kowald, Dominik
--schedl
+- lesota
+- geiger
+- Walder, Max
+- Kowald, Dominik
+- schedl
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG
 journal-short: RecSys

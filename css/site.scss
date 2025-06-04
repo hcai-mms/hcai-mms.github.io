@@ -806,7 +806,7 @@ ul.post-list {
     
   }
   p {
-    @include span-columns(10);
+    // @include span-columns(10);
     
   }
 @include single-column-content();

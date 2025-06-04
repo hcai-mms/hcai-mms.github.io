@@ -48,7 +48,7 @@ layout: default
 
   <h1 id="fwf">FWF Projects</h1>
   {% for project in site.projects  %}
-    {% if project.type == "FWF" %}
+    {% if project.type == "fwf" %}
       <div class="project-list-entry">
          <i>{{ project.year }}</i>
         <b><a href="{{ site.baseurl }}">{{ project.title }}</a></b><br />
@@ -62,7 +62,7 @@ layout: default
 
   <h1 id="ffg">FFG Projects</h1>
   {% for project in site.projects reversed %}
-    {% if project.type == "FFG" %}
+    {% if project.type == "ffg" %}
       <div class="project-list-entry">
         <b><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></b><br />
         {{ project.description }}<br />
@@ -88,7 +88,7 @@ layout: default
 
   <h1 id="industry">Industry Projects</h1>
   {% for project in site.projects reversed %}
-    {% if project.type == "Industry" %}
+    {% if project.type == "industry" %}
       <div class="project-list-entry">
         <b><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></b><br />
         {{ project.description }}<br />
@@ -101,7 +101,7 @@ layout: default
 
   <h1 id="others">Other Projects</h1>
   {% for project in site.projects reversed %}
-    {% if project.type == "Other" %}
+    {% if project.type == "other" %}
       <div class="project-list-entry">
         <b><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></b><br />
         {{ project.description }}<br />

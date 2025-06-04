@@ -36,7 +36,8 @@ layout: default
   {% for project in site.projects %}
     {% if project.type == "EU" %}
          <div class="project-list-block">
-       <p> <div class="project-year">{{ project.year }}</div>
+           <i class="project-year">{{ project.year }}</i>
+       <p> 
        <b><a href="{{ project.url }}" target="_blank">{{ project.title }}</a></b>
         {{ project.description }}, funded by
         {{ project.funding_agency }} </p>

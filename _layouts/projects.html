@@ -35,10 +35,10 @@ layout: default
   <h1 id="eu">EU Projects</h1>
   {% for project in site.projects %}
     {% if project.type == "EU" %}
-      <div class="project-list-entry">
-         [{{ project.year }}]   rendered space 
-        <b><a href="{{ project.url }}">{{ project.title }}</a>
-        {{ project.description }} , funded by
+         <div class="project-list-entry">
+        <p>{{ project.year }}</p>
+        <b><a href="{{ project.url }}" target="_blank">{{ project.title }}</a></b>
+        {{ project.description }}, funded by
         {{ project.funding_agency }}
       </div>
     {% endif %}

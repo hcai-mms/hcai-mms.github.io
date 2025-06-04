@@ -50,11 +50,12 @@ layout: default
   <h1 id="fwf">FWF Projects</h1>
   {% for project in site.projects  %}
     {% if project.type == "fwf" %}
-      <div class="project-list-entry">
-         <i>{{ project.year }}</i>
-        <b><a href="{{ site.baseurl }}">{{ project.title }}</a></b><br />
-        {{ project.description }}<br />
-        <i>{{ project.funding_agency }}</i>
+      <div class="project-list-block">
+         <i class="project-year">{{ project.year }}</i>
+        <p>
+        <b><a href="{{ project.ext_url }}" target=_blank>{{ project.title }}</a></b>
+        {{ project.description }}
+        {{ project.funding_agency }} </p>
       </div>
     {% endif %}
   {% endfor %}
@@ -64,10 +65,12 @@ layout: default
   <h1 id="ffg">FFG Projects</h1>
   {% for project in site.projects reversed %}
     {% if project.type == "ffg" %}
-      <div class="project-list-entry">
-        <b><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></b><br />
-        {{ project.description }}<br />
-        <i>{{ project.year }}</i>
+       <div class="project-list-block">
+         <i class="project-year">{{ project.year }}</i>
+        <p>
+        <b><a href="{{ project.ext_url }}" target=_blank>{{ project.title }}</a></b>
+        {{ project.description }}
+        {{ project.funding_agency }} </p>
       </div>
     {% endif %}
   {% endfor %}
@@ -77,10 +80,12 @@ layout: default
   <h1 id="lit">LIT Projects</h1>
   {% for project in site.projects reversed %}
     {% if project.type == "LIT" %}
-      <div class="project-list-entry">
-        <b><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></b><br />
-        {{ project.description }}<br />
-        <i>{{ project.year }}</i>
+   <div class="project-list-block">
+         <i class="project-year">{{ project.year }}</i>
+        <p>
+        <b><a href="{{ project.ext_url }}" target=_blank>{{ project.title }}</a></b>
+        {{ project.description }}
+        {{ project.funding_agency }} </p>
       </div>
     {% endif %}
   {% endfor %}
@@ -90,10 +95,12 @@ layout: default
   <h1 id="industry">Industry Projects</h1>
   {% for project in site.projects reversed %}
     {% if project.type == "industry" %}
-      <div class="project-list-entry">
-        <b><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></b><br />
-        {{ project.description }}<br />
-        <i>{{ project.year }}</i>
+   <div class="project-list-block">
+         <i class="project-year">{{ project.year }}</i>
+        <p>
+        <b><a href="{{ project.ext_url }}" target=_blank>{{ project.title }}</a></b>
+        {{ project.description }}
+        {{ project.funding_agency }} </p>
       </div>
     {% endif %}
   {% endfor %}
@@ -102,11 +109,12 @@ layout: default
 
   <h1 id="others">Other Projects</h1>
   {% for project in site.projects reversed %}
-    {% if project.type == "other" %}
-      <div class="project-list-entry">
-        <b><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></b><br />
-        {{ project.description }}<br />
-        <i>{{ project.year }}</i>
+   <div class="project-list-block">
+         <i class="project-year">{{ project.year }}</i>
+        <p>
+        <b><a href="{{ project.ext_url }}" target=_blank>{{ project.title }}</a></b>
+        {{ project.description }}
+        {{ project.funding_agency }} </p>
       </div>
     {% endif %}
   {% endfor %}

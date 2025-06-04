@@ -795,10 +795,8 @@ ul.post-list {
   display: block;
 
   .project-year {
-    min-width: 100px;
-    // height: 100px;
     float: left;
-    margin-right: 20px;
+    margin-right: 10px;
     // @include box-shadow(1px, 1px, 4px, transparentize(black, 0.75));
     // @include border-radius(3px);
 
@@ -807,10 +805,8 @@ ul.post-list {
     // @include single-column-content();
     
   }
-
   p {
-    
-    @include span-columns(9);
+    @include span-columns(10);
     @include single-column-content();
   }
 }

@@ -33,7 +33,7 @@ layout: default
   <br>
 
   <h1 id="eu">EU Projects</h1>
-  {% for project in site.projects %}
+  {% for project in site.projects reversed %}
     {% if project.type == "EU" %}
          <div class="project-list-block">
            <i class="project-year">{{ project.year }}</i>
@@ -48,7 +48,7 @@ layout: default
   <br>
 
   <h1 id="fwf">FWF Projects</h1>
-  {% for project in site.projects  %}
+  {% for project in site.projects reversed  %}
     {% if project.type == "fwf" %}
   <div class="project-list-block">
            <i class="project-year">{{ project.year }}</i>
@@ -63,7 +63,7 @@ layout: default
   <br>
 
   <h1 id="ffg">FFG Projects</h1>
-  {% for project in site.projects  %}
+  {% for project in site.projects reversed  %}
     {% if project.type == "ffg" %}
     <div class="project-list-block">
            <i class="project-year">{{ project.year }}</i>
@@ -78,7 +78,7 @@ layout: default
   <br>
 
   <h1 id="lit">LIT Projects</h1>
-  {% for project in site.projects  %}
+  {% for project in site.projects reversed  %}
     {% if project.type == "LIT" %}
  <div class="project-list-block">
            <i class="project-year">{{ project.year }}</i>
@@ -93,7 +93,7 @@ layout: default
   <br>
 
   <h1 id="industry">Industry Projects</h1>
-  {% for project in site.projects  %}
+  {% for project in site.projects reversed  %}
     {% if project.type == "industry" %}
  <div class="project-list-block">
            <i class="project-year">{{ project.year }}</i>
@@ -108,7 +108,7 @@ layout: default
   <br>
 
   <h1 id="others">Other Projects</h1>
-  {% for project in site.projects  %}
+  {% for project in site.projects reversed  %}
    {% if project.type == "industry" %}
  <div class="project-list-block">
            <i class="project-year">{{ project.year }}</i>

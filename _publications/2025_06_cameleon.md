@@ -38,15 +38,15 @@ image_large:
 # - schedl # .md file exists for this person
 # - Max Mustermann # there is no .md file for this person.
 authors:
-- Muhammad Irzam Liaqat
+- liaqat
 - nawaz
-- Muhammad Zaigham Zaheer
-- Muhammad Saad Saeed
-- Hassan Sajjad
-- Tom De Schepper
-- Karthik Nandakumar
-- Muhammad Haris Khan
-- Ignazio Gallo
+- Zaheer, Muhammad Zaigham 
+- Saeed, Muhammad Saad 
+- Sajjad, Hassan 
+- De Schepper, Tom 
+- Nandakumar, Karthik 
+- Khan, Muhammad Haris 
+- Gallo, Ignazio 
 - schedl
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG

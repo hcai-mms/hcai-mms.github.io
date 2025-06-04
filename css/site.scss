@@ -795,7 +795,7 @@ ul.post-list {
   display: block;
 
   .project-year {
-    min-width: 50px;
+    min-width: 100px;
     // height: 100px;
     float: left;
     margin-right: 20px;
@@ -803,8 +803,8 @@ ul.post-list {
     // @include border-radius(3px);
 
     
-    @include span-columns(1);
-    @include single-column-content();
+    @include span-columns(2);
+    // @include single-column-content();
     
   }
 

@@ -36,8 +36,7 @@ layout: default
   {% for project in site.projects reversed %}
     {% if project.type == "EU" %}
          <div class="project-list-block">
-           <div class="project-year">{{ project.year }}</div>
-      <div>
+           <i class="project-year">{{ project.year }}</i>
            <p> 
           {% if project.ext_url %}
        <b><a href="{{ project.ext_url }}" target="_blank">{{ project.title }}</a></b>
@@ -46,7 +45,6 @@ layout: default
           {% endif %}
         {{ project.description }}, funded by
         {{ project.funding_agency }} </p>
-      </div>
       </div>
     {% endif %}
   {% endfor %}

@@ -87,7 +87,11 @@ layout: default
  <div class="project-list-block">
            <i class="project-year">{{ project.year }}</i>
        <p> 
+           {% if project.ext_url %}
        <b><a href="{{ project.ext_url }}" target="_blank">{{ project.title }}</a></b>
+           {% else %}
+          <b>{{ project.title }}</b>
+          {% endif %}
         {{ project.description }}, funded by
         {{ project.funding_agency }} </p>
       </div>
@@ -121,7 +125,11 @@ layout: default
  <div class="project-list-block">
            <i class="project-year">{{ project.year }}</i>
        <p> 
+                   {% if project.ext_url %}
        <b><a href="{{ project.ext_url }}" target="_blank">{{ project.title }}</a></b>
+           {% else %}
+          <b>{{ project.title }}</b>
+          {% endif %}
         {{ project.description }}, funded by
         {{ project.funding_agency }} </p>
       </div>

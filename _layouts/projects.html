@@ -51,8 +51,7 @@ layout: default
 
   <br>
 
-  <h1 id="fwf"> FWF Projects <a href="https://www.fwf.ac.at/en/" target="_blank">Austrian
-              Research Fund (FWF)</a> </h1>
+  <h1 id="fwf"><a href="https://www.fwf.ac.at/en/" target="_blank">Austrian Research Fund (FWF)</a> </h1>
   
   {% for project in site.projects reversed  %}
     {% if project.type == "fwf" %}
@@ -68,7 +67,7 @@ layout: default
 
   <br>
 
-  <h1 id="ffg">FFG Projects</h1>
+  <h1 id="ffg"><a href="https://www.ffg.at/en" target="_blank">Austrian Promotion Agency (FFG)</a> </h1>
   {% for project in site.projects reversed  %}
     {% if project.type == "ffg" %}
     <div class="project-list-block">
@@ -87,7 +86,7 @@ layout: default
 
   <br>
 
-  <h1 id="lit">LIT Projects</h1>
+  <h1 id="lit"><a href="https://www.jku.at/en/linz-institute-of-technology/" target="_blank">Linz Institute of Technology (LIT)</a></h1>
   {% for project in site.projects reversed  %}
     {% if project.type == "LIT" %}
  <div class="project-list-block">

@@ -795,15 +795,16 @@ ul.post-list {
   display: block;
 
   .project-year {
-    float: right;
+  
     margin-right: 10px;
+    text-align: right;
 
-    @include span-columns(2);
-    
+    @include span-columns(1);
+    @include omega();
   }
   p {
     @include span-columns(10);
-    
+    @include omega();
   }
 @include single-column-content();
 }

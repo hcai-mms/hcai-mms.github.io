@@ -793,7 +793,7 @@ ul.post-list {
   // padding-bottom: 10px;
   // padding-top: 10px;
   display: block;
-  
+  @include span-columns(8)
 
   .project-year {
     float: left;

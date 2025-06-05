@@ -795,18 +795,14 @@ ul.post-list {
   display: block;
 
   .project-year {
-    float: left;
+    float: right;
     margin-right: 10px;
-    // @include box-shadow(1px, 1px, 4px, transparentize(black, 0.75));
-    // @include border-radius(3px);
 
-    
-    // @include span-columns(2);
-    // @include single-column-content();
+    @include span-columns(2);
     
   }
   p {
-    // @include span-columns(10);
+    @include span-columns(10);
     
   }
 @include single-column-content();
@@ -1301,10 +1297,10 @@ ul.project-icon-list li {
 // {  background-color: $team-color-light;
 // }
 
-.team-members-org{
+// .team-members-org{
   
   
-}
+// }
 .team-members-org .member{
   width: 49%;
   float: left;

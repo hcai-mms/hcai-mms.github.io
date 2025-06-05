@@ -36,7 +36,7 @@ degrees_post:
 location: "Johannes Kepler University Linz<br />
                 Institute of Computational Perception<br />
                 Altenberger Straße 69<br />
-                Science Park 3, 406<br />
+                Science Park 3, 4.th floor<br />
                 A-4040 Linz, Austria"
 
 # thats your office number. usually you only need to replace the last 4 numbers with your own extension i.e. replace "6635" (you can find the extension on the right top of your office phone)

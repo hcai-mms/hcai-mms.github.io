@@ -41,7 +41,7 @@ location: "Johannes Kepler University Linz<br />
                 A-4040 Linz, Austria"
 
 # thats your office number. usually you only need to replace the last 4 numbers with your own extension i.e. replace "6635" (you can find the extension on the right top of your office phone)
-phone: 
+phone: "+43 732 2468 4717"
 # if you have a fax you can enter your fax information here
 fax:
 # add your twitter handle (e.g. "marc_streit")

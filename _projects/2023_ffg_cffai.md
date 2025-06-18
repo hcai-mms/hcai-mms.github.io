@@ -6,6 +6,6 @@ funding_agency: Austrian Research Promotion Agency (FFG) # if needed
 ext_url: 
 budget: # if needed
 type: ffg # needed
-description: , jointly with Know-Center GmbH (COMET)
+description: jointly with Know-Center GmbH (COMET)
 ---
 

@@ -6,4 +6,5 @@ funding_agency: Austrian Research Fund (FWF) # if needed
 ext_url: https://humrec.github.io
 budget: # if needed
 type: fwf
+description: PI Project
 ---

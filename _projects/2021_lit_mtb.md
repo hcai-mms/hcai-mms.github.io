@@ -6,4 +6,5 @@ funding_agency: Linz Institute of Technology (LIT) # if needed
 ext_url: https://www.ars.electronica.at/newdigitaldeal/en/music-tower-blocks/
 budget: # if needed
 type: LIT
+description: Special LIT Call for Ars Electrionica Festival
 ---

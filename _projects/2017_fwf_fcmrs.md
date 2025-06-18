@@ -6,4 +6,5 @@ funding_agency: Austrian Research Fund (FWF) # if needed
 ext_url: https://www.cp.jku.at/research/projects/V579/project.html
 budget: # if needed
 type: fwf #
+description: PI Project
 ---

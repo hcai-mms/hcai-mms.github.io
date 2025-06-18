@@ -6,4 +6,5 @@ funding_agency: Austrian Research Fund (FWF) # if needed
 ext_url: https://www.bilateral-ai.net/
 budget: # if needed
 type: fwf
+description: Cluster of Excellence 
 ---

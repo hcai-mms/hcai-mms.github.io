@@ -6,4 +6,5 @@ funding_agency: Austrian Research Fund (FWF) # if needed
 ext_url: https://dfc.hcai.at
 budget: # if needed
 type: fwf
+description: doc.funds.connect Project
 ---

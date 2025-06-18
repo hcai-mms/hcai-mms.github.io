@@ -6,4 +6,5 @@ funding_agency: Linz Institute of Technology (LIT) # if needed
 ext_url: https://www.jku.at/en/institute-of-technology/research/lit-calls/schedl/
 budget: # if needed
 type: LIT 
+description: Seed Project
 ---

@@ -70,7 +70,7 @@ bib:
 preprint:	 # here you can put the preprint link (arxiv.org, osf.io,...) e.g. https://arxiv.org/abs/1910.00969
 
 # Add things like "Best Paper Award at InfoVis 2099, selected out of 4000 submissions"
-award:
+award: Best Reviewer Award
 
 # state key of an internal tool. This will link to the tool site e.g. lineup (usually not needed)
 project: 

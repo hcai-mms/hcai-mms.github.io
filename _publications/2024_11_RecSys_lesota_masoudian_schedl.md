@@ -38,9 +38,9 @@ image_large:
 # - schedl # .md file exists for this person
 # - Max Mustermann # there is no .md file for this person.
 authors:
+- schedl
 - lesota
 - masoudian
-- schedl
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG
 journal-short: CEUR Workshop Proceedings
@@ -51,7 +51,7 @@ year: 2024
 # publisherurl: https://link.springer.com/chapter/10.1007/978-3-030-72240-1_60 # add link to publisher page of your publication
 
 # what is the publication type and other bib specific properties
-bibentry: article
+bibentry: schedl2024importance
 bib:
   # journal: Springer # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
   booktitle: Proceedings of the 11th Joint Workshop on Interfaces and Human Decision Making for Recommender Systems co-located with 18th ACM Conference on Recommender Systems (RecSys 2024)

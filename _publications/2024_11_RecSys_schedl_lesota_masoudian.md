@@ -15,7 +15,7 @@ abstract: "Cognitive biases have been studied in psychology, sociology, and beha
 
 
 # set this url, if your paper is on another server; defaults to data.jku-vds-lab.at
-paper_content_url: https://ceur-ws.org/Vol-3815/paper10.pdf
+paper_content_url: "https://ceur-ws.org/Vol-3815/paper10.pdf"
 # uncomment the "hide" property, if you do not want the publication to be displayed on the website (usually you don't need this)
 # hide: True
 # uncomment the "non_group_project" property, if you only want the publication to be displayed on your personal page (i.e. publications where you contributed, but does not have anything to do with the Vis Group e.g. Master Thesis,...)
@@ -54,7 +54,7 @@ year: 2024
 bibentry: schedl2024importance
 bib:
   # journal: Springer # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
-  booktitle: Proceedings of the 11th Joint Workshop on Interfaces and Human Decision Making for Recommender Systems co-located with 18th ACM Conference on Recommender Systems (RecSys 2024)
+  booktitle: "Proceedings of the 11th Joint Workshop on Interfaces and Human Decision Making for Recommender Systems co-located with 18th ACM Conference on Recommender Systems (RecSys 2024)"
   editor: 
   publisher: CEUR-WS.org
   address: 

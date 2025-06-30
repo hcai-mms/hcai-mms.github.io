@@ -58,7 +58,7 @@ bib:
   editor: 
   publisher: CEUR-WS.org
   address: 
-  doi:		
+  doi:		https://doi.org/10.48550/arXiv.2408.12492 
   url: https://ceur-ws.org/Vol-3815/paper10.pdf
   volume: 
   number: 

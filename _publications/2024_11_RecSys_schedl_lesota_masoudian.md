@@ -15,7 +15,7 @@ abstract: "Cognitive biases have been studied in psychology, sociology, and beha
 
 
 # set this url, if your paper is on another server; defaults to data.jku-vds-lab.at
-# paper_content_url: 
+# publisherurl: https://link.springer.com/chapter/10.1007/978-3-030-72240-1_60 
 # uncomment the "hide" property, if you do not want the publication to be displayed on the website (usually you don't need this)
 # hide: True
 # uncomment the "non_group_project" property, if you only want the publication to be displayed on your personal page (i.e. publications where you contributed, but does not have anything to do with the Vis Group e.g. Master Thesis,...)

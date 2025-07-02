@@ -56,7 +56,7 @@ year: 2025
 # publisherurl: https://link.springer.com/chapter/10.1007/978-3-030-72240-1_60 # add link to publisher page of your publication
 
 # what is the publication type and other bib specific properties
-bibentry: Peintner-2025
+bibentry: article{Peintner2025emotional_rec
 bib:
   # journal: Springer # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
   booktitle: "Transactions of the International Society for Music Information Retrieval" 

@@ -51,7 +51,7 @@ year: 2024
  # add link to publisher page of your publication
 
 # what is the publication type and other bib specific properties
-bibentry: schedl2024importance
+bibentry: article
 bib:
   # journal: Springer # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
   booktitle: Proceedings of the 11th Joint Workshop on Interfaces and Human Decision Making for Recommender Systems co-located with 18th ACM Conference on Recommender Systems (RecSys 2024)

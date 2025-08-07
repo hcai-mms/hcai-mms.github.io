@@ -43,7 +43,6 @@ image_large:
 # - Max Mustermann # there is no .md file for this person.
 authors:
 - Nico Filzmoser
-- schedl
 
 # when was this publication written/ when was the publication accepted (e.g. 2020)
 year: 2025

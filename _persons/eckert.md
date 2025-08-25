@@ -47,7 +47,7 @@ fax:
 # add your twitter handle (e.g. "marc_streit")
 twitter: 
 # add your github username (e.g. "mstreit")
-github: 
+github: HannahEckert
 # add your google scholar key (e.g. "l7TTSP0AAAAJ")
 google_scholar: "elTC__EAAAAJ"
 # add your linkedin username (e.g. "marcstreit")

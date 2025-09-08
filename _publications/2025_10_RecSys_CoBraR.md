@@ -53,7 +53,7 @@ year: 2025
 # what is the publication type and other bib specific properties
 bibentry: inproceedings
 bib:
-  journal: International Journal of Multimedia Information Retrieval # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
+  journal: Proceedings of the Nineteenth ACM Conference on Recommender Systems # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
   booktitle: 
   editor: 
   publisher: Association for Computing Machinery
@@ -65,7 +65,7 @@ bib:
   pages: 1256–1260
   month: 
 
-preprint:	 # here you can put the preprint link (arxiv.org, osf.io,...) e.g. https://arxiv.org/abs/1910.00969
+preprint:	https://www.arxiv.org/abs/2508.03518 # here you can put the preprint link (arxiv.org, osf.io,...) e.g. https://arxiv.org/abs/1910.00969
 
 # Add things like "Best Paper Award at InfoVis 2099, selected out of 4000 submissions"
 award:
@@ -101,7 +101,7 @@ supplements:
 #  linksym: true
 
 # Link to the repository where the code is hostet
-code:
+code: https://github.com/hcai-mms/cobrar
 
 # After the --- you can put information that you want to appear on the website using markdown formatting or HTML. A good example are acknowledgements, extra references, an erratum, etc.
 ---

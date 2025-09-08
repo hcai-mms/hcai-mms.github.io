@@ -8,7 +8,7 @@ title: "Mitigating Gender Bias in Job Ranking Systems Using Job Advertisement Ne
 # "paper": Peer-Reviewed Journal and Conference Papers
 # "preprint": Preprint
 # "thesis": Thesis (e.g. Master/PhD Thesis)
-type: workshop
+type: paper
 abstract: "Transformer-based Job Ranking Systems (JRSs) are vulnerable to societal biases inherited in unbalanced datasets. These biases often manifest as unjust job rankings, particularly disadvantaging candidates of different genders. Most bias mitigation techniques leverage candidates’ gender and align gender distributions within the embeddings of JRSs to mitigate bias. While such methods effectively align distributional properties and make JRSs agnostic to gender, they frequently fall short in addressing empirical fairness metrics, such as the performance gap across genders. In this study, we shift our attention from candidate gender to mitigate bias based on gendered language in job advertisements. We propose a novel neutrality score based on automatically discovered biased words in job ads and use it to re-rank the model’s decisions. We evaluate our method by comparing it with different bias mitigation strategies and empirically demonstrate that our proposed method not only improves fairness but can also enhance the model’s performance." # insert the abstract of your publication between the quotes; you can use html e.g. to make links (<a></a>) or generate bold (<b></b>) etc. text 
 
 ####

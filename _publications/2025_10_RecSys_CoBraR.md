@@ -8,7 +8,7 @@ title: "Parameter-Efficient Single Collaborative Branch for Recommendation" # ti
 # "paper": Peer-Reviewed Journal and Conference Papers
 # "preprint": Preprint
 # "thesis": Thesis (e.g. Master/PhD Thesis)
-type: journal
+type: workshop
 abstract: "Recommender Systems (RS) often rely on representations of users and items in a joint embedding space and on a similarity metric to compute relevance scores. In modern RS, the modules to obtain user and item representations consist of two distinct and separate neural networks (NN). In multimodal representation learning, weight sharing has been proven effective in reducing the distance between multiple modalities of a same item. Inspired by these approaches, we propose a novel RS that leverages weight sharing between the user and item NN modules used to obtain the latent representations in the shared embedding space. The proposed framework consists of a single Collaborative Branch for Recommendation (CoBraR). We evaluate CoBraR by means of quantitative experiments on e-commerce and movie recommendation. Our experiments show that by reducing the number of parameters and improving beyond-accuracy aspects without compromising accuracy, CoBraR has the potential to be applied and extended for real-world scenarios." # insert the abstract of your publication between the quotes; you can use html e.g. to make links (<a></a>) or generate bold (<b></b>) etc. text 
 
 ####

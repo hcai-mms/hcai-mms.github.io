@@ -54,7 +54,7 @@ year: 2025
 # what is the publication type and other bib specific properties
 bibentry: inproceedings
 bib:
-  journal: International Journal of Multimedia Information Retrieval # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
+  journal: Proceedings of the Fourth Workshop on NLP for Positive Impact (NLP4PI) # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
   booktitle: 
   editor: 
   publisher: 

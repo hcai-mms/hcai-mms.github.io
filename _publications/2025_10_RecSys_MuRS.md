@@ -90,7 +90,7 @@ external-project: https://visualizationproject2023-4226c576e92e.herokuapp.com
 # preview-youtube-id: fTTh4rMeUCQ
 
 # the name of your publication pdf e.g. 2020_tvcg_confusionflow.pdf; this is usually uploaded to the caleydo aws server
-pdf: 2025_10_RecSys_MuRS.pdf
+pdf: /assets/pdf/2025_10_RecSys_MuRS.pdf
 # A supplement PDF e.g. 2017_preprint_taggle_supplement.pdf; this is usually uploaded to the caleydo aws server
 supplement: 
 

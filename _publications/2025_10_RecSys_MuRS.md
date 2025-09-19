@@ -39,7 +39,7 @@ image_large: 2025_10_RecSys_MuRS.png
 # - Max Mustermann # there is no .md file for this person.
 authors:
 - moscati
-- escobedo
+- escobedo-ticona
 - Hernandez Almanza, Eduardo
 - Peché, Jonas
 - schedl

@@ -76,7 +76,7 @@ award:
 project: 
 
 # Use this if you have an external project website e.g. https://ordino.caleydoapp.org/
-external-project: 
+external-project: https://visualizationproject2023-4226c576e92e.herokuapp.com
 
 # (deprecated)
 # # The key of the video .md file (in _videos subfolder)
@@ -90,17 +90,17 @@ external-project:
 # preview-youtube-id: fTTh4rMeUCQ
 
 # the name of your publication pdf e.g. 2020_tvcg_confusionflow.pdf; this is usually uploaded to the caleydo aws server
-pdf: 2025_10_RecSys_MuRS
+pdf: 2025_10_RecSys_MuRS.pdf
 # A supplement PDF e.g. 2017_preprint_taggle_supplement.pdf; this is usually uploaded to the caleydo aws server
 supplement: 
 
 # Extra supplements, such as talk slides, data sets, etc.
-supplements:
-- name: Dashboard
+# supplements:
+# - name: Dashboard
 #  # use link instead of abslink if you want to link to the master directory
-  abslink: visualizationproject2023-4226c576e92e.herokuapp.com
+  # abslink: 
 #  # defaults to a download icon, use this if you want a link-out icon
-  linksym: true
+  # linksym: true
 
 # Link to the repository where the code is hostet
 code: https://github.com/hcai-mms/multimodal_mir

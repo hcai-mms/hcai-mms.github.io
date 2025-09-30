@@ -62,8 +62,8 @@ website: https://tigxy.github.io
 ####
 ---
 
-During my studies at Johannes Kepler University Linz, I worked as a student research assistant at the Institute of Computational Perception. My research focused on Recommender Systems - initially on mitigating inherent biases, and later on leveraging multimodal side information to address cold-start and missing-modality scenarios. My work has been published in renowed conferences and journals, including SIGIR, RecSys, and TORS.
+During my studies at Johannes Kepler University Linz, I worked as a student research assistant at the Institute of Computational Perception. My research focused on Recommender Systems - initially on mitigating inherent biases, and later on leveraging multimodal side information to address cold-start and missing-modality scenarios. My work has been published in renowed conferences and journals, including *SIGIR*, *RecSys*, and *TORS*.
 
-In addition, I contributed to EmoMTB, a science communication project presented at the Ars Electronica Festival, which showcasing an interactive music exploration interface.
+In addition, I contributed to *EmoMTB*, a science communication project presented at the *Ars Electronica Festival*, with which we showcased an interactive music exploration interface.
 
 For the latest updates and my contact details, please visit [my website](https://tigxy.github.io).

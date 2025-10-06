@@ -2,7 +2,7 @@
 layout: default
 key: cambridge
 name: University of Cambridge
-name-short: CAM
+name-short: Cambridge
 # location: United Kingdome
 website: https://www.cam.ac.uk/
 national: false

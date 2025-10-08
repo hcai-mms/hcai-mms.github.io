@@ -55,7 +55,7 @@ year: 2025
 bibentry: inproceedings
 bib:
   journal: International Journal of Multimedia Information Retrieval # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
-  booktitle: CBMI '25: Proceedings of the 22nd International Conference on Content-based Multimedia Indexing
+  booktitle: "CBMI '25: Proceedings of the 22nd International Conference on Content-based Multimedia Indexing"
   editor: 
   publisher: 
   address: 

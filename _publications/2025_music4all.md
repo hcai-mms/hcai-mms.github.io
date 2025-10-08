@@ -54,7 +54,7 @@ year: 2025
 # what is the publication type and other bib specific properties
 bibentry: inproceedings
 bib:
-  journal: International Journal of Multimedia Information Retrieval # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
+  journal: International Conference on Content-Based Multimedia Indexing # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
   booktitle: "CBMI '25: Proceedings of the 22nd International Conference on Content-based Multimedia Indexing"
   editor: 
   publisher: 

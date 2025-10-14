@@ -50,7 +50,7 @@ journal-short: CEUR Workshop Proceedings
 year: 2025
 
 # if you have an explicit page you want to reference, use this tag; otherwise it will be generated from your doi
-# publisherurl: https://link.springer.com/chapter/10.1007/978-3-030-72240-1_60 # add link to publisher page of your publication
+publisherurl: https://ceur-ws.org/Vol-4045/ # add link to publisher page of your publication
 
 # what is the publication type and other bib specific properties
 bibentry: proceedings
@@ -61,8 +61,8 @@ bib:
   publisher: CEUR-WS.org
   address: 
   doi:		
-  url: 
-  volume: 
+  url: https://ceur-ws.org/Vol-4045/
+  volume: 4045
   number: 
   pages: 
   month: 

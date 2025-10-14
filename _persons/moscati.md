@@ -16,7 +16,7 @@ key: moscati # this should be your lastname in lower case; the key is important 
 role: raPhD
 
 email:  marta.moscati@jku.at # this is your work e-mail address
-image: /assets/images/team_colored/moscati.jpg # insert the relative link to your profile image
+image: /assets/images/team_colored/moscati_2.jpg # insert the relative link to your profile image
 organization: Johannes Kepler University Linz # usually you leave this unchanged, but if your have a different organization, feel free to change the property
 position: PhD Student # This is the position that you have within your organization. e.g. "Project Assistant", "University Assistant", "Technical Support", "Student Research" (or whatever Marc tells you^^)
 ####
@@ -53,7 +53,7 @@ google_scholar: https://scholar.google.com/citations?user=Y0T4-9kAAAAJ&hl=en
 # add your linkedin username (e.g. "marcstreit")
 linkedin: marta-mosc
 # here you can add a link to your CV (e.g. "http://data.jku-vds-lab.at/team/marc/cv_streit.pdf")
-cv: https://mmosc.github.io/assets/pdf/cv_pdf.pdf
+cv: 
 # here you can add a link to a personal website
 website: https://mmosc.github.io/
 
@@ -65,4 +65,9 @@ website: https://mmosc.github.io/
 
 ####
 ---
+I am a physicist turned computer scientist, currently a PhD student at the Multimedia Mining and Search Group of the Johannes Kepler University Linz, Austria.
+
+My (current) fields of research are multimodal learning and recommender systems. I have a PhD in theoretical particle physics.
+
+I love understanding and discussing maths and science. I have a passion for music and books. I enjoy doing sports. I have a thing for languages.
 

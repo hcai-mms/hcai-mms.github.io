@@ -1,67 +1,139 @@
----
-layout: default
----
-<div class="home">
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Home | HCAI MMS Group JKU</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Human-centered Artificial Intelligence & Multimedia Mining Search Group at JKU and LIT.">
+    <link rel="canonical" href="https://hcai.at/">
 
-    <header class="home-title">
-        <h1>Welcome</h1>
-        <!-- <h1>{{ page.title | remove: "| JKU Visual Data Science Lab" }}</h1> -->
-    </header>
+    <!-- Custom Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic|Patua+One|Vollkorn:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
-    <article class="home-content-main">
+    <!-- Custom CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/site.css">
 
-        <!-- <h1>About</h1> -->
-        <p>
-            Welcome to the Human-centered Artificial Intelligence (HCAI) group at the <a href="https://www.jku.at/linz-institute-of-technology/">Linz Institute of Technology, Artificial Intelligence Lab</a>!<br>
-            Welcome to the Multimedia Mining and Search (MMS) group at the <a href="https://www.jku.at/institut-fuer-computational-perception/">Institute of Computational Perception</a> of the <a href="https://www.jku.at/">Johannes Kepler University Linz</a>!
- 
-            While the HCAI and MMS groups are formally different entities, they are strongly interwoven in terms of research, staff, and administration.<br><br>
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.6/slick.css" />
 
-            We create cutting-edge technology at the forefront of the following research areas:
+    <!-- maps flexbox css -->
+    <style>
+        .maps-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .maps-container iframe {
+            flex: 1;
+            min-width: 300px;
+        }
+    </style>
+</head>
 
-        </p>
-        <ul>
-		<li>Recommender Systems</li>
-		<li>Information Retrieval</li>
-		<li>Natural Language Processing</li>
-		<li>Multimedia Processing, Analysis, and Retrieval</li>
-		<li>Intelligent User Interfaces</li>
-		<li>Affective Computing</li>
-		<li>Ethics in AI (Fairness, Explainability, and Trustworthiness)</li>
-	</ul>
-        
-    </article>
+<body>
+<div class="wrap">
+    <div class="navigation">
+        <div class="logo">
+            <a href="/">
+                <img class="logo-header-svg" src="/assets/images/logos/hcai-mms-logo.svg" alt="LIT Human-centered AI Group - Logo">
+            </a>
+        </div>
 
-    <article class="home-content-aside">
-        <h2>Mission</h2>
-        <p>
-            AI technology permeates more and more aspects of our daily life. Considering human factors in the development of corresponding algorithms and systems is, therefore, a timely and highly important research topic, which is unfortunately often neglected in the more technically driven AI communities. In our group, in contrast, we elaborate methods and algorithms to create AI technology that puts the human in the focus instead of adopting a purely system-centric perspective. Among others, we elaborate comprehensive user models, develop personalization techniques (e.g., for search and recommender systems), and conduct studies on human-technology interaction. Furthermore, our research aims at uncovering data, algorithmic, presentation, and cognitive biases, and at ensuring transparency and fairness of machine learning algorithms.
+        <div class="logo-subtitle">
+            Associated with the <nobr><a href="https://www.jku.at/linz-institute-of-technology/" target="_blank">Linz Institute of Technology</a></nobr>
+            and the <nobr><a href="https://www.jku.at/en/institute-of-computational-perception/" target="_blank">Institute of Computational Perception</a></nobr>
+            @ <nobr><a href="https://www.jku.at/" target="_blank">JKU Linz</a></nobr>, Austria
+        </div>
 
-        </p>
-        <h2>FWF doc.funds.connect project HCAI</h2>
-        <p>
-            Our group is also a member (and Markus Schedl a co-coordinator) of the 
-            <!-- <nobr> -->
+        <div class="navigation-buttons">
+            <ul>
+                <li class="home-button"><a href="/"><span class="nav-icon"><i class="fa fa-home"></i></span><span class="nav-text">Home</span></a></li>
+                <li class="team-button"><a href="/team/"><span class="nav-icon"><i class="fa fa-group"></i></span><span class="nav-text">Team</span></a></li>
+                <li class="project-button"><a href="/projects/"><span class="nav-icon"><i class="fa fa-university"></i></span><span class="nav-text">Projects</span></a></li>
+                <li class="publication-button"><a href="/publications/"><span class="nav-icon"><i class="fa fa-book"></i></span><span class="nav-text">Publications</span></a></li>
+                <li class="teaching-button"><a href="https://www.jku.at/en/institute-of-computational-perception/teaching/current-semester/" target="_blank"><span class="nav-icon" style="vertical-align: sub;"><img src="/assets/images/icons/icon-teaching.svg" height="15"></span><span class="nav-text">Teaching</span></a></li>
+                <li class="about-us-button"><a href="/about-us/"><span class="nav-icon"><i class="fa fa-comments-o"></i></span><span class="nav-text">About Us</span></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="home">
+        <header class="home-title">
+            <h1>Welcome</h1>
+        </header>
+
+        <article class="home-content-main">
+            <p>
+                Welcome to the Human-centered Artificial Intelligence (HCAI) group at the <a href="https://www.jku.at/linz-institute-of-technology/">Linz Institute of Technology, Artificial Intelligence Lab</a>!<br>
+                Welcome to the Multimedia Mining and Search (MMS) group at the <a href="https://www.jku.at/institut-fuer-computational-perception/">Institute of Computational Perception</a> of the <a href="https://www.jku.at/">Johannes Kepler University Linz</a>!
+                While the HCAI and MMS groups are formally different entities, they are strongly interwoven in terms of research, staff, and administration.<br><br>
+                We create cutting-edge technology at the forefront of the following research areas:
+            </p>
+            <ul>
+                <li>Recommender Systems</li>
+                <li>Information Retrieval</li>
+                <li>Natural Language Processing</li>
+                <li>Multimedia Processing, Analysis, and Retrieval</li>
+                <li>Intelligent User Interfaces</li>
+                <li>Affective Computing</li>
+                <li>Ethics in AI (Fairness, Explainability, and Trustworthiness)</li>
+            </ul>
+        </article>
+
+        <article class="home-content-aside">
+            <h2>Mission</h2>
+            <p>
+                AI technology permeates more and more aspects of our daily life. Considering human factors in the development of corresponding algorithms and systems is, therefore, a timely and highly important research topic, which is unfortunately often neglected in the more technically driven AI communities. In our group, in contrast, we elaborate methods and algorithms to create AI technology that puts the human in the focus instead of adopting a purely system-centric perspective. Among others, we elaborate comprehensive user models, develop personalization techniques (e.g., for search and recommender systems), and conduct studies on human-technology interaction. Furthermore, our research aims at uncovering data, algorithmic, presentation, and cognitive biases, and at ensuring transparency and fairness of machine learning algorithms.
+            </p>
+            <h2>FWF doc.funds.connect project HCAI</h2>
+            <p>
+                Our group is also a member (and Markus Schedl a co-coordinator) of the
                 <a target="_self" href="http://dfc.hcai.at/" target="_blank">FWF doc.funds.connect research and education program Human-centered Artificial intelligence.</a>
-            <!-- </nobr>. -->
-        </p>
-<div> 
- <h2>Contact Us</h2>
-		<ul>
-        <p>
-            If you are interested in our research activities or in collaborating with us, please mail to: <a href="mailto://info@hcai.at" target="_blank">info@hcai.at</a> or visit us in: <a href="https://www.google.com/maps/place/Science+Park+3/@48.3351096,14.3220006,17z/data=!4m8!1m2!2m1!1sscience+park+3+4.+stock!3m4!1s0x4773991d5880f437:0xc58d7ca1cdc2b04!8m2!3d48.3351119!4d14.3242242/" target="_blank">Science Park 3, JKU, Linz, Austria</a>  
-        </p>
-        <iframe src="https://www.google.com/maps/embed?pb=!4v1647613429384!6m8!1m7!1sCAoSLEFGMVFpcE4xMGdOb2I4bGJoTjc4eVFaTHBYQmVxYS1ieTgyME9vV2hEZmx2!2m2!1d48.3354077!2d14.3239423!3f128.892417662228!4f12.306696425587262!5f0.7820865974627469" width="525" height="320" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-	<br>
-	<br>
-	<p> <a href="https://maps.app.goo.gl/21Po4zszQkRS71FB7" target="_blank"> Biberstraße 11, 4th floor, Vienna, Austria</a>  
-        </p>
-<iframe src="https://www.google.com/maps/embed?pb=!4v1759746092714!6m8!1m7!1sQYL_1hLpYGh5AhsGulkG7g!2m2!1d48.20899655137913!2d16.38095191757553!3f291.4!4f1.9500000000000028!5f0.7820865974627469" width="525" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-	<br> 	
-	</ul>
-	</div>
-    </article>
-    <article class="home-content-bottom">
-        
-    </article>
+            </p>
+        </article>
+
+        <!-- Contact Us am Ende -->
+        <article class="home-content-bottom">
+            <h2>Contact Us</h2>
+            <p>
+                If you are interested in our research activities or in collaborating with us, please mail to:
+                <a href="mailto://info@hcai.at" target="_blank">info@hcai.at</a> or visit us in:
+            </p>
+
+            <div class="maps-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1647613429384!6m8!1m7!1sCAoSLEFGMVFpcE4xMGdOb2I4bGJoTjc4eVFaTHBYQmVxYS1ieTgyME9vV2hEZmx2!2m2!1d48.3354077!2d14.3239423!3f128.892417662228!4f12.306696425587262!5f0.7820865974627469" width="525" height="320" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1759746092714!6m8!1m7!1sQYL_1hLpYGh5AhsGulkG7g!2m2!1d48.20899655137913!2d16.38095191757553!3f291.4!4f1.9500000000000028!5f0.7820865974627469" width="525" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </article>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-list-social">
+                <ul>
+                    <li><a href="mailto:info@hcai.at"><img class="footer-icon" src="/assets/images/icons/icon-mail.svg" alt="info@hcai.at" title="Email"></a></li>
+                    <li><a href="https://www.jku.at/en/institute-of-computational-perception/"><img class="footer-icon" class="institution-logo" src="/assets/images/icons/icon-cp.svg" alt="Institute of Computational Perception" title="Institute of Computational Perception"></a></li>
+                    <li><a href="https://www.jku.at"><img class="footer-icon" class="institution-logo" src="/assets/images/icons/icon-jku.svg" alt="JKU Linz" title="Johannes Kepler University Linz"></a></li>
+                    <li><a href="https://www.linkedin.com/showcase/jku-institute-of-computational-perception"><img class="footer-icon" src="/assets/images/icons/icon-linkedin.png" alt="" title="linkedin"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-content">
+            <div class="footer-disclaimer">
+                <p>
+                    Copyright &copy; 2022 JKU Multimedia Mining Search Group. All content on this website is licensed under the <br />
+                    <a href="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution license (CC BY)</a>. Copyright of the linked papers is with the publishers.
+                </p>
+            </div>
+        </div>
+    </footer>
 </div>
+</body>
+</html>

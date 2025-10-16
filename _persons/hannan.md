@@ -15,7 +15,7 @@ key: hannan # this should be your lastname in lower case; the key is important f
 # - "alumni": Other Alumni
 # - "administration": Administration/Secretary
 # - "tech": Technical Support
-role: guest
+role: former
 
 email: abdul.hannan@unitn.it # this is your work e-mail address
 image: /assets/images/team_colored/hannan.jpg # insert the relative link to your profile image

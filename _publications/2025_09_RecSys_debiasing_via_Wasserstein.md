@@ -2,20 +2,22 @@
 layout: publication # do not change
 
 #### these fields are mandatory. please fill them out
-title: "Mitigating Latent User Biases in Pre-trained VAE Recommendation Models via On-demand Input Space Transformation" # title of your publication 
+title: "Debiasing Implicit Feedback Recommenders via Sliced Wasserstein Distance-based Regularization" # title of your publication 
 
 # choose one of the following types:
 # "paper": Peer-Reviewed Journal and Conference Papers
 # "preprint": Preprint
 # "thesis": Thesis (e.g. Master/PhD Thesis)
 type: paper
-abstract: "Recommender systems can unintentionally encode protected attributes (e.g., gender, country, or age) in their learned latent user representations. Current in-processing debiasing approaches, notably adversarial training, effectively reduce the encoded information on private user attributes. These approaches modify the model parameters during training. Thus, to alternate between biased and debiased model, two separate models have to be trained. In contrast, we propose a novel method to debias recommendation models post-training, which allows switching between biased and debiased model at inference time. Focusing on state-of-the-art variational autoencoder (VAE) architectures, our method aims to reduce bias at input level (user–item interactions) by learning a transformation from input space to a debiased subspace. As the output of this transformation lies in the same space as the original input vector, we can use transformed (debiased) input vectors without the need to fine-tune the pre-trained model. We evaluate the effectiveness of our method on three datasets, MovieLens-1M, LFM2b-DemoBias, and EB-NeRD, from the movie, music, and news domains, respectively. Our experiments show that the proposed method achieves task performance (in terms of NDCG) and debiasing strength (in terms of balanced accuracy of an attacker network) that are comparable to applying adversarial training during the initial training procedure, while providing the added functionality of alternating between biased and debiased model at inference time." # insert the abstract of your publication between the quotes; you can use html e.g. to make links (<a></a>) or generate bold (<b></b>) etc. text 
+abstract: "Recommendation models often encode users’ sensitive attributes (e.g., gender or age) in their learned representations during training, leading to biased (e.g., stereotypical) recommendations and potential privacy risks. To address this, previous research has predominantly focused on adversarial training to make user representations invariant to sensitive attributes. However, adversarial methods can be unstable and computationally expensive due to additional network parameters. An alternative approach is the use of regularization losses that minimize distributional discrepancies between different demographic groups during training. In particular, the Sliced Wasserstein Distance (SWD) provides a computationally efficient and stable solution for mitigating bias by directly aligning the distributions of user representations across groups.
+We follow this alternative strategy and propose an in-processing approach to mitigate encoded biases in user representations of implicit feedback-based recommender systems by using SWD-based regularization.
+We perform extensive experiments targeting the debiasing of the users’ gender on three datasets ML-1M, LFM2b-DB, and EB-NeRD from the movie, music, and news domains, respectively. Our results indicate that SWD-based regularization is an effective approach for mitigating encoded biases in user representations while keeping competitive recommendation accuracy." # insert the abstract of your publication between the quotes; you can use html e.g. to make links (<a></a>) or generate bold (<b></b>) etc. text 
 
 ####
 
 
 # set this url, if your paper is on another server; defaults to data.jku-vds-lab.at
-paper_content_url: https://dl.acm.org/doi/10.1145/3705328.3748012
+paper_content_url: https://dl.acm.org/doi/10.1145/3705328.3759320
 # uncomment the "hide" property, if you do not want the publication to be displayed on the website (usually you don't need this)
 # hide: True
 # uncomment the "non_group_project" property, if you only want the publication to be displayed on your personal page (i.e. publications where you contributed, but does not have anything to do with the Vis Group e.g. Master Thesis,...)
@@ -24,9 +26,9 @@ paper_content_url: https://dl.acm.org/doi/10.1145/3705328.3748012
 
 #### the following fields are optional, but it is recommended to enter as much information as possible
 # The shortname is used for auto-generated titels. e.g. ConfusionFlow
-shortname: userbias
+shortname: Wasserstein
 # add a 2:1 aspect ratio (e.g., width: 400px, height: 200px) to the folder /assets/images/papers/ e.g. 2020_tvcg_confusionflow.png
-image: 2025_recsys_maskmult_teaser.png
+image: 2025_recsys_swd_teaser.png
 # add a 2:1 aspect ratio teaser figure (e.g., width: 1200px, height: 600px) to the folder /assets/images/papers/ e.g. 2020_tvcg_confusionflow_teaser.png
 image_large: 
 
@@ -38,8 +40,8 @@ image_large:
 # - schedl # .md file exists for this person
 # - Max Mustermann # there is no .md file for this person.
 authors:
-- penz
 - escobedo-ticona
+- penz
 - schedl
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG
@@ -51,18 +53,18 @@ year: 2025
 # publisherurl: https://link.springer.com/chapter/10.1007/978-3-030-72240-1_60 # add link to publisher page of your publication
 
 # what is the publication type and other bib specific properties
-bibentry: inproceedings{Escobedo_2025, series={RecSys ’25}
+bibentry: inproceedings
 bib:
   journal:  # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
   booktitle: Proceedings of the Nineteenth ACM Conference on Recommender Systems
   editor: 
   publisher: ACM
   address: 
-  doi: 10.1145/3705328.3748012
-  url:  https://doi.org/10.1145/3705328.3748012
+  doi: 10.1145/3705328.3759320
+  url: http://dx.doi.org/10.1145/3705328.3759320
   volume: 
   number: 
-  pages: 632 - 636
+  pages: 1153-1158
   month: September
 
 preprint:	 # here you can put the preprint link (arxiv.org, osf.io,...) e.g. https://arxiv.org/abs/1910.00969

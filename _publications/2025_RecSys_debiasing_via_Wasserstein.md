@@ -40,7 +40,7 @@ image_large:
 # - schedl # .md file exists for this person
 # - Max Mustermann # there is no .md file for this person.
 authors:
-- escobedo
+- escobedo-ticona
 - penz
 - schedl
 
@@ -107,3 +107,4 @@ code:
 
 # After the --- you can put information that you want to appear on the website using markdown formatting or HTML. A good example are acknowledgements, extra references, an erratum, etc.
 ---
+

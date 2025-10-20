@@ -61,16 +61,16 @@ year: 2025
 bibentry: article
 bib:
   journal: International Journal of Multimedia Information Retrieval # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
-  booktitle: 
+  booktitle: International Journal of Multimedia Information Retrieval
   editor: 
-  publisher: 
-  address: 
+  publisher: Springer
+  address: https://link.springer.com/article/10.1007/s13735-025-00370-y
   doi: 10.1007/s13735-025-00370-y	
   url: https://doi.org/10.1007/s13735-025-00370-y
-  volume: 
-  number: 
+  volume: 14
+  number: 21
   pages: 
-  month: 
+  month: June, 2025
 
 preprint:	 # here you can put the preprint link (arxiv.org, osf.io,...) e.g. https://arxiv.org/abs/1910.00969
 

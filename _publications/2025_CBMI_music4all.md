@@ -97,7 +97,7 @@ supplement:
 supplements:
 - name: Dataset
 #  # use link instead of abslink if you want to link to the master directory
-  abslink: https://zenodo.org/records/17400116 to
+  abslink: https://zenodo.org/records/17400116
 #  # defaults to a download icon, use this if you want a link-out icon
 #  linksym: true
 

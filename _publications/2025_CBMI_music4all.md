@@ -95,9 +95,9 @@ supplement:
 
 # Extra supplements, such as talk slides, data sets, etc.
 supplements:
-#- name: General UpSet
+- name: Dataset
 #  # use link instead of abslink if you want to link to the master directory
-#  abslink: http://vials.io/talk/
+  abslink: https://zenodo.org/records/17400116 to
 #  # defaults to a download icon, use this if you want a link-out icon
 #  linksym: true
 

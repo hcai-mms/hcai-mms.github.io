@@ -48,7 +48,7 @@ authors:
 year: 2025
 
 # if you have an explicit page you want to reference, use this tag; otherwise it will be generated from your doi
-publisherurl: X 
+publisherurl: https://epub.jku.at/obvulihs/content/titleinfo/12791432
 # what is the publication type and other bib specific properties
 bibentry: misc
 bib:

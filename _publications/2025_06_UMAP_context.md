@@ -2,19 +2,19 @@
 layout: publication # do not change
 
 #### these fields are mandatory. please fill them out
-title: "Hybrid Personalization Using Declarative and Procedural Memory Modules of the Cognitive Architecture ACT-R" # title of your publication 
+title: "Why Context Matters: Exploring How Musical Context Impacts User Behavior, Mood, and Musical Preferences" # title of your publication 
 
 # choose one of the following types:
 # "paper": Peer-Reviewed Journal and Conference Papers
 # "preprint": Preprint
 # "thesis": Thesis (e.g. Master/PhD Thesis)
 type: paper
-abstract: "Recommender systems often rely on sub-symbolic machine learning approaches that operate as opaque black boxes. These approaches typically fail to account for the cognitive processes that shape user preferences and decision-making. In this vision paper, we propose a hybrid user modeling framework based on the cognitive architecture ACT-R that integrates symbolic and sub-symbolic representations of human memory. Our goal is to combine ACT-R’s declarative memory, which is responsible for storing symbolic chunks along sub-symbolic activations, with its procedural memory, which contains symbolic production rules. This integration will help simulate how users retrieve past experiences and apply decision-making strategies. With this approach, we aim to provide more transparent recommendations, enable rule-based explanations, and facilitate the modeling of cognitive biases. We argue that our approach has the potential to inform the design of a new generation of human-centered, psychology-informed recommender systems."
+abstract: "Music consumption is shaped by both internal factors (e.g., mood, motivation) and external factors (e.g., activity, social environment), which together influence listeners’ behavior (e.g., focus, songs’ skips) and reactions (e.g., mood changes). While prior research has explored real-life or survey-based, context-aware music listening with limited available context information, we introduce a dataset comprising 216 music listening sessions collected in real-world settings through a custom-built Android mobile application designed to assess a wide range of contextual factors. The dataset captures static (e.g., activity, social environment, motivation) and dynamic (e.g., mood changes) contextual factors, along with music interaction data (e.g., skipped or fully listened songs), listening focus levels, and participant traits (e.g., demographics, music education, listening preferences, personality). Our analysis highlights key insights into how different contextual factors influence user behavior and mood. demonstrating significant differences in skipping songs, focus levels, and genre diversity. We show that music listening sessions grouped by context are significantly different in terms of music listening behaviors (focus, skipping, and session genre diversity) and mood changes (happiness, sadness, stress, and energy). Furthermore, we explore the correlations between personality traits and listening behaviors (mean skip rate and genre diversity). Ultimately, our findings emphasize the importance of understanding context, as different situations lead to distinct music preferences and have varying impacts on user behavior and emotional responses."
 ####
 
 
 # set this url, if your paper is on another server; defaults to data.jku-vds-lab.at
-# paper_content_url: https://dl.acm.org/doi/10.1145/3604915.3608838 # https://dl.acm.org/doi/abs/10.1145/3511808.3557656
+paper_content_url: https://dl.acm.org/doi/10.1145/3699682.3728354 # https://dl.acm.org/doi/abs/10.1145/3511808.3557656
 # uncomment the "hide" property, if you do not want the publication to be displayed on the website (usually you don't need this)
 # hide: True
 # uncomment the "non_group_project" property, if you only want the publication to be displayed on your personal page (i.e. publications where you contributed, but does not have anything to do with the Vis Group e.g. Master Thesis,...)
@@ -23,11 +23,11 @@ abstract: "Recommender systems often rely on sub-symbolic machine learning appro
 
 #### the following fields are optional, but it is recommended to enter as much information as possible
 # The shortname is used for auto-generated titels. e.g. ConfusionFlow
-shortname: HybPers
+shortname: context
 # add a 2:1 aspect ratio (e.g., width: 400px, height: 200px) to the folder /assets/images/papers/ e.g. 2020_tvcg_confusionflow.png
-image: placeholder.png
+image: 2025_context.png
 # add a 2:1 aspect ratio teaser figure (e.g., width: 1200px, height: 600px) to the folder /assets/images/papers/ e.g. 2020_tvcg_confusionflow_teaser.png
-image_large: placeholder.png
+image_large: 2025_context.png
 
 # Authors in the "database" can be used with just the key that is specified in the corresponding .md file (usually it is the lastname in lower case e.g. doe). Authors that do not have an individual page here should be stated with their full name (e.g. John Doe)
 # each author is one item in the list. the list is enumerated with dashes ("-")
@@ -37,10 +37,10 @@ image_large: placeholder.png
 # - schedl # .md file exists for this person
 # - Max Mustermann # there is no .md file for this person.
 authors:
-- Kevin Innerebner
-- Dominik Kowald
+- hausberger
+- Emilia Parada-Cabaleiro
 - schedl
--  Elisabeth Lex
+
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG
 journal-short: UMAP
@@ -58,7 +58,7 @@ bib:
   editor: 
   publisher: Association for Computing Machinery
   address: New York, NY, USA
-  doi: 10.1145/3708319.3734176
+  doi: 10.1145/3699682.3728354
   url:  
   volume: 
   number: 

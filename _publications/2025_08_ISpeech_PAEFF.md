@@ -2,7 +2,7 @@
 layout: publication # do not change
 
 #### these fields are mandatory. please fill them out
-title: "An Effective Training Framework for Light-Weight Automatic Speech Recognition Models" # title of your publication 
+title: "PAEFF: Precise Alignment and Enhanced Gated Feature Fusion for Face-Voice Association" # title of your publication 
 
 # choose one of the following types:
 # "paper": Peer-Reviewed Journal and Conference Papers

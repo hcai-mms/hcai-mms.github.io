@@ -2,20 +2,20 @@
 layout: publication # do not change
 
 #### these fields are mandatory. please fill them out
-title: "First International Workshop on Data Quality-Aware Multimodal Recommendation (DaQuaMRec)" # title of your publication 
+title: "Enhancing Music Recommender Systems with Multimedia Content: A Context-Aware Approach" # title of your publication 
 
 # choose one of the following types:
 # "paper": Peer-Reviewed Journal and Conference Papers
 # "preprint": Preprint
 # "thesis": Thesis (e.g. Master/PhD Thesis)
 type: paper
-abstract: "The integration of rich, multimodal signals—spanning visual, textual, and acoustic information—represents a significant evolution for recommender systems, promising more nuanced and personalized user experiences. However, the efficacy and trustworthiness of these advanced models hinge critically on a foundational, yet frequently overlooked, element: the integrity of the input data. Practical deployments are often plagued by a host of data-related pathologies, including noisy or corrupted signals, partial or missing modalities, semantic misalignment between data streams, and the propagation of societal biases. Such deficiencies can silently subvert model performance, leading to unreliable recommendations and eroding user trust. The First International Workshop on Data Quality-Aware Multimodal Recommendation (DaQuaMRec) is convened to establish a dedicated, international forum to confront these fundamental challenges. Our objective is to drive research into new frameworks for diagnosing, measuring, and addressing data quality issues in multimodal recommendations. By focusing on data rather than just model architecture, DaQuaMRec seeks to develop more robust, equitable, and reliable recommender systems, prioritizing data quality in research." # insert the abstract of your publication between the quotes; you can use html e.g. to make links (<a></a>) or generate bold (<b></b>) etc. text 
+abstract: "The evolution of the music industry has introduced multimedia elements—such as video, text, and images—into music consumption. However, current Music Recommender Systems (MRSs) remain predominantly audio-focused, requiring explicit user interaction to access additional media. This study explores the integration of multimedia content into MRSs, considering the role of contextual activities and the Uses and Gratifications (U&Gs) framework in enhancing personalization and engagement. A diary study with 26 participants over one week identified nine key activities, with Household Chores, Workout, and Focusing being the most relevant. These activities revealed novel U&Gs such as 'For Preference', 'For Convenience', 'For Discovery', and 'To Get Distracted'. A subsequent user study compared a Basic Music App (audio-only) with a Modified Music App (multimedia-enhanced). Results showed that participants preferred the Modified Music App across five constructs: novelty, ease of use, usefulness, satisfaction, and intention to use. These findings suggest that multimedia-enhanced recommendations can improve user experience by aligning with activity-specific preferences. The study contributes to research on personalized MRSs and offers insights for developing context-aware, multimedia-driven recommendations." # insert the abstract of your publication between the quotes; you can use html e.g. to make links (<a></a>) or generate bold (<b></b>) etc. text 
 
 ####
 
 
 # set this url, if your paper is on another server; defaults to data.jku-vds-lab.at
-paper_content_url: https://doi.org/10.1145/3705328.3748001
+paper_content_url: https://zenodo.org/records/17706515/files/000063.pdf
 # uncomment the "hide" property, if you do not want the publication to be displayed on the website (usually you don't need this)
 # hide: True
 # uncomment the "non_group_project" property, if you only want the publication to be displayed on your personal page (i.e. publications where you contributed, but does not have anything to do with the Vis Group e.g. Master Thesis,...)
@@ -24,11 +24,11 @@ paper_content_url: https://doi.org/10.1145/3705328.3748001
 
 #### the following fields are optional, but it is recommended to enter as much information as possible
 # The shortname is used for auto-generated titels. e.g. ConfusionFlow
-shortname: DaQuaMRec
+shortname: MuRec
 # add a 2:1 aspect ratio (e.g., width: 400px, height: 200px) to the folder /assets/images/papers/ e.g. 2020_tvcg_confusionflow.png
-image: placeholder.png
+image: 2025_MuRec.png
 # add a 2:1 aspect ratio teaser figure (e.g., width: 1200px, height: 600px) to the folder /assets/images/papers/ e.g. 2020_tvcg_confusionflow_teaser.png
-image_large: placeholder.png
+image_large: 2025_MuRec.png
 
 # Authors in the "database" can be used with just the key that is specified in the corresponding .md file (usually it is the lastname in lower case e.g. doe). Authors that do not have an individual page here should be stated with their full name (e.g. John Doe)
 # each author is one item in the list. the list is enumerated with dashes ("-")
@@ -38,14 +38,11 @@ image_large: placeholder.png
 # - schedl # .md file exists for this person
 # - Max Mustermann # there is no .md file for this person.
 authors:
-- Claudio Pomo
-- Dietmar Jannach
-- Yubin Kim
-- Daniele Malitesta
-- Alberto Carlo Maria Manchio
-- Julian McAuley
-- Alessandro Melchiorre
-- Nawaz
+- Lesota
+- Veronica Clavijo
+- Attia Rizwani
+- Schedl
+- Bruce Ferwerda
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG
 journal-short: 
@@ -59,7 +56,7 @@ year: 2025
 bibentry: inproceedings
 bib:
   # journal: IEEE International Conference on Content-Based Multimedia Indexing # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
-  booktitle: "RecSys '25: Proceedings of the Nineteenth ACM Conference on Recommender Syste"
+  booktitle: "Proceedings of the 26th International Society for Music Information Retrieval Conference"
   editor: 
   publisher: 
   address: 
@@ -67,7 +64,7 @@ bib:
   url: 
   volume: 
   number: 
-  pages: 
+  pages: 561–568
   month: 
 
 preprint:	 # here you can put the preprint link (arxiv.org, osf.io,...) e.g. https://arxiv.org/abs/1910.00969

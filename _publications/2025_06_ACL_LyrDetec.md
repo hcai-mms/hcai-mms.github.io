@@ -2,20 +2,20 @@
 layout: publication # do not change
 
 #### these fields are mandatory. please fill them out
-title: "Development of a bilingual healthcare chatbot for pregnant women: A comparative study of deep learning models with BiGRU optimization" # title of your publication 
+title: "BreastCare application: Moroccan Breast cancer diagnosis through deep learning-based image segmentation and classification" # title of your publication 
 
 # choose one of the following types:
 # "paper": Peer-Reviewed Journal and Conference Papers
 # "preprint": Preprint
 # "thesis": Thesis (e.g. Master/PhD Thesis)
 type: journal
-abstract: "With the growing demand for healthcare services and a persistent shortage of medical professionals, intelligent systems such as chatbots are gaining relevance in improving patient support. In obstetrics, pregnant women require fast, accessible, and reliable information to monitor their health and the progression of their pregnancy. This study aims to design and evaluate a bilingual chatbot tailored to the healthcare needs of pregnant women, leveraging recent advances in deep learning for natural language processing (NLP). We developed and compared five deep learning architectures – artificial neural networks (ANN), long short-term memory (LSTM), bidirectional LSTM (BiLSTM), gated recurrent units (GRU), and bidirectional GRU (BiGRU) – to identify the most suitable model for chatbot implementation. Each model was trained on a bilingual dataset of pregnancy-related questions and answers, and evaluated using accuracy, computational efficiency, and contextual relevance of responses. The BiGRU model achieved the highest performance, demonstrating superior accuracy and response efficiency over the other models. It consistently delivered context-aware, personalized answers in both languages, showing its robustness in handling sequential healthcare queries. These findings suggest that BiGRU networks offer a promising solution for building intelligent, bilingual healthcare chatbots aimed at supporting pregnant women. Future work will focus on expanding the dataset, incorporating voice-based input, and deploying the chatbot in real-world healthcare settings for clinical validation." # insert the abstract of your publication between the quotes; you can use html e.g. to make links (<a></a>) or generate bold (<b></b>) etc. text 
+abstract: "Breast cancer remains a critical health problem worldwide. Increasing survival rates requires early detection. Accurate classification and segmentation are crucial for effective diagnosis and treatment. Although breast imaging modalities offer many advantages for the diagnosis of breast cancer, the interpretation of breast ultrasound images has always been a vital issue for physicians and radiologists due to misdiagnosis. Moreover, detecting cancer at an early stage increases the chances of survival. This article presents two approaches: Attention-DenseUNet for the segmentation task and EfficientNetB7 for the classification task using public datasets: BUSI, UDIAT, BUSC, BUSIS, and STUHospital. These models are proposed in the context of Computer-Aided Diagnosis (CAD) for breast cancer detection. In the first study, we obtained an impressive Dice coefficient for all datasets, with scores of 88.93%, 95.35%, 92.79%, 93.29%, and 94.24%, respectively. In the classification task, we achieved a high accuracy using only four public datasets that include the two classes benign and malignant: BUSI, UDIAT, BUSC, and BUSIS, with an accuracy of 97%, 100%, 99%, and 94%, respectively. Generally, the results show that our proposed methods are considerably better than other state-of-the-art methods, which will undoubtedly help improve cancer diagnosis and reduce the number of false positives. Finally, we used the suggested approaches to create “Moroccan BreastCare”, an advanced breast cancer segmentation and classification software that automatically processes, segments, and classifies breast ultrasound images." # insert the abstract of your publication between the quotes; you can use html e.g. to make links (<a></a>) or generate bold (<b></b>) etc. text 
 
 ####
 
 
 # set this url, if your paper is on another server; defaults to data.jku-vds-lab.at
-paper_content_url: https://doi.org/10.1016/j.ibmed.2025.100261
+paper_content_url: https://doi.org/10.1016/j.ibmed.2025.100254
 # uncomment the "hide" property, if you do not want the publication to be displayed on the website (usually you don't need this)
 # hide: True
 # uncomment the "non_group_project" property, if you only want the publication to be displayed on your personal page (i.e. publications where you contributed, but does not have anything to do with the Vis Group e.g. Master Thesis,...)
@@ -24,11 +24,11 @@ paper_content_url: https://doi.org/10.1016/j.ibmed.2025.100261
 
 #### the following fields are optional, but it is recommended to enter as much information as possible
 # The shortname is used for auto-generated titels. e.g. ConfusionFlow
-shortname: BiGRU
+shortname: Breastcare
 # add a 2:1 aspect ratio (e.g., width: 400px, height: 200px) to the folder /assets/images/papers/ e.g. 2020_tvcg_confusionflow.png
-image: 2025_BiGRU.png
+image: 2025_breastcancer.png
 # add a 2:1 aspect ratio teaser figure (e.g., width: 1200px, height: 600px) to the folder /assets/images/papers/ e.g. 2020_tvcg_confusionflow_teaser.png
-image_large: 2025_BiGRU.png
+image_large: 2025_breastcancer.png
 
 # Authors in the "database" can be used with just the key that is specified in the corresponding .md file (usually it is the lastname in lower case e.g. doe). Authors that do not have an individual page here should be stated with their full name (e.g. John Doe)
 # each author is one item in the list. the list is enumerated with dashes ("-")
@@ -38,11 +38,17 @@ image_large: 2025_BiGRU.png
 # - schedl # .md file exists for this person
 # - Max Mustermann # there is no .md file for this person.
 authors:
-- Ablavi Ericka Armela
+- Nouhaila Erragzi
 - Nabila Zrira
-- Khadija Ouazzani-Touhami
+- Safae Lanjeri
+- Youssef Omor
+- Anwar Jimi
+- Ibtissam Benmiloud
+- Rajaa Sebihi
+- Rachida Latib
+- Nabil Ngote
 - Haris Ahmad Khan
-- Nawaz
+- nawaz
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG
 journal-short: 
@@ -67,7 +73,7 @@ bib:
   pages: 
   month: 
 
-preprint:	 # here you can put the preprint link (arxiv.org, osf.io,...) e.g. https://arxiv.org/abs/1910.00969
+preprint:	https://doi.org/10.1016/j.ibmed.2025.100254 # here you can put the preprint link (arxiv.org, osf.io,...) e.g. https://arxiv.org/abs/1910.00969
 
 # Add things like "Best Paper Award at InfoVis 2099, selected out of 4000 submissions"
 award:

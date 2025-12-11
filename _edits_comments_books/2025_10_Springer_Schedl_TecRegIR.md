@@ -30,7 +30,7 @@ authors:
 editors: 
   
 bibentry: book
-year: 2024	# year of publication e.g. 2020
+year: 2025	# year of publication e.g. 2020
 # optional bib information (state as much as possible)
 bib:
   journal: # e.g. Springer

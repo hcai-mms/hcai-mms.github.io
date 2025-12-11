@@ -2,20 +2,19 @@
 layout: publication # do not change
 
 #### these fields are mandatory. please fill them out
-title: "Development of a bilingual healthcare chatbot for pregnant women: A comparative study of deep learning models with BiGRU optimization" # title of your publication 
+title: "Introduction to the Special Issue on Trustworthy Recommender Systems" # title of your publication 
 
 # choose one of the following types:
 # "paper": Peer-Reviewed Journal and Conference Papers
 # "preprint": Preprint
 # "thesis": Thesis (e.g. Master/PhD Thesis)
-type: journal
-abstract: "With the growing demand for healthcare services and a persistent shortage of medical professionals, intelligent systems such as chatbots are gaining relevance in improving patient support. In obstetrics, pregnant women require fast, accessible, and reliable information to monitor their health and the progression of their pregnancy. This study aims to design and evaluate a bilingual chatbot tailored to the healthcare needs of pregnant women, leveraging recent advances in deep learning for natural language processing (NLP). We developed and compared five deep learning architectures – artificial neural networks (ANN), long short-term memory (LSTM), bidirectional LSTM (BiLSTM), gated recurrent units (GRU), and bidirectional GRU (BiGRU) – to identify the most suitable model for chatbot implementation. Each model was trained on a bilingual dataset of pregnancy-related questions and answers, and evaluated using accuracy, computational efficiency, and contextual relevance of responses. The BiGRU model achieved the highest performance, demonstrating superior accuracy and response efficiency over the other models. It consistently delivered context-aware, personalized answers in both languages, showing its robustness in handling sequential healthcare queries. These findings suggest that BiGRU networks offer a promising solution for building intelligent, bilingual healthcare chatbots aimed at supporting pregnant women. Future work will focus on expanding the dataset, incorporating voice-based input, and deploying the chatbot in real-world healthcare settings for clinical validation." # insert the abstract of your publication between the quotes; you can use html e.g. to make links (<a></a>) or generate bold (<b></b>) etc. text 
-
+type: paper
+abstract: "This editorial introduces the Special Issue on Trustworthy Recommender Systems, hosted by the ACM Transactions on Recommender Systems in 2024. We provide an overview on the multifaceted aspects of trustworthiness and point to recent regulations that underline the importance of the topic, also beyond technical perspectives. Subsequently, we present the nine articles constituting the special issue: one survey that reviews over 400 papers, categorizing them according to five trustworthiness dimensions, and eight research articles. We categorize and introduce the latter according to the major trustworthiness dimensions they address, specifically into privacy/security, transparency/explainability, and bias/fairness. We provide a summary of their main contributions and end with a brief personal statement about envisioned challenges ahead."
 ####
 
 
 # set this url, if your paper is on another server; defaults to data.jku-vds-lab.at
-paper_content_url: https://doi.org/10.1016/j.ibmed.2025.100261
+paper_content_url: https://dl.acm.org/doi/10.1145/3702249 # https://aclanthology.org/2024.emnlp-main.612.pdf
 # uncomment the "hide" property, if you do not want the publication to be displayed on the website (usually you don't need this)
 # hide: True
 # uncomment the "non_group_project" property, if you only want the publication to be displayed on your personal page (i.e. publications where you contributed, but does not have anything to do with the Vis Group e.g. Master Thesis,...)
@@ -24,11 +23,11 @@ paper_content_url: https://doi.org/10.1016/j.ibmed.2025.100261
 
 #### the following fields are optional, but it is recommended to enter as much information as possible
 # The shortname is used for auto-generated titels. e.g. ConfusionFlow
-shortname: BiGRU
+shortname: SpecIs
 # add a 2:1 aspect ratio (e.g., width: 400px, height: 200px) to the folder /assets/images/papers/ e.g. 2020_tvcg_confusionflow.png
-image: 2025_BiGRU.png
+image: placeholder.png
 # add a 2:1 aspect ratio teaser figure (e.g., width: 1200px, height: 600px) to the folder /assets/images/papers/ e.g. 2020_tvcg_confusionflow_teaser.png
-image_large: 2025_BiGRU.png
+image_large: placeholder.png
 
 # Authors in the "database" can be used with just the key that is specified in the corresponding .md file (usually it is the lastname in lower case e.g. doe). Authors that do not have an individual page here should be stated with their full name (e.g. John Doe)
 # each author is one item in the list. the list is enumerated with dashes ("-")
@@ -38,16 +37,15 @@ image_large: 2025_BiGRU.png
 # - schedl # .md file exists for this person
 # - Max Mustermann # there is no .md file for this person.
 authors:
-- Ablavi Ericka Armela
-- Nabila Zrira
-- Khadija Ouazzani-Touhami
-- Haris Ahmad Khan
-- Nawaz
+- Markus Schedl
+- Yashar Deldjoo
+- Pablo Castells
+- Emine Yilmaz
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG
-journal-short: 
+journal-short: ACM
 # when was this publication written/ when was the publication accepted (e.g. 2020)
-year: 2025
+year: 2024
 
 # if you have an explicit page you want to reference, use this tag; otherwise it will be generated from your doi
 # publisherurl: https://link.springer.com/chapter/10.1007/978-3-030-72240-1_60 # add link to publisher page of your publication
@@ -55,17 +53,18 @@ year: 2025
 # what is the publication type and other bib specific properties
 bibentry: inproceedings
 bib:
-  # journal: IEEE International Conference on Content-Based Multimedia Indexing # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
-  booktitle: "Intelligence-Based Medicine"
-  editor: 
+  # journal: Springer # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
+  booktitle: "TISMIR '25: Transactions of the International Society for Music Information Retrieval" 
+  editor: # George Buchanan, Haiming Liu, Dana McKAy, Douglas Oard
   publisher: 
   address: 
-  doi: 
+  doi: https://doi.org/10.1145/3702249
   url: 
   volume: 
   number: 
   pages: 
   month: 
+  location: 
 
 preprint:	 # here you can put the preprint link (arxiv.org, osf.io,...) e.g. https://arxiv.org/abs/1910.00969
 
@@ -90,19 +89,19 @@ youtube-id:
 preview-youtube-id: 
 
 # the name of your publication pdf e.g. 2020_tvcg_confusionflow.pdf; this is usually uploaded to the caleydo aws server
-pdf: 
+# pdf: /assets/pdf/2024_recsys_sibrar.pdf
 # A supplement PDF e.g. 2017_preprint_taggle_supplement.pdf; this is usually uploaded to the caleydo aws server
-supplement: 
+# supplement: /assets/pdf/2024_recsys_supplementar.pdf
 
 # Extra supplements, such as talk slides, data sets, etc.
 supplements:
-- name: 
+#- name: General UpSet
 #  # use link instead of abslink if you want to link to the master directory
-  abslink: 
+#  abslink: http://vials.io/talk/
 #  # defaults to a download icon, use this if you want a link-out icon
 #  linksym: true
 
-# Link to the repository where the code is hostet
+# Link to the repository where the code is hosted
 code: 
 
 # After the --- you can put information that you want to appear on the website using markdown formatting or HTML. A good example are acknowledgements, extra references, an erratum, etc.

@@ -2,20 +2,20 @@
 layout: publication # do not change
 
 #### these fields are mandatory. please fill them out
-title: "Development of a bilingual healthcare chatbot for pregnant women: A comparative study of deep learning models with BiGRU optimization" # title of your publication 
+title: "First International Workshop on Data Quality-Aware Multimodal Recommendation (DaQuaMRec)" # title of your publication 
 
 # choose one of the following types:
 # "paper": Peer-Reviewed Journal and Conference Papers
 # "preprint": Preprint
 # "thesis": Thesis (e.g. Master/PhD Thesis)
-type: journal
-abstract: "With the growing demand for healthcare services and a persistent shortage of medical professionals, intelligent systems such as chatbots are gaining relevance in improving patient support. In obstetrics, pregnant women require fast, accessible, and reliable information to monitor their health and the progression of their pregnancy. This study aims to design and evaluate a bilingual chatbot tailored to the healthcare needs of pregnant women, leveraging recent advances in deep learning for natural language processing (NLP). We developed and compared five deep learning architectures – artificial neural networks (ANN), long short-term memory (LSTM), bidirectional LSTM (BiLSTM), gated recurrent units (GRU), and bidirectional GRU (BiGRU) – to identify the most suitable model for chatbot implementation. Each model was trained on a bilingual dataset of pregnancy-related questions and answers, and evaluated using accuracy, computational efficiency, and contextual relevance of responses. The BiGRU model achieved the highest performance, demonstrating superior accuracy and response efficiency over the other models. It consistently delivered context-aware, personalized answers in both languages, showing its robustness in handling sequential healthcare queries. These findings suggest that BiGRU networks offer a promising solution for building intelligent, bilingual healthcare chatbots aimed at supporting pregnant women. Future work will focus on expanding the dataset, incorporating voice-based input, and deploying the chatbot in real-world healthcare settings for clinical validation." # insert the abstract of your publication between the quotes; you can use html e.g. to make links (<a></a>) or generate bold (<b></b>) etc. text 
+type: paper
+abstract: "The integration of rich, multimodal signals—spanning visual, textual, and acoustic information—represents a significant evolution for recommender systems, promising more nuanced and personalized user experiences. However, the efficacy and trustworthiness of these advanced models hinge critically on a foundational, yet frequently overlooked, element: the integrity of the input data. Practical deployments are often plagued by a host of data-related pathologies, including noisy or corrupted signals, partial or missing modalities, semantic misalignment between data streams, and the propagation of societal biases. Such deficiencies can silently subvert model performance, leading to unreliable recommendations and eroding user trust. The First International Workshop on Data Quality-Aware Multimodal Recommendation (DaQuaMRec) is convened to establish a dedicated, international forum to confront these fundamental challenges. Our objective is to drive research into new frameworks for diagnosing, measuring, and addressing data quality issues in multimodal recommendations. By focusing on data rather than just model architecture, DaQuaMRec seeks to develop more robust, equitable, and reliable recommender systems, prioritizing data quality in research." # insert the abstract of your publication between the quotes; you can use html e.g. to make links (<a></a>) or generate bold (<b></b>) etc. text 
 
 ####
 
 
 # set this url, if your paper is on another server; defaults to data.jku-vds-lab.at
-paper_content_url: https://doi.org/10.1016/j.ibmed.2025.100261
+paper_content_url: https://doi.org/10.1145/3705328.3748001
 # uncomment the "hide" property, if you do not want the publication to be displayed on the website (usually you don't need this)
 # hide: True
 # uncomment the "non_group_project" property, if you only want the publication to be displayed on your personal page (i.e. publications where you contributed, but does not have anything to do with the Vis Group e.g. Master Thesis,...)
@@ -24,11 +24,11 @@ paper_content_url: https://doi.org/10.1016/j.ibmed.2025.100261
 
 #### the following fields are optional, but it is recommended to enter as much information as possible
 # The shortname is used for auto-generated titels. e.g. ConfusionFlow
-shortname: BiGRU
+shortname: DaQuaMRec
 # add a 2:1 aspect ratio (e.g., width: 400px, height: 200px) to the folder /assets/images/papers/ e.g. 2020_tvcg_confusionflow.png
-image: 2025_BiGRU.png
+image: placeholder.png
 # add a 2:1 aspect ratio teaser figure (e.g., width: 1200px, height: 600px) to the folder /assets/images/papers/ e.g. 2020_tvcg_confusionflow_teaser.png
-image_large: 2025_BiGRU.png
+image_large: placeholder.png
 
 # Authors in the "database" can be used with just the key that is specified in the corresponding .md file (usually it is the lastname in lower case e.g. doe). Authors that do not have an individual page here should be stated with their full name (e.g. John Doe)
 # each author is one item in the list. the list is enumerated with dashes ("-")
@@ -38,10 +38,13 @@ image_large: 2025_BiGRU.png
 # - schedl # .md file exists for this person
 # - Max Mustermann # there is no .md file for this person.
 authors:
-- Ablavi Ericka Armela
-- Nabila Zrira
-- Khadija Ouazzani-Touhami
-- Haris Ahmad Khan
+- Claudio Pomo
+- Dietmar Jannach
+- Yubin Kim
+- Daniele Malitesta
+- Alberto Carlo Maria Manchio
+- Julian McAuley
+- Alessandro Melchiorre
 - Nawaz
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG
@@ -56,7 +59,7 @@ year: 2025
 bibentry: inproceedings
 bib:
   # journal: IEEE International Conference on Content-Based Multimedia Indexing # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
-  booktitle: "Intelligence-Based Medicine"
+  booktitle: "RecSys '25: Proceedings of the Nineteenth ACM Conference on Recommender Syste"
   editor: 
   publisher: 
   address: 

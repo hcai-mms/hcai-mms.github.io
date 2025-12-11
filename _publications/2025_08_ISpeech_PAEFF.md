@@ -9,13 +9,13 @@ title: "An Effective Training Framework for Light-Weight Automatic Speech Recogn
 # "preprint": Preprint
 # "thesis": Thesis (e.g. Master/PhD Thesis)
 type: paper
-abstract: "Recent advancement in deep learning encouraged developing large automatic speech recognition (ASR) models that achieve promising results while ignoring computational and memory constraints. However, deploying such models on low resource devices is impractical despite of their favorable performance. Existing approaches (pruning, distillation, layer skip etc.) transform the large models into smaller ones at the cost of significant performance degradation or require prolonged training of smaller models for better performance. To address these issues, we introduce an efficacious two-step representation learning based approach capable of producing several small sized models from a single large model ensuring considerably better performance in limited number of epochs. Comprehensive experimentation on ASR benchmarks reveals the efficacy of our approach, achieving three-fold training speed-up and up to 12.54% word error rate improvement." # insert the abstract of your publication between the quotes; you can use html e.g. to make links (<a></a>) or generate bold (<b></b>) etc. text 
+abstract: "We study the task of learning association between faces and voices, which is gaining interest in the multimodal community lately. These methods suffer from the deliberate crafting of negative mining procedures as well as the reliance on the distant margin parameter. These issues are addressed by learning a joint embedding space in which orthogonality constraints are applied to the fused embeddings of faces and voices. However, embedding spaces of faces and voices possess different characteristics and require spaces to be aligned before fusing them. To this end, we propose a method that accurately aligns the embedding spaces and fuses them with an enhanced gated fusion thereby improving the performance of face-voice association. Extensive experiments on the VoxCeleb dataset reveals the merits of the proposed approach." # insert the abstract of your publication between the quotes; you can use html e.g. to make links (<a></a>) or generate bold (<b></b>) etc. text 
 
 ####
 
 
 # set this url, if your paper is on another server; defaults to data.jku-vds-lab.at
-paper_content_url: https://doi.org/10.21437/Interspeech.2025-1704
+paper_content_url: https://www.isca-archive.org/interspeech_2025/hannan25_interspeech.html
 # uncomment the "hide" property, if you do not want the publication to be displayed on the website (usually you don't need this)
 # hide: True
 # uncomment the "non_group_project" property, if you only want the publication to be displayed on your personal page (i.e. publications where you contributed, but does not have anything to do with the Vis Group e.g. Master Thesis,...)
@@ -39,8 +39,10 @@ image_large: placeholder.png
 # - Max Mustermann # there is no .md file for this person.
 authors:
 - Abdul Hannan
-- Alessio Brutti
+- Muhammad Arslan Manzoor
 - Nawaz
+- Muhammad Irzam Liaqat
+- Schedl
 - Mubashir Noman
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG
@@ -66,7 +68,7 @@ bib:
   pages: 
   month: 
 
-preprint:	https://doi.org/10.21437/Interspeech.2025-1704 # here you can put the preprint link (arxiv.org, osf.io,...) e.g. https://arxiv.org/abs/1910.00969
+preprint:	https://www.isca-archive.org/interspeech_2025/hannan25_interspeech.html # here you can put the preprint link (arxiv.org, osf.io,...) e.g. https://arxiv.org/abs/1910.00969
 
 # Add things like "Best Paper Award at InfoVis 2099, selected out of 4000 submissions"
 award:

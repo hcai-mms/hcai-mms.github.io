@@ -2,20 +2,20 @@
 layout: publication # do not change
 
 #### these fields are mandatory. please fill them out
-title: "ESC-UNET: A hybrid CNN and Swin Transformers for skin lesion segmentation." # title of your publication 
+title: "Development of a bilingual healthcare chatbot for pregnant women: A comparative study of deep learning models with BiGRU optimization" # title of your publication 
 
 # choose one of the following types:
 # "paper": Peer-Reviewed Journal and Conference Papers
 # "preprint": Preprint
 # "thesis": Thesis (e.g. Master/PhD Thesis)
 type: journal
-abstract: "One of the most important tasks in computer-aided diagnostics is the automatic segmentation of skin lesions, which plays an essential role in the early diagnosis and treatment of skin cancer. In recent years, the Convolutional Neural Network (CNN) has largely replaced other traditional methods for segmenting skin lesions. However, due to insufficient information and unclear lesion region segmentation, skin lesion image segmentation still has challenges. In this paper, we propose a novel deep medical image segmentation approach named “ESC-UNET” which combines the advantages of CNN and Transformer to effectively leverage local information and long-range dependencies to enhance medical image segmentation. In terms of the local information, we use a CNN-based encoder and decoder framework. The CNN branch mines local information from medical images using the locality of convolution processes and the pre-trained EfficientNetB5 network. As for the long-range dependencies, we build a Transformer branch that emphasizes the global context. In addition, we employ Atrous Spatial Pyramid Pooling (ASPP) to gather network-wide relevant information. The Convolution Block Attention Module (CBAM) is added to the model to promote effective features and suppress ineffective features in segmentation. We have evaluated our network using the ISIC 2016, ISIC 2017, and ISIC 2018 datasets. The results demonstrate the efficiency of the proposed model in segmenting skin lesions." # insert the abstract of your publication between the quotes; you can use html e.g. to make links (<a></a>) or generate bold (<b></b>) etc. text 
+abstract: "With the growing demand for healthcare services and a persistent shortage of medical professionals, intelligent systems such as chatbots are gaining relevance in improving patient support. In obstetrics, pregnant women require fast, accessible, and reliable information to monitor their health and the progression of their pregnancy. This study aims to design and evaluate a bilingual chatbot tailored to the healthcare needs of pregnant women, leveraging recent advances in deep learning for natural language processing (NLP). We developed and compared five deep learning architectures – artificial neural networks (ANN), long short-term memory (LSTM), bidirectional LSTM (BiLSTM), gated recurrent units (GRU), and bidirectional GRU (BiGRU) – to identify the most suitable model for chatbot implementation. Each model was trained on a bilingual dataset of pregnancy-related questions and answers, and evaluated using accuracy, computational efficiency, and contextual relevance of responses. The BiGRU model achieved the highest performance, demonstrating superior accuracy and response efficiency over the other models. It consistently delivered context-aware, personalized answers in both languages, showing its robustness in handling sequential healthcare queries. These findings suggest that BiGRU networks offer a promising solution for building intelligent, bilingual healthcare chatbots aimed at supporting pregnant women. Future work will focus on expanding the dataset, incorporating voice-based input, and deploying the chatbot in real-world healthcare settings for clinical validation." # insert the abstract of your publication between the quotes; you can use html e.g. to make links (<a></a>) or generate bold (<b></b>) etc. text 
 
 ####
 
 
 # set this url, if your paper is on another server; defaults to data.jku-vds-lab.at
-paper_content_url: https://doi.org/10.1016/j.ibmed.2025.100257
+paper_content_url: https://doi.org/10.1016/j.ibmed.2025.100261
 # uncomment the "hide" property, if you do not want the publication to be displayed on the website (usually you don't need this)
 # hide: True
 # uncomment the "non_group_project" property, if you only want the publication to be displayed on your personal page (i.e. publications where you contributed, but does not have anything to do with the Vis Group e.g. Master Thesis,...)
@@ -24,11 +24,11 @@ paper_content_url: https://doi.org/10.1016/j.ibmed.2025.100257
 
 #### the following fields are optional, but it is recommended to enter as much information as possible
 # The shortname is used for auto-generated titels. e.g. ConfusionFlow
-shortname: ESC-UNET
+shortname: BiGRU
 # add a 2:1 aspect ratio (e.g., width: 400px, height: 200px) to the folder /assets/images/papers/ e.g. 2020_tvcg_confusionflow.png
-image: 2025_esc_unet.jpg
+image: 2025_BiGRU.jpg
 # add a 2:1 aspect ratio teaser figure (e.g., width: 1200px, height: 600px) to the folder /assets/images/papers/ e.g. 2020_tvcg_confusionflow_teaser.png
-image_large: 2025_esc_unet.jpg
+image_large: 2025_BiGRU.jpg
 
 # Authors in the "database" can be used with just the key that is specified in the corresponding .md file (usually it is the lastname in lower case e.g. doe). Authors that do not have an individual page here should be stated with their full name (e.g. John Doe)
 # each author is one item in the list. the list is enumerated with dashes ("-")
@@ -38,10 +38,9 @@ image_large: 2025_esc_unet.jpg
 # - schedl # .md file exists for this person
 # - Max Mustermann # there is no .md file for this person.
 authors:
-- Anwar Jimi
+- Ablavi Ericka Armela
 - Nabila Zrira
-- Oumaima Guendoul
-- Ibtissam Benmiloud
+- Khadija Ouazzani-Touhami
 - Haris Ahmad Khan
 - Nawaz
 
@@ -68,7 +67,7 @@ bib:
   pages: 
   month: 
 
-preprint:	https://doi.org/10.1016/j.ibmed.2025.100257 # here you can put the preprint link (arxiv.org, osf.io,...) e.g. https://arxiv.org/abs/1910.00969
+preprint:	 # here you can put the preprint link (arxiv.org, osf.io,...) e.g. https://arxiv.org/abs/1910.00969
 
 # Add things like "Best Paper Award at InfoVis 2099, selected out of 4000 submissions"
 award:

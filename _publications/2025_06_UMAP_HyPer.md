@@ -2,19 +2,19 @@
 layout: publication # do not change
 
 #### these fields are mandatory. please fill them out
-title: "Hybrid Personalization Using Declarative and Procedural Memory Modules of the Cognitive Architecture ACT-R" # title of your publication 
+title: "Hybrid AI for Human-Centric Personalization (HyPer)" # title of your publication 
 
 # choose one of the following types:
 # "paper": Peer-Reviewed Journal and Conference Papers
 # "preprint": Preprint
 # "thesis": Thesis (e.g. Master/PhD Thesis)
 type: paper
-abstract: "Recommender systems often rely on sub-symbolic machine learning approaches that operate as opaque black boxes. These approaches typically fail to account for the cognitive processes that shape user preferences and decision-making. In this vision paper, we propose a hybrid user modeling framework based on the cognitive architecture ACT-R that integrates symbolic and sub-symbolic representations of human memory. Our goal is to combine ACT-R’s declarative memory, which is responsible for storing symbolic chunks along sub-symbolic activations, with its procedural memory, which contains symbolic production rules. This integration will help simulate how users retrieve past experiences and apply decision-making strategies. With this approach, we aim to provide more transparent recommendations, enable rule-based explanations, and facilitate the modeling of cognitive biases. We argue that our approach has the potential to inform the design of a new generation of human-centered, psychology-informed recommender systems."
+abstract: "Hybrid AI, which integrates symbolic and sub-symbolic methods, has emerged as a promising paradigm for advancing human-centric personalization. By combining machine learning with structured knowledge representations, hybrid AI enables interpretable and adaptive user models that account for human factors such as biases, mental models, and affective states. The HyPer workshop provides a venue to discuss how hybrid AI approaches, combining neural architectures, symbolic representations, and cognitive/behavioral frameworks, can bridge the gap between explainability, cognitive modeling, and automated adaptation to user preferences."
 ####
 
 
 # set this url, if your paper is on another server; defaults to data.jku-vds-lab.at
-# paper_content_url: https://dl.acm.org/doi/10.1145/3604915.3608838 # https://dl.acm.org/doi/abs/10.1145/3511808.3557656
+paper_content_url: https://dl.acm.org/doi/10.1145/3708319.3727563 # https://dl.acm.org/doi/abs/10.1145/3511808.3557656
 # uncomment the "hide" property, if you do not want the publication to be displayed on the website (usually you don't need this)
 # hide: True
 # uncomment the "non_group_project" property, if you only want the publication to be displayed on your personal page (i.e. publications where you contributed, but does not have anything to do with the Vis Group e.g. Master Thesis,...)
@@ -23,7 +23,7 @@ abstract: "Recommender systems often rely on sub-symbolic machine learning appro
 
 #### the following fields are optional, but it is recommended to enter as much information as possible
 # The shortname is used for auto-generated titels. e.g. ConfusionFlow
-shortname: HybPers
+shortname: hyper
 # add a 2:1 aspect ratio (e.g., width: 400px, height: 200px) to the folder /assets/images/papers/ e.g. 2020_tvcg_confusionflow.png
 image: placeholder.png
 # add a 2:1 aspect ratio teaser figure (e.g., width: 1200px, height: 600px) to the folder /assets/images/papers/ e.g. 2020_tvcg_confusionflow_teaser.png
@@ -37,10 +37,12 @@ image_large: placeholder.png
 # - schedl # .md file exists for this person
 # - Max Mustermann # there is no .md file for this person.
 authors:
+- Elisabeth Lex
 - Kevin Innerebner
+- Marko Tkalcic
 - Dominik Kowald
 - schedl
--  Elisabeth Lex
+
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG
 journal-short: UMAP
@@ -58,7 +60,7 @@ bib:
   editor: 
   publisher: Association for Computing Machinery
   address: New York, NY, USA
-  doi: 10.1145/3708319.3734176
+  doi: 10.1145/3708319.3727563
   url:  
   volume: 
   number: 

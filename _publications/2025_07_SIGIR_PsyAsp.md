@@ -2,20 +2,20 @@
 layout: publication # do not change
 
 #### these fields are mandatory. please fill them out
-title: "An Effective Training Framework for Light-Weight Automatic Speech Recognition Models" # title of your publication 
+title: "Psychological Aspects in Retrieval and Recommendation" # title of your publication 
 
 # choose one of the following types:
 # "paper": Peer-Reviewed Journal and Conference Papers
 # "preprint": Preprint
 # "thesis": Thesis (e.g. Master/PhD Thesis)
 type: paper
-abstract: "Recent advancement in deep learning encouraged developing large automatic speech recognition (ASR) models that achieve promising results while ignoring computational and memory constraints. However, deploying such models on low resource devices is impractical despite of their favorable performance. Existing approaches (pruning, distillation, layer skip etc.) transform the large models into smaller ones at the cost of significant performance degradation or require prolonged training of smaller models for better performance. To address these issues, we introduce an efficacious two-step representation learning based approach capable of producing several small sized models from a single large model ensuring considerably better performance in limited number of epochs. Comprehensive experimentation on ASR benchmarks reveals the efficacy of our approach, achieving three-fold training speed-up and up to 12.54% word error rate improvement." # insert the abstract of your publication between the quotes; you can use html e.g. to make links (<a></a>) or generate bold (<b></b>) etc. text 
+abstract: "Psychological processes play a critical role in shaping users' interactions with information retrieval (IR) and recommender systems (RS). Therefore, understanding human cognition, decision-making, and emotions is vital to enable user-centric retrieval and recommendation systems. Vice versa, understanding whether these aspects are also present in the systems themselves (e.g., in training data, ranking models, or outputs), or even injecting them on purpose, can inform the development of psychology-inspired systems. The purpose of this tutorial is to provide its attendees with an introduction to psychological concepts that are important in the ecosystem of search, retrieval, and recommendation, in particular, cognitive architectures, cognitive effects and biases, as well as personality and affect. Leveraging corresponding models allows its audience to build or refine psychology-informed IR and RS technology. The interdisciplinary tutorial requires intermediate expertise in terms of IR and RS, while we do not assume knowledge in psychology." # insert the abstract of your publication between the quotes; you can use html e.g. to make links (<a></a>) or generate bold (<b></b>) etc. text 
 
 ####
 
 
 # set this url, if your paper is on another server; defaults to data.jku-vds-lab.at
-paper_content_url: https://doi.org/10.21437/Interspeech.2025-1704
+paper_content_url: https://dl.acm.org/doi/10.1145/3726302.3731691
 # uncomment the "hide" property, if you do not want the publication to be displayed on the website (usually you don't need this)
 # hide: True
 # uncomment the "non_group_project" property, if you only want the publication to be displayed on your personal page (i.e. publications where you contributed, but does not have anything to do with the Vis Group e.g. Master Thesis,...)
@@ -24,7 +24,7 @@ paper_content_url: https://doi.org/10.21437/Interspeech.2025-1704
 
 #### the following fields are optional, but it is recommended to enter as much information as possible
 # The shortname is used for auto-generated titels. e.g. ConfusionFlow
-shortname: l_speech_recog
+shortname: PsyAsp
 # add a 2:1 aspect ratio (e.g., width: 400px, height: 200px) to the folder /assets/images/papers/ e.g. 2020_tvcg_confusionflow.png
 image: placeholder.png
 # add a 2:1 aspect ratio teaser figure (e.g., width: 1200px, height: 600px) to the folder /assets/images/papers/ e.g. 2020_tvcg_confusionflow_teaser.png
@@ -38,10 +38,9 @@ image_large: placeholder.png
 # - schedl # .md file exists for this person
 # - Max Mustermann # there is no .md file for this person.
 authors:
-- Abdul Hannan
-- Alessio Brutti
-- Nawaz
-- Mubashir Noman
+- schedl
+- Elisabeth Lex
+- Marko Tkalcic
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG
 journal-short: 
@@ -55,7 +54,7 @@ year: 2025
 bibentry: inproceedings
 bib:
   # journal: IEEE International Conference on Content-Based Multimedia Indexing # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
-  booktitle: "Proceedings of the Annual Conference of the International Speech Communication Association"
+  booktitle: "SIGIR '25: Proceedings of the 48th International ACM SIGIR Conference on Research and Development in Information Retrieval"
   editor: 
   publisher: 
   address: 
@@ -66,7 +65,7 @@ bib:
   pages: 
   month: 
 
-preprint:	https://doi.org/10.21437/Interspeech.2025-1704 # here you can put the preprint link (arxiv.org, osf.io,...) e.g. https://arxiv.org/abs/1910.00969
+preprint:	https://doi.org/10.1145/3726302.3731691 # here you can put the preprint link (arxiv.org, osf.io,...) e.g. https://arxiv.org/abs/1910.00969
 
 # Add things like "Best Paper Award at InfoVis 2099, selected out of 4000 submissions"
 award:

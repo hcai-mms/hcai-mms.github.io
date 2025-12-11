@@ -14,7 +14,7 @@ abstract: "Recommender systems often rely on sub-symbolic machine learning appro
 
 
 # set this url, if your paper is on another server; defaults to data.jku-vds-lab.at
-# paper_content_url: https://dl.acm.org/doi/10.1145/3604915.3608838 # https://dl.acm.org/doi/abs/10.1145/3511808.3557656
+paper_content_url: https://dl.acm.org/doi/10.1145/3708319.3734176 # https://dl.acm.org/doi/abs/10.1145/3511808.3557656
 # uncomment the "hide" property, if you do not want the publication to be displayed on the website (usually you don't need this)
 # hide: True
 # uncomment the "non_group_project" property, if you only want the publication to be displayed on your personal page (i.e. publications where you contributed, but does not have anything to do with the Vis Group e.g. Master Thesis,...)
@@ -40,7 +40,7 @@ authors:
 - Kevin Innerebner
 - Dominik Kowald
 - schedl
--  Elisabeth Lex
+- Elisabeth Lex
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG
 journal-short: UMAP

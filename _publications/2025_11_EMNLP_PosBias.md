@@ -2,20 +2,20 @@
 layout: publication # do not change
 
 #### these fields are mandatory. please fill them out
-title: "Music4All A+A: A Multimodal Dataset for Music Information Retrieval Tasks" # title of your publication 
+title: "Characterizing Positional Bias in Large Language Models: A Multi-Model Evaluation of Prompt Order Effects" # title of your publication 
 
 # choose one of the following types:
 # "paper": Peer-Reviewed Journal and Conference Papers
 # "preprint": Preprint
 # "thesis": Thesis (e.g. Master/PhD Thesis)
 type: paper
-abstract: "Music is characterized by aspects related to different modalities, such as the audio signal, the lyrics, or the music video clips. This has motivated the development of multimodal datasets and methods for Music Information Retrieval (MIR) tasks such as genre classification or autotagging. Music can be described at different levels of granularity, for instance defining genres at the level of artists or music albums. However, most datasets for multimodal MIR neglect this aspect and provide data at the level of individual music tracks. We aim to fill this gap by providing Music4All Artist and Album (Music4All A+A), a dataset for multimodal MIR tasks based on music artists and albums. Music4All A+A is built on top of the Music4All-Onion dataset, an existing track-level dataset for MIR tasks. Music4All A+A provides metadata, genre labels, image representations, and textual descriptors for 6,741 artists and 19,511 albums. Furthermore, since Music4All A+A is built on top of Music4All-Onion, it allows access to other multimodal data at the track level, including user--item interaction data. This renders Music4All A+A suitable for a broad range of MIR tasks, including multimodal music recommendation, at several levels of granularity. To showcase the use of Music4All A+A, we carry out experiments on multimodal genre classification of artists and albums, including an analysis in missing-modality scenarios, and a quantitative comparison with genre classification in the movie domain. Our experiments show that images are more informative for classifying the genres of artists and albums, and that several multimodal models for genre classification struggle in generalizing across domains. We provide the code to reproduce our experiments at this https URL, the dataset is linked in the repository and provided open-source under a CC BY-NC-SA 4.0 license. " # insert the abstract of your publication between the quotes; you can use html e.g. to make links (<a></a>) or generate bold (<b></b>) etc. text 
+abstract: "Large Language Models (LLMs) are widely used for a variety of tasks such as text generation, ranking, and decision-making. However, their outputs can be influenced by various forms of biases. One such bias is positional bias, where models prioritize items based on their position within a given prompt rather than their content or quality, impacting on how LLMs interpret and weigh information, potentially compromising fairness, reliability, and robustness. To assess positional bias, we prompt a range of LLMs to generate descriptions for a list of topics, systematically permuting their order and analyzing variations in the responses. Our analysis shows that ranking position affects structural features and coherence, with some LLMs also reordering or omitting topics. Nonetheless, the impact of positional bias varies across different LLMs and topics, indicating an interplay with other related biases." # insert the abstract of your publication between the quotes; you can use html e.g. to make links (<a></a>) or generate bold (<b></b>) etc. text 
 
 ####
 
 
 # set this url, if your paper is on another server; defaults to data.jku-vds-lab.at
-paper_content_url: https://arxiv.org/abs/2509.14891
+paper_content_url: https://aclanthology.org/2025.findings-emnlp.1124/
 # uncomment the "hide" property, if you do not want the publication to be displayed on the website (usually you don't need this)
 # hide: True
 # uncomment the "non_group_project" property, if you only want the publication to be displayed on your personal page (i.e. publications where you contributed, but does not have anything to do with the Vis Group e.g. Master Thesis,...)
@@ -24,11 +24,11 @@ paper_content_url: https://arxiv.org/abs/2509.14891
 
 #### the following fields are optional, but it is recommended to enter as much information as possible
 # The shortname is used for auto-generated titels. e.g. ConfusionFlow
-shortname: music4all
+shortname: posbias
 # add a 2:1 aspect ratio (e.g., width: 400px, height: 200px) to the folder /assets/images/papers/ e.g. 2020_tvcg_confusionflow.png
-image: 2025_music4all.png
+image: 2025_emnlp.png
 # add a 2:1 aspect ratio teaser figure (e.g., width: 1200px, height: 600px) to the folder /assets/images/papers/ e.g. 2020_tvcg_confusionflow_teaser.png
-image_large: 2025_music4all.png
+image_large: 2025_emnlp.png
 
 # Authors in the "database" can be used with just the key that is specified in the corresponding .md file (usually it is the lastname in lower case e.g. doe). Authors that do not have an individual page here should be stated with their full name (e.g. John Doe)
 # each author is one item in the list. the list is enumerated with dashes ("-")
@@ -38,13 +38,15 @@ image_large: 2025_music4all.png
 # - schedl # .md file exists for this person
 # - Max Mustermann # there is no .md file for this person.
 authors:
-- Jonas Geiger
-- moscati
-- nawaz
+- Patrick Schilcher
+- Dominik Karasin
+- Michael Schöpf
+- Haisam Saleh
+- Tommasel
 - schedl
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG
-journal-short: CBMI
+journal-short: EMNLP
 # when was this publication written/ when was the publication accepted (e.g. 2020)
 year: 2025
 
@@ -55,7 +57,7 @@ year: 2025
 bibentry: inproceedings
 bib:
   # journal: IEEE International Conference on Content-Based Multimedia Indexing # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
-  booktitle: "Proceedings of the 22nd IEEE International Conference on Content-based Multimedia Indexing (CBMI 2025)"
+  booktitle: "Findings of the Association for Computational Linguistics: EMNLP 2025"
   editor: 
   publisher: 
   address: 
@@ -66,7 +68,7 @@ bib:
   pages: 
   month: 
 
-preprint:	https://arxiv.org/abs/2509.14891 # here you can put the preprint link (arxiv.org, osf.io,...) e.g. https://arxiv.org/abs/1910.00969
+preprint:	 # here you can put the preprint link (arxiv.org, osf.io,...) e.g. https://arxiv.org/abs/1910.00969
 
 # Add things like "Best Paper Award at InfoVis 2099, selected out of 4000 submissions"
 award:
@@ -95,14 +97,12 @@ supplement:
 
 # Extra supplements, such as talk slides, data sets, etc.
 supplements:
-- name: Dataset
 #  # use link instead of abslink if you want to link to the master directory
-  abslink: https://zenodo.org/records/17400116
 #  # defaults to a download icon, use this if you want a link-out icon
 #  linksym: true
 
 # Link to the repository where the code is hostet
-code: https://github.com/hcai-mms/Music4All-A-A
+code: 
 
 # After the --- you can put information that you want to appear on the website using markdown formatting or HTML. A good example are acknowledgements, extra references, an erratum, etc.
 ---

@@ -39,8 +39,8 @@ image_large: 2025_CarbonFoot.png
 # - Max Mustermann # there is no .md file for this person.
 authors:
 - Josef Schodl
-- Lesota
-- Tommasel
+- lesota
+- tommasel
 - schedl
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG

@@ -38,12 +38,12 @@ image_large: placeholder.png
 # - schedl # .md file exists for this person
 # - Max Mustermann # there is no .md file for this person.
 authors:
-- Lesota
+- lesota
 - hausberger
 - Ivanna Pshenychna
 - Oleksandr Shvydanenko
 - Olha Yehorova
-- Schedl
+- schedl
 
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG

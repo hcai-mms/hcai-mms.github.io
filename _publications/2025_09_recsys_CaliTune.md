@@ -38,11 +38,11 @@ image_large: 2025_recsys_calitune.png
 # - schedl # .md file exists for this person
 # - Max Mustermann # there is no .md file for this person.
 authors:
-- Lesota
+- lesota
 - Adrian Bajko
 - Max Walder
 - Matthias Wenzel
-- Tommasel
+- tommasel
 - schedl
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG

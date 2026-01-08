@@ -42,7 +42,7 @@ authors:
 - Dominik Karasin
 - Michael Schöpf
 - Haisam Saleh
-- Tommasel
+- tommasel
 - schedl
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG

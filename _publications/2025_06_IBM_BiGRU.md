@@ -42,7 +42,7 @@ authors:
 - Nabila Zrira
 - Khadija Ouazzani-Touhami
 - Haris Ahmad Khan
-- Nawaz
+- nawaz
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG
 journal-short: 

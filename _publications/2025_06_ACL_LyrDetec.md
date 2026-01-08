@@ -40,7 +40,7 @@ image_large: 2025_lyrDetec.png
 authors:
 - Markus Frohmann 
 - Gabriel Meseguer Brocal
-- Schedl
+- schedl
 - Elena V. Epure
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG

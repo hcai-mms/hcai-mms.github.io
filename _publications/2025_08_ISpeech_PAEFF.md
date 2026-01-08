@@ -40,9 +40,9 @@ image_large: placeholder.png
 authors:
 - Abdul Hannan
 - Muhammad Arslan Manzoor
-- Nawaz
+- nawaz
 - Muhammad Irzam Liaqat
-- Schedl
+- schedl
 - Mubashir Noman
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG

@@ -45,7 +45,7 @@ authors:
 - Alberto Carlo Maria Manchio
 - Julian McAuley
 - Alessandro Melchiorre
-- Nawaz
+- nawaz
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG
 journal-short: 

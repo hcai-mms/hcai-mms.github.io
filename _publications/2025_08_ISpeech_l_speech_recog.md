@@ -40,7 +40,7 @@ image_large: placeholder.png
 authors:
 - Abdul Hannan
 - Alessio Brutti
-- Nawaz
+- nawaz
 - Mubashir Noman
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG

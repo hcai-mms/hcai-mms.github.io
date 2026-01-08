@@ -43,7 +43,7 @@ authors:
 - Oumaima Guendoul
 - Ibtissam Benmiloud
 - Haris Ahmad Khan
-- Nawaz
+- nawaz
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG
 journal-short: 

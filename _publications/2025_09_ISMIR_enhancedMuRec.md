@@ -38,10 +38,10 @@ image_large: 2025_MuRec.png
 # - schedl # .md file exists for this person
 # - Max Mustermann # there is no .md file for this person.
 authors:
-- Lesota
+- lesota
 - Veronica Clavijo
 - Attia Rizwani
-- Schedl
+- schedl
 - Bruce Ferwerda
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG

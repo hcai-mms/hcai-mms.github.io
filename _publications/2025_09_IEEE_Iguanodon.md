@@ -38,9 +38,9 @@ image_large: placeholder.png
 # - Max Mustermann # there is no .md file for this person.
 authors:
 - Patrick Adelberger  
-- Lesota
+- lesota
 - Klaus Eckelt 
-- Schedl  
+- schedl  
 - Marc Streit 
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG

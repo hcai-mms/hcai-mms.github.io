@@ -41,7 +41,7 @@ authors:
 - Markus Frohmann
 - Elena V. Epure
 - Gabriel Meseguer-Brocal1
-- Schedl
+- schedl
 - Romain Hennequin
 
 

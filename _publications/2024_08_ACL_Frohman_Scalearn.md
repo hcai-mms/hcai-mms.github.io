@@ -15,7 +15,7 @@ abstract: "Multi-task learning (MTL) has shown considerable practical benefits, 
 
 
 # set this url, if your paper is on another server; defaults to data.jku-vds-lab.at
-paper_content_url:
+paper_content_url: https://aclanthology.org/2024.findings-acl.699/
 # uncomment the "hide" property, if you do not want the publication to be displayed on the website (usually you don't need this)
 # hide: True
 # uncomment the "non_group_project" property, if you only want the publication to be displayed on your personal page (i.e. publications where you contributed, but does not have anything to do with the Vis Group e.g. Master Thesis,...)
@@ -57,12 +57,12 @@ bibentry: inproceedings
 bib:
   # journal: Springer # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
   booktitle: Findings of the Association for Computational Linguistics ACL 2024
-  editor: 
-  publisher: 
+  editor:     Lun-Wei Ku, Andre Martins, Vivek Srikumar
+  publisher:  Association for Computational Linguistics
   address: 
   location: Bangkok
-  doi:		
-  url: 
+  doi: https://doi.org/10.18653/v1/2024.findings-acl.699		
+  url: https://aclanthology.org/2024.findings-acl.699/
   volume: 
   number: 
   pages: 11743--11776

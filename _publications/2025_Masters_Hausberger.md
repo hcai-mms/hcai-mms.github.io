@@ -2,7 +2,7 @@
 layout: publication # do not change
 
 #### these fields are mandatory. please fill them out
-title: "Generating Contextbased Music Playlists for Mood Regulation: An Approach Based on Contrastive Learning" # title of your publication 
+title: "Generating Context-based Music Playlists for Mood Regulation: An Approach Based on Contrastive Learning" # title of your publication 
 
 # choose one of the following types:
 # "paper": Peer-Reviewed Journal and Conference Papers

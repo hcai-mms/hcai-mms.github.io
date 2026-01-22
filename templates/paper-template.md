@@ -7,7 +7,8 @@ title: "ConfusionFlow: A Model-Agnostic Visualization for Temporal Analysis of C
 # choose one of the following types:
 # "paper": Peer-Reviewed Journal and Conference Papers
 # "preprint": Preprint
-# "thesis": Thesis (e.g. Master/PhD Thesis)
+# "msthesis": Master Thesis 
+# "phdthesis": Phd. Thesis  
 type: preprint
 abstract: "" # insert the abstract of your publication between the quotes; you can use html e.g. to make links (<a></a>) or generate bold (<b></b>) etc. text 
 

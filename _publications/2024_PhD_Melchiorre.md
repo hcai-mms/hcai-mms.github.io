@@ -2,14 +2,14 @@
 layout: publication # do not change
 
 #### these fields are mandatory. please fill them out
-title: "Robust AI-Generated Lyrics Detection" # title of your publication 
+title: "Explainable and Fair Music Recommender Systems" # title of your publication 
 
 # choose one of the following types:
 # "paper": Peer-Reviewed Journal and Conference Papers
 # "preprint": Preprint
 # "thesis": Thesis (e.g. Master/PhD Thesis)
-type: msthesis
-abstract: "The rapid advance of Artificial Intelligence (AI)-based music genera-tion tools presents new opportunities for the music industry but alsoposes significant challenges, necessitating reliable methods for detect-ing AI-generated content. Existing detectors, however, face key practi-cal limitations: audio-based approaches struggle to generalize to un-seen generators and are not robust to common audio perturbations,while lyrics-based methods depend on cleanly formatted lyrics that areunavailable in real-world settings. To address this gap, this thesis pro-poses and evaluates a novel, practically grounded approach that lever-ages lyrical content extracted directly from the audio signal. Our methodfirst transcribes sung lyrics using a general-purpose Automatic SpeechRecognition (ASR) model, allowing established AI-generated text de-tection methods to be applied. To further improve performance, we in-troduce Double Entendre-detect (DE-detect), a multi-view late-fusionmethod that also incorporates audio-derived speech features capturingparalinguistic information. By focusing on lyrical and speech-relatedinformation rather than low-level audio artifacts, our method is de-signed for improved robustness and generalization. Experiments on adiverse dataset show that DE-detect achieves strong detection perfor-mance compared to text-only ones and, crucially, outperforms audio-based approaches, especially when tested against various audio pertur-bations and unseen music generators. This work thus presents an effec-tive, robust, and practical solution for detecting AI-generated music."
+type: phdthesis
+abstract: "Music Recommender Systems (MRS) are essential components of online music platforms, offering users personalized music recommendations from vast catalogs. Despite their convenience, there is growing concern over the fairness and explainability of these systems, as they may inadvertently reinforce biases, limit exposure to diverse content, and operate as 'black boxes' where the decision-making processes are opaque to users. Studies suggest that Recommender Systems' recommendation quality, including MRS', may vary based on user characteristics such as gender, age, or country of origin, potentially limiting access to quality content and reinforcing demographic-specific filter bubbles. Besides fairness, explaining why certain music items are recommended is important for maintaining user trust and supporting engineers in debugging the recommendation process. Explainability and fairness are noticeably intertwined, as explanations can aid in identifying potential biases and injustices within the systems, although transparent explanations alone do not ensure fair or biased results. This thesis provides several substantial contributions to the research directions of fairness and explainability in Recommender Systems in the music domain. Part I is devoted to assessing the disparate effectiveness of popular recommendation algorithms trained on large music datasets across different user groups. Focusing on the users' gender and personality, we uncover and measure the unfairness of most of the algorithms, demonstrating that they provide different quality of service to different user groups based on these characteristics. In Part II, we explore the role and methods of explainability in MRS by drawing connections to explainable AI and RSs, and we propose two novel explanation methods: ProtoMF, which uses prototypical users and items, as well as their similarities to real users and items, to explain recommendations, and LEMONS, which pinpoints the most meaningful part of the audio for track recommendations. Lastly, in Part III we jointly consider fairness and explainability in prototype-based RS models, proposing a debiasing method to make recommendation predictions less influenced by users' protected attributes like age and gender, effectively debiasing the RSs."
 ####
 
 
@@ -24,12 +24,12 @@ institution: Johannes Kepler University Linz
 thesis_type: Master's Thesis
 advisors : 
 - schedl
-
+- Tommaso Di Noia
 
 
 #### the following fields are optional, but it is recommended to enter as much information as possible
 # The shortname is used for auto-generated titels. e.g. ConfusionFlow
-shortname: master-thesis
+shortname: phd-thesis
 # add a 2:1 aspect ratio (e.g., width: 400px, height: 200px) to the folder /assets/images/papers/ e.g. 2020_tvcg_confusionflow.png
 image: 
 # add a 2:1 aspect ratio teaser figure (e.g., width: 1200px, height: 600px) to the folder /assets/images/papers/ e.g. 2020_tvcg_confusionflow_teaser.png
@@ -43,13 +43,14 @@ image_large:
 # - schedl # .md file exists for this person
 # - Max Mustermann # there is no .md file for this person.
 authors:
-- Markus Frohmann 
+- melchiorre 
 
 # when was this publication written/ when was the publication accepted (e.g. 2020)
-year: 2025
+year: 2024
 
 # if you have an explicit page you want to reference, use this tag; otherwise it will be generated from your doi
-publisherurl: https://epub.jku.at/download/pdf/13104267.pdf 
+publisherurl: https://epub.jku.at/urn/urn:nbn:at:at-ubl:1-81098
+
 # what is the publication type and other bib specific properties
 bibentry: misc
 bib:

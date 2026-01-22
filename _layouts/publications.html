@@ -28,7 +28,10 @@ layout: default
         <a href="#book-chapters"><span>Book Chapters</span></a>
       </li>
       <li>
-        <a href="#theses"><span>Theses</span></a>
+        <a href="#mstheses"><span>Theses</span></a>
+      </li>
+      <li>
+        <a href="#phdtheses"><span>Theses</span></a>
       </li>
       <!-- <li>
         <a href="#posters"><span>Posters</span></a>
@@ -80,22 +83,22 @@ layout: default
 
   <br>
 
-  <h1 id="theses">Theses</h1>
+  <h1 id="msthesis">Theses</h1>
 
-  {% assign member_thesis = site.publications | where:"type", "thesis" %}
-  {% for thesis in member_thesis reversed %}
-    {% if thesis.hide or thesis.non_group_project %}
+  {% assign member_msthesis = site.publications | where:"type", "msthesis" %}
+  {% for msthesis in member_msthesis reversed %}
+    {% if msthesis.hide or msthesis.non_group_project %}
     {% else %}
     <div class="paper-list-block">
-      {% if thesis.image %}
-        <a href="{{ site.baseurl }}{{ thesis.url }}">
-          <img alt="{{ thesis.shortname }} screenshot" class="paper-image-small" src="{{ site.baseurl }}{{ thesis.image }}">
+      {% if msthesis.image %}
+        <a href="{{ site.baseurl }}{{ msthesis.url }}">
+          <img alt="{{ msthesis.shortname }} screenshot" class="paper-image-small" src="{{ site.baseurl }}{{ msthesis.image }}">
         </a>
       {% endif %}
       <p>
         {% assign known = false %}
         {% for person in site.persons %}
-          {% if person.key == thesis.authors.first %}
+          {% if person.key == msthesis.authors.first %}
             {% if person.cg_website %}
             <a href="{{ person.cg_website }}">{{ person.first_name }} {{ person.last_name }}</a>
             {% elsif person.hide_personal_page %}
@@ -107,10 +110,11 @@ layout: default
           {% endif %}
         {% endfor %}
         {% if known == false %}
-        {{ thesis.authors.first | split: ','|reverse| join}}
+        {{ msthesis.authors.first | split: ','|reverse| join}}
         {% endif %} <br />
-        <b> <a href="{{ site.baseurl }}{{ thesis.url }}">{{ thesis.title }}</a></b><br />
-        {{ thesis.institution }}, {{thesis.thesis_type}}, {{thesis.year}}
+        <b> <a href="{{ site.baseurl }}{{ msthesis.url }}">{{ msthesis.title }}</a></b><br />
+        {{ msthesis.institution }}, {{msthesis.thesis_type}}, {{msthesis.year}}
+        
       </p>
 
     </div>
@@ -119,6 +123,48 @@ layout: default
   {% endfor %}
 
   <br>
+
+  <h1 id="#phdtheses">Theses</h1>
+
+  {% assign member_phdthesis = site.publications | where:"type", "phdthesis" %}
+  {% for phdthesis in member_phdthesis reversed %}
+    {% if phdthesis.hide or phdthesis.non_group_project %}
+    {% else %}
+    <div class="paper-list-block">
+      {% if phdthesis.image %}
+        <a href="{{ site.baseurl }}{{ phdthesis.url }}">
+          <img alt="{{ phdthesis.shortname }} screenshot" class="paper-image-small" src="{{ site.baseurl }}{{ phdthesis.image }}">
+        </a>
+      {% endif %}
+      <p>
+        {% assign known = false %}
+        {% for person in site.persons %}
+          {% if person.key == phdthesis.authors.first %}
+            {% if person.cg_website %}
+            <a href="{{ person.cg_website }}">{{ person.first_name }} {{ person.last_name }}</a>
+            {% elsif person.hide_personal_page %}
+            {{ person.first_name }} {{ person.last_name }}
+            {% else %}
+              <a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }} {{ person.last_name }}</a>
+            {% endif %}
+            {% assign known = true %}
+          {% endif %}
+        {% endfor %}
+        {% if known == false %}
+        {{ phdthesis.authors.first | split: ','|reverse| join}}
+        {% endif %} <br />
+        <b> <a href="{{ site.baseurl }}{{ phdthesis.url }}">{{ phdthesis.title }}</a></b><br />
+        {{ phdthesis.institution }}, {{phdthesis.thesis_type}}, {{phdthesis.year}}
+        
+      </p>
+
+    </div>
+    {% endif %}
+
+  {% endfor %}
+
+    <br>
+
 
   <!-- <h1 id="commentaries">Commentaries</h1>
 

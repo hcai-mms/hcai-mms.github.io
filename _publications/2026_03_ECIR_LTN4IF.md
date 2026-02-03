@@ -52,10 +52,10 @@ year: 2026
 publisherurl: # add link to publisher page of your publication
 
 # what is the publication type and other bib specific properties
-bibentry: 
+bibentry: inproceedings
 bib:
-  journal: 		# e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
-  booktitle: 
+  journal: 		European Conference on Information Retrieval
+  booktitle:  European Conference on Information Retrieval
   editor: 
   publisher: 
   address: 

@@ -46,7 +46,13 @@ authors:
 - Mir, Junaid
 - Yousaf, Muhammad Haroon
 - Malik, Khalid Mahmood
-- schedl 
+- schedl
+equal_contribution:
+- moscati
+- Abdullah, Ahmed
+- Saeed, Muhammad Saad 
+- nawaz
+- Das, Rohan Kumar
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG
 journal-short: ICASSP

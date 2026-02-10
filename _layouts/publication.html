@@ -76,8 +76,16 @@ layout: default
         {% endfor %}
         {% if known == false %}
         {{ author | split: ','|reverse |join}}{% if equal_contrib %}*{% endif %}{% if author != page.authors.last%}, {% endif %}
+        {% if equal_contrib %}
+        {% assign author_parts = author | split: ',' %}
+        {% if author_parts.size > 1 %}
+        {% assign bibname_unknown = author_parts[0] | append: '*,' | append: author_parts[1] %}
+        {% else %}
+        {% assign bibname_unknown = author | append: '*' %}
+        {% endif %}
+        {% else %}
         {% assign bibname_unknown = author %}
-        {% if equal_contrib %}{% assign bibname_unknown = bibname_unknown | append: '*' %}{% endif %}
+        {% endif %}
         {% if author == page.authors.first %}
         {% assign bibauthors = bibname_unknown %}
         {% else %}

@@ -61,20 +61,27 @@ layout: default
           {{ person.last_name }}</a>{% if equal_contrib %}*{% endif %}{% if author != page.authors.last%}, {% endif %}
         {% endif %}
         <!-- <a href="{{ person.website }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>{% if author != page.authors.last%}, {% endif %} -->
-        {% if author == page.authors.first %}
-        {% assign bibauthors = person.last_name | append: ', ' | append: person.first_name %}
+        {% if equal_contrib %}
+        {% assign bibname = person.last_name | append: '*, ' | append: person.first_name %}
         {% else %}
-        {% assign bibauthors = bibauthors | append: ' and ' | append: person.last_name | append: ', ' | append: person.first_name %}
+        {% assign bibname = person.last_name | append: ', ' | append: person.first_name %}
+        {% endif %}
+        {% if author == page.authors.first %}
+        {% assign bibauthors = bibname %}
+        {% else %}
+        {% assign bibauthors = bibauthors | append: ' and ' | append: bibname %}
         {% endif %}
         {% assign known = true %}
         {% endif %}
         {% endfor %}
         {% if known == false %}
         {{ author | split: ','|reverse |join}}{% if equal_contrib %}*{% endif %}{% if author != page.authors.last%}, {% endif %}
+        {% assign bibname_unknown = author %}
+        {% if equal_contrib %}{% assign bibname_unknown = bibname_unknown | append: '*' %}{% endif %}
         {% if author == page.authors.first %}
-        {% assign bibauthors = author %}
+        {% assign bibauthors = bibname_unknown %}
         {% else %}
-        {% assign bibauthors = bibauthors | append: ' and ' | append: author %}
+        {% assign bibauthors = bibauthors | append: ' and ' | append: bibname_unknown %}
         {% endif %}
         {% endif %}
         {% endfor %}

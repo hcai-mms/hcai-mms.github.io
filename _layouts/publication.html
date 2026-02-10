@@ -42,17 +42,23 @@ layout: default
       <p>
         {% assign bibauthors = '' %}
         {% for author in page.authors %}
+        {% assign equal_contrib = false %}
+        {% if page.equal_contribution %}
+        {% for ec in page.equal_contribution %}
+        {% if ec == author %}{% assign equal_contrib = true %}{% endif %}
+        {% endfor %}
+        {% endif %}
         {% assign known = false %}
         {% for person in site.persons %}
         {% if author == person.key %}
         {% if person.cg_website %}
         <a href="{{ person.cg_website }}">{{ person.first_name }}
-          {{ person.last_name }}</a>{% if author != page.authors.last%}, {% endif %}
+          {{ person.last_name }}</a>{% if equal_contrib %}*{% endif %}{% if author != page.authors.last%}, {% endif %}
         {% elsif person.hide_personal_page %}
-        {{ person.first_name }} {{ person.last_name }}<br>
+        {{ person.first_name }} {{ person.last_name }}{% if equal_contrib %}*{% endif %}<br>
         {% else %}
         <a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }}
-          {{ person.last_name }}</a>{% if author != page.authors.last%}, {% endif %}
+          {{ person.last_name }}</a>{% if equal_contrib %}*{% endif %}{% if author != page.authors.last%}, {% endif %}
         {% endif %}
         <!-- <a href="{{ person.website }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>{% if author != page.authors.last%}, {% endif %} -->
         {% if author == page.authors.first %}
@@ -64,7 +70,7 @@ layout: default
         {% endif %}
         {% endfor %}
         {% if known == false %}
-        {{ author | split: ','|reverse |join}}{% if author != page.authors.last%}, {% endif %}
+        {{ author | split: ','|reverse |join}}{% if equal_contrib %}*{% endif %}{% if author != page.authors.last%}, {% endif %}
         {% if author == page.authors.first %}
         {% assign bibauthors = author %}
         {% else %}
@@ -72,6 +78,9 @@ layout: default
         {% endif %}
         {% endif %}
         {% endfor %}
+        {% if page.equal_contribution %}
+        <br /><small>* Equal contribution</small>
+        {% endif %}
 
 
         <br />

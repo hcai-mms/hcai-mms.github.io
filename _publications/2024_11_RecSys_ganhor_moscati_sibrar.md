@@ -42,6 +42,9 @@ authors:
 - hausberger
 - nawaz
 - schedl
+equal_contribution:
+- ganhoer
+- moscati
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG
 journal-short: RecSys

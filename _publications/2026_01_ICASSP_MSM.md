@@ -2,7 +2,7 @@
 layout: publication # do not change
 
 #### these fields are mandatory. please fill them out
-title: "Face-Voice Association with Inductive Bias for \\Maximum Class Separation" # title of your publication 
+title: "Face-Voice Association with Inductive Bias for Maximum Class Separation" # title of your publication 
 
 # choose one of the following types:
 # "paper": Peer-Reviewed Journal and Conference Papers

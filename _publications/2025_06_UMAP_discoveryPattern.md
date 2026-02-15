@@ -39,9 +39,9 @@ image_large: 2025_06_UMAP_discoveryPattern.png
 # - Max Mustermann # there is no .md file for this person.
 authors:
 - moscati
-- Afchar Darius
+- Darius Afchar
 - schedl
-- Sguerra Bruno
+- Bruno Sguerra
 
 # abreviation of the journal/conference ... e.g. IEEE TVCG
 journal-short: UMAP

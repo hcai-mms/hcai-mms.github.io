@@ -10,17 +10,23 @@
   <div>
     <p>
       {% for author in publication.authors %}
+      {% assign equal_contrib = false %}
+      {% if publication.equal_contribution %}
+      {% for ec in publication.equal_contribution %}
+      {% if ec == author %}{% assign equal_contrib = true %}{% endif %}
+      {% endfor %}
+      {% endif %}
 
       {% assign known = false %}
       {% for person in site.persons %}
       {% if author == person.key %}
     <span class="paper-author">
       {% if person.cg_website %}
-          <a href="{{ person.cg_website }}">{{ person.first_name }} {{ person.last_name }}</a>{% if author != publication.authors.last %}, {% endif %}
+          <a href="{{ person.cg_website }}">{{ person.first_name }} {{ person.last_name }}</a>{% if equal_contrib %}*{% endif %}{% if author != publication.authors.last %}, {% endif %}
       {% elsif person.hide_personal_page %}
-          {{ person.first_name }} {{ person.last_name }}<br>
+          {{ person.first_name }} {{ person.last_name }}{% if equal_contrib %}*{% endif %}<br>
       {% else %}
-          <a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }} {{ person.last_name }}</a>{% if author != publication.authors.last %}, {% endif %}
+          <a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }} {{ person.last_name }}</a>{% if equal_contrib %}*{% endif %}{% if author != publication.authors.last %}, {% endif %}
       {% endif %}
     </span>
       {% assign known = true %}
@@ -29,7 +35,7 @@
 
       {% if known == false %}
     <span class="paper-author">
-      {{ author| split:', '| reverse|join ' ' }}{% if author != publication.authors.last %}, {% endif %}
+      {{ author| split:', '| reverse|join ' ' }}{% if equal_contrib %}*{% endif %}{% if author != publication.authors.last %}, {% endif %}
     </span>
       {% endif %}
 

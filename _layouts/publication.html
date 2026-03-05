@@ -42,36 +42,60 @@ layout: default
       <p>
         {% assign bibauthors = '' %}
         {% for author in page.authors %}
+        {% assign equal_contrib = false %}
+        {% if page.equal_contribution %}
+        {% for ec in page.equal_contribution %}
+        {% if ec == author %}{% assign equal_contrib = true %}{% endif %}
+        {% endfor %}
+        {% endif %}
         {% assign known = false %}
         {% for person in site.persons %}
         {% if author == person.key %}
         {% if person.cg_website %}
         <a href="{{ person.cg_website }}">{{ person.first_name }}
-          {{ person.last_name }}</a>{% if author != page.authors.last%}, {% endif %}
+          {{ person.last_name }}</a>{% if equal_contrib %}*{% endif %}{% if author != page.authors.last%}, {% endif %}
         {% elsif person.hide_personal_page %}
-        {{ person.first_name }} {{ person.last_name }}<br>
+        {{ person.first_name }} {{ person.last_name }}{% if equal_contrib %}*{% endif %}<br>
         {% else %}
         <a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }}
-          {{ person.last_name }}</a>{% if author != page.authors.last%}, {% endif %}
+          {{ person.last_name }}</a>{% if equal_contrib %}*{% endif %}{% if author != page.authors.last%}, {% endif %}
         {% endif %}
         <!-- <a href="{{ person.website }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>{% if author != page.authors.last%}, {% endif %} -->
-        {% if author == page.authors.first %}
-        {% assign bibauthors = person.last_name | append: ', ' | append: person.first_name %}
+        {% if equal_contrib %}
+        {% assign bibname = person.last_name | append: '*, ' | append: person.first_name %}
         {% else %}
-        {% assign bibauthors = bibauthors | append: ' and ' | append: person.last_name | append: ', ' | append: person.first_name %}
+        {% assign bibname = person.last_name | append: ', ' | append: person.first_name %}
+        {% endif %}
+        {% if author == page.authors.first %}
+        {% assign bibauthors = bibname %}
+        {% else %}
+        {% assign bibauthors = bibauthors | append: ' and ' | append: bibname %}
         {% endif %}
         {% assign known = true %}
         {% endif %}
         {% endfor %}
         {% if known == false %}
-        {{ author | split: ','|reverse |join}}{% if author != page.authors.last%}, {% endif %}
-        {% if author == page.authors.first %}
-        {% assign bibauthors = author %}
+        {{ author | split: ','|reverse |join}}{% if equal_contrib %}*{% endif %}{% if author != page.authors.last%}, {% endif %}
+        {% if equal_contrib %}
+        {% assign author_parts = author | split: ',' %}
+        {% if author_parts.size > 1 %}
+        {% assign bibname_unknown = author_parts[0] | append: '*,' | append: author_parts[1] %}
         {% else %}
-        {% assign bibauthors = bibauthors | append: ' and ' | append: author %}
+        {% assign bibname_unknown = author | append: '*' %}
+        {% endif %}
+        {% else %}
+        {% assign bibname_unknown = author %}
+        {% endif %}
+        {% if author == page.authors.first %}
+        {% assign bibauthors = bibname_unknown %}
+        {% else %}
+        {% assign bibauthors = bibauthors | append: ' and ' | append: bibname_unknown %}
         {% endif %}
         {% endif %}
         {% endfor %}
+        {% if page.equal_contribution %}
+        <br /><small>* Equal contribution</small>
+        {% endif %}
 
 
         <br />

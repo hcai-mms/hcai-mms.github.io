@@ -2,10 +2,10 @@
 layout: team-member # do not change
 
 #### these fields are mandatory. please fill them out
-first_name: Anna 
-last_name: Hausberger
-title: "Anna Hausberger"
-key: hausberger # this should be your lastname in lower case; the key is important for publications or other listings that need to be linked to your profile. it needs to be unique (should there be someone else with the same lastname, please contact the admin)
+first_name: Max
+last_name: Walder
+title: "Max Walder"
+key: walder # this should be your lastname in lower case; the key is important for publications or other listings that need to be linked to your profile. it needs to be unique (should there be someone else with the same lastname, please contact the admin)
 
 # choose one of the following: 
 # - "faculty": Faculty
@@ -13,12 +13,12 @@ key: hausberger # this should be your lastname in lower case; the key is importa
 # - "undergrad": Undergraduate Students
 # - "phdgrad": PhD Graduates
 # - "alumni": Other Alumni
-role: raPhD
+role: undergrad
 
-email: anna.hausberger@jku.at # this is your work e-mail address
-image: /assets/images/team_colored/hausberger.jpeg # insert the relative link to your profile image
+email:  max.walder@jku.at # this is your work e-mail address
+image: /assets/images/icons/incon-cp.svg # insert the relative link to your profile image
 organization: Johannes Kepler University Linz # usually you leave this unchanged, but if your have a different organization, feel free to change the property
-position: PhD # This is the position that you have within your organization. e.g. "Project Assistant", "University Assistant", "Technical Support", "Student Research" (or whatever Marc tells you^^)
+position: Student Research Assistant # This is the position that you have within your organization. e.g. "Project Assistant", "University Assistant", "Technical Support", "Student Research" (or whatever Marc tells you^^)
 ####
 
 
@@ -31,17 +31,17 @@ position: PhD # This is the position that you have within your organization. e.g
 # in degrees_pre you can state all your degrees that should be displayed in front of your name e.g. "Dr", "DI", "Prof" etc. (or a combination of several)
 degrees_pre: 
 # in degrees_post you can state all your degrees that should be displayed after your name e.g. "BSc", "MSc" etc. (or a combination of several)
-degrees_post: 
+degrees_post: B.Sc.
 
 # the location property states your work address. Usually you would only need to adjust the room number below i.e. change "0357" which is Marc's office to your own
 location: "Johannes Kepler University Linz<br />
                 Institute of Computational Perception<br />
                 Altenberger Straße 69<br />
-                Science Park 3, 406<br />
+                Science Park 3, 403<br />
                 A-4040 Linz, Austria"
 
 # thats your office number. usually you only need to replace the last 4 numbers with your own extension i.e. replace "6635" (you can find the extension on the right top of your office phone)
-phone: "+43 732 2468 4717"
+phone: "+43 732 2468 4700"
 # if you have a fax you can enter your fax information here
 fax:
 # add your twitter handle (e.g. "marc_streit")

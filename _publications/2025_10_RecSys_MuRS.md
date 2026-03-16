@@ -76,7 +76,7 @@ award:
 project: 
 
 # Use this if you have an external project website e.g. https://ordino.caleydoapp.org/
-external-project: https://visualizationproject2023-4226c576e92e.herokuapp.com
+external-project: 
 
 # (deprecated)
 # # The key of the video .md file (in _videos subfolder)

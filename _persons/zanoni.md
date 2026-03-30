@@ -15,7 +15,7 @@ key: zanoni # this should be your lastname in lower case; the key is important f
 # - "alumni": Other Alumni
 # - "administration": Administration/Secretary
 # - "tech": Technical Support
-role: guest
+role: former
 
 email: zanoni.1964213@studenti.uniroma1.it # this is your work e-mail address
 image: /assets/images/team_colored/zanoni.jpg # insert the relative link to your profile image

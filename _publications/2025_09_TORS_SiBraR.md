@@ -60,7 +60,7 @@ bib:
   editor: 
   publisher: Association for Computing Machinery
   address: New York, NY, USA
-  url: https://doi.org/10.1145/3769430
+  url: https://arxiv.org/pdf/2602.14706
   doi: 10.1145/3769430
   volume: 
   number: 

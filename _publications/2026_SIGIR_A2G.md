@@ -14,7 +14,7 @@ abstract: "Diffusion recommender systems achieve strong recommendation accuracy 
 
 
 # set this url, if your paper is on another server; defaults to data.jku-vds-lab.at
-# paper_content_url: 
+paper_content_url: https://arxiv.org/pdf/2602.14706
 # uncomment the "hide" property, if you do not want the publication to be displayed on the website (usually you don't need this)
 # hide: True
 # uncomment the "non_group_project" property, if you only want the publication to be displayed on your personal page (i.e. publications where you contributed, but does not have anything to do with the Vis Group e.g. Master Thesis,...)
@@ -59,8 +59,8 @@ bib:
   editor: 
   publisher: Association for Computing Machinery
   address: New York, NY, USA
-#  doi: 10.1145/3805712.3809912
-#  url: https://doi.org/10.1145/3805712.3809912
+  doi: 10.1145/3805712.3809912
+  url: https://doi.org/10.1145/3805712.3809912
 #  volume: 
 #  number: 
 #  pages: 1256–1260
@@ -89,7 +89,7 @@ preprint:	https://arxiv.org/pdf/2602.14706 # here you can put the preprint link 
 # preview-youtube-id: 
 
 # the name of your publication pdf e.g. 2020_tvcg_confusionflow.pdf; this is usually uploaded to the caleydo aws server
-pdf: 2026_SIGIR_A2G.pdf
+#pdf: 2026_SIGIR_A2G.pdf
 # A supplement PDF e.g. 2017_preprint_taggle_supplement.pdf; this is usually uploaded to the caleydo aws server
 # supplement: 
 

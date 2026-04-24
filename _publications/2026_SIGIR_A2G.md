@@ -55,7 +55,7 @@ year: 2026
 bibentry: inproceedings
 bib:
   # journal: Proceedings of the IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 
-  booktitle: Proceedings of the 49th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR, 
+  booktitle: Proceedings of the 49th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR) 
   editor: 
   publisher: Association for Computing Machinery
   address: New York, NY, USA

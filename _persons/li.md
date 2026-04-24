@@ -47,15 +47,15 @@ fax:
 # add your twitter handle (e.g. "marc_streit")
 twitter: 
 # add your github username (e.g. "mstreit")
-github: 
+github: https://github.com/zihanlizi
 # add your google scholar key (e.g. "l7TTSP0AAAAJ")
 google_scholar: 
 # add your linkedin username (e.g. "marcstreit")
-linkedin:
+linkedin: https://www.linkedin.com/in/zihan-li-558b2b233/
 # here you can add a link to your CV (e.g. "http://data.jku-vds-lab.at/team/marc/cv_streit.pdf")
 cv:
 # here you can add a link to a personal website
-website:
+website: https://zihanlizi.github.io/
 
 
 # uncomment this property, if your personal page should have a navigation for publications (i.e. if you have many publiations). usually you don't need this.

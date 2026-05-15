@@ -49,6 +49,8 @@ authors:
 # abreviation of the journal/conference ... e.g. IEEE TVCG
 journal-short: ICASSP
 # when was this publication written/ when was the publication accepted (e.g. 2020)
+# when was this publication written/ when was the publication accepted (e.g. 2020)
+year: 2026
 
 # if you have an explicit page you want to reference, use this tag; otherwise it will be generated from your doi
 # publisherurl: https://link.springer.com/chapter/10.1007/978-3-030-72240-1_60 # add link to publisher page of your publication
@@ -65,7 +67,6 @@ bib:
 #  volume: 
 #  number: 
 #  pages: 1256–1260
-  year: 2026 
 
 preprint:	https://arxiv.org/abs/2601.13651 # here you can put the preprint link (arxiv.org, osf.io,...) e.g. https://arxiv.org/abs/1910.00969
 

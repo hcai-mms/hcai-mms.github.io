@@ -65,8 +65,7 @@ year: 2026
 # what is the publication type and other bib specific properties
 bibentry: inproceedings
 bib:
-  journal: Proceedings of the IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 
-  booktitle: Proceedings of the IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 
+  booktitle: Proceedings of the IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP) 
   editor: 
 #  publisher: Association for Computing Machinery
 #  address: New York, NY, USA
@@ -100,7 +99,7 @@ preprint:	https://arxiv.org/abs/2512.20376 # here you can put the preprint link 
 # preview-youtube-id: 
 
 # the name of your publication pdf e.g. 2020_tvcg_confusionflow.pdf; this is usually uploaded to the caleydo aws server
-pdf: 2026_ICASSP_FAME.pdf
+pdf: /assets/pdf/2026_ICASSP_FAME.pdf
 # A supplement PDF e.g. 2017_preprint_taggle_supplement.pdf; this is usually uploaded to the caleydo aws server
 # supplement: 
 

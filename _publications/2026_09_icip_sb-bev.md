@@ -48,8 +48,6 @@ authors:
 # abreviation of the journal/conference ... e.g. IEEE TVCG
 journal-short: ICIP
 # when was this publication written/ when was the publication accepted (e.g. 2020)
-year: 2026
-
 # if you have an explicit page you want to reference, use this tag; otherwise it will be generated from your doi
 # publisherurl: https://link.springer.com/chapter/10.1007/978-3-030-72240-1_60 # add link to publisher page of your publication
 

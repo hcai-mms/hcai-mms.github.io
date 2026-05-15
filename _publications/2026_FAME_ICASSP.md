@@ -74,7 +74,7 @@ bib:
 #  volume: 
 #  number: 
 #  pages: 1256–1260
-  year: 2026 
+#  year: 2026 
 
 preprint:	https://arxiv.org/abs/2512.20376 # here you can put the preprint link (arxiv.org, osf.io,...) e.g. https://arxiv.org/abs/1910.00969
 

@@ -92,7 +92,7 @@ youtube-id:
 preview-youtube-id: 
 
 # the name of your publication pdf e.g. 2020_tvcg_confusionflow.pdf; this is usually uploaded to the caleydo aws server
-pdf: /assets/pdf/2024_umap_emomrs.pdf
+# pdf: /assets/pdf/2024_umap_emomrs.pdf
 # A supplement PDF e.g. 2017_preprint_taggle_supplement.pdf; this is usually uploaded to the caleydo aws server
 supplement: /assets/pdf/2024_umap_emomrs_poster.pdf
 

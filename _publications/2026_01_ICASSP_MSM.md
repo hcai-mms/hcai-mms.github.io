@@ -49,7 +49,6 @@ authors:
 # abreviation of the journal/conference ... e.g. IEEE TVCG
 journal-short: ICASSP
 # when was this publication written/ when was the publication accepted (e.g. 2020)
-year: 2026
 
 # if you have an explicit page you want to reference, use this tag; otherwise it will be generated from your doi
 # publisherurl: https://link.springer.com/chapter/10.1007/978-3-030-72240-1_60 # add link to publisher page of your publication
@@ -68,7 +67,7 @@ bib:
 #  pages: 1256–1260
   year: 2026 
 
-# preprint:	https://www.arxiv.org/abs/2508.03518 # here you can put the preprint link (arxiv.org, osf.io,...) e.g. https://arxiv.org/abs/1910.00969
+preprint:	https://arxiv.org/abs/2601.13651 # here you can put the preprint link (arxiv.org, osf.io,...) e.g. https://arxiv.org/abs/1910.00969
 
 # Add things like "Best Paper Award at InfoVis 2099, selected out of 4000 submissions"
 # award:
@@ -91,7 +90,7 @@ bib:
 # preview-youtube-id: 
 
 # the name of your publication pdf e.g. 2020_tvcg_confusionflow.pdf; this is usually uploaded to the caleydo aws server
-pdf: /assets/pdf/2026_ICASSP_MSM.pdf
+# pdf: /assets/pdf/2026_ICASSP_MSM.pdf
 # A supplement PDF e.g. 2017_preprint_taggle_supplement.pdf; this is usually uploaded to the caleydo aws server
 # supplement: 
 

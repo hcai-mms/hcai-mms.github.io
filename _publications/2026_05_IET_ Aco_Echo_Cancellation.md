@@ -53,23 +53,22 @@ year: 2026
 # publisherurl: https://link.springer.com/chapter/10.1007/978-3-030-72240-1_60 # add link to publisher page of your publication
 
 # what is the publication type and other bib specific properties
-bibentry: @article{https://doi.org/10.1049/ell2.70595,
-author = {Singh, Gagandeep and Kar, Asutosh and Vasundhara and Swain, Monorama and Jensen, Jesper Rindom and Christensen, Mads Græsbøll},
-title = {Robust Sub-Filter Based APA With Parametric Welsch Function for Acoustic Echo Cancellation Under Impulsive Noise},
-journal = {Electronics Letters},
-volume = {62},
-number = {1},
-pages = {e70595},
-keywords = {acoustic signal processing, adaptive filters, adaptive signal processing, affine transforms, echo, echo suppression, impulse noise},
-doi = {https://doi.org/10.1049/ell2.70595},
-url = {https://ietresearch.onlinelibrary.wiley.com/doi/abs/10.1049/ell2.70595},
-eprint = {https://ietresearch.onlinelibrary.wiley.com/doi/pdf/10.1049/ell2.70595},
-abstract = {ABSTRACT The affine projection algorithm (APA) is widely used for acoustic echo cancellation, but faces challenges like slow convergence, high steady-state errors and sensitivity to impulsive noise. In this paper, a parametric Welsch APA has been introduced and integrated into the multiple sub-filter-based framework to address these issues for highly correlated input signals and impulsive noise. The employed parametric Welsch cost function robustly suppresses impulsive noise without any matrix inversion operation as in APA. On the other hand, a multiple sub-filter framework improves convergence and tracking performance. Through a theoretical stability and convergence analysis, the performance limits have been validated. Simulations performed using speech and synthetic signals with Bernoulli–Gaussian and impulsive noise demonstrate that the proposed approach achieves superior steady-state and convergence performance than existing APA variants.},
-year = {2026}
-}
+bibentry: @article https://doi.org/10.1049/ell2.70595
+bib:
+  journal: Electronics Letters 
+  # booktitle: Proceedings of the 49th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR) 
+  editor: 
+  publisher: Association for Computing Machinery
+  address: New York, NY, USA
+  doi: https://doi.org/10.1049/ell2.70595
+  url: https://ietresearch.onlinelibrary.wiley.com/doi/abs/10.1049/ell2.70595}
+  volume: 62
+  number: 1 
+  pages: e70595
+  year: 2026 
 
 
-preprint:	# here you can put the preprint link (arxiv.org, osf.io,...) e.g. https://arxiv.org/abs/1910.00969
+preprint:	 # here you can put the preprint link (arxiv.org, osf.io,...) e.g. https://arxiv.org/abs/1910.00969
 
 # Add things like "Best Paper Award at InfoVis 2099, selected out of 4000 submissions"
 # award:

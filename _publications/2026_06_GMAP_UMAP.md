@@ -50,7 +50,7 @@ year: 2026
 # publisherurl: https://ceur-ws.org/Vol-xxxx/ # add link to publisher page of your publication
 
 # what is the publication type and other bib specific properties
-bibentry: proceedings
+bibentry: inproceedings
 bib:
   # journal: Springer # e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
   booktitle: Workshops Proceedings of the 34th ACM International Conference on User Modeling, Adaptation and Personalization (UMAP 2026), Gothenburg, Sweden. 

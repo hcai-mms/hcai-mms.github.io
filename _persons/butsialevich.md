@@ -15,7 +15,7 @@ key: butsialevich # this should be your lastname in lower case; the key is impor
 # - "alumni": Other Alumni
 # - "administration": Administration/Secretary
 # - "tech": Technical Support
-role: guest
+role: former
 
 email: yauheni.butsialevich.stud@pw.edu.pl # this is your work e-mail address
 image: /assets/images/team_colored/butsialevich.png # insert the relative link to your profile image

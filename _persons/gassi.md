@@ -15,7 +15,7 @@ key: gassi # this should be your lastname in lower case; the key is important fo
 # - "alumni": Other Alumni
 # - "administration": Administration/Secretary
 # - "tech": Technical Support
-role: guest
+role: former
 
 email:  g.gassi@studenti.poliba.it # this is your work e-mail address
 image: /assets/images/team_colored/gassi.png # insert the relative link to your profile image

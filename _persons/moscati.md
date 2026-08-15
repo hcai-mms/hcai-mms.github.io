@@ -47,9 +47,9 @@ fax:
 # add your twitter handle (e.g. "marc_streit")
 twitter: 
 # add your github username (e.g. "mstreit")
-github: https://github.com/mmosc
+github: mmosc
 # add your google scholar key (e.g. "l7TTSP0AAAAJ")
-google_scholar: https://scholar.google.com/citations?user=Y0T4-9kAAAAJ&hl=en
+google_scholar: Y0T4-9kAAAAJ&hl
 # add your linkedin username (e.g. "marcstreit")
 linkedin: marta-mosc
 # here you can add a link to your CV (e.g. "http://data.jku-vds-lab.at/team/marc/cv_streit.pdf")
@@ -65,7 +65,7 @@ website: https://mmosc.github.io/
 
 ####
 ---
-I am a physicist turned computer scientist, currently a PhD student at the Multimedia Mining and Search Group of the Johannes Kepler University Linz, Austria. I am also Applied Scientist (L5) at [Albatross AI](https://usealbatross.ai/).
+I am a physicist turned computer scientist, currently a PhD student at the Multimedia Mining and Search Group of the Johannes Kepler University Linz, Austria. I am also Applied Scientist at [Albatross AI](https://usealbatross.ai/).
 
 My fields of research are multimodal learning and recommender systems. I have a PhD in theoretical particle physics.
 

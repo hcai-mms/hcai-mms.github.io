@@ -47,10 +47,10 @@ authors:
 # abreviation of the journal/conference ... e.g. IEEE TVCG
 journal-short: CEUR Workshop Proceedings
 # when was this publication written/ when was the publication accepted (e.g. 2020)
-year: 2025
+year: 2026
 
 # if you have an explicit page you want to reference, use this tag; otherwise it will be generated from your doi
-publisherurl: https://ceur-ws.org/Vol-4045/ # add link to publisher page of your publication
+# publisherurl: https://ceur-ws.org/Vol-4045/ # add link to publisher page of your publication
 
 # what is the publication type and other bib specific properties
 bibentry: proceedings
